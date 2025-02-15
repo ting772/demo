@@ -1,5 +1,6 @@
 import code from "./index.vue?raw"
 import component from "./index.vue"
+import display from './display.png'
 
 export default {
   codes: [
@@ -9,5 +10,8 @@ export default {
       lang: "js"
     },
   ],
-  component
+  component,
+  display,
+  title: "css box阴影效果",
+  descriptions: ""
 }

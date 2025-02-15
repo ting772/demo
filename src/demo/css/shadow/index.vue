@@ -1,20 +1,39 @@
 <template>
-  <div>
-    <el-checkbox v-model="boxShadowFlag" label="添加shadow-box" border />
-    <el-checkbox v-model="roundFlag" label="round-border" border />
-    <el-checkbox v-model="filterFlag" label="filter:drop-shadow" border />
-    <div :class="ctClass">
-      测试文本
-      <div class="circle">
-        测试文本2
-      </div>
+  <div :class="ctClass">
+    测试文本
+    <div class="circle">
+      测试文本2
     </div>
   </div>
 </template>
 <script setup lang="ts">
-const boxShadowFlag = ref(false)
-const roundFlag = ref(false)
-const filterFlag = ref(false)
+import useGui from '@/hooks/useLilGui'
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
+
+let { obj } = useGui({
+  title: "css-阴影",
+  "添加box-shadow": {
+    value: [false],
+    onChange(v: boolean) { boxShadowFlag.value = v }
+  },
+  "添加圆角": {
+    value: [false],
+    onChange(v: boolean) { roundFlag.value = v }
+  },
+  "添加filter:drop-shadow": {
+    value: [false],
+    onChange(v: boolean) { filterFlag.value = v }
+  },
+  "查看源码"() {
+    emit("check-source")
+  }
+})
+
+const boxShadowFlag = ref(obj['添加box-shadow'])
+const roundFlag = ref(obj['添加圆角'])
+const filterFlag = ref(obj['添加filter:drop-shadow'])
 const ctClass = computed(() => ([
   'container',
   {

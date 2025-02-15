@@ -14,7 +14,10 @@ export type Position = {
 }
 
 type FillGridOptions = {
-  position: Position;
+  x: number;
+  y: number;
+  w?: number;
+  h?: number;
   size?: number;
   color?: string;
 }
@@ -49,6 +52,7 @@ export class Grid {
     this.xMax = nx - 1
     this.yMax = ny - 1
     if (isDef(background)) this.background = background!
+    this.fresh()
   }
 
   posX2X(x: number) {
@@ -65,14 +69,14 @@ export class Grid {
 
   fillGrid(options: FillGridOptions) {
     const {
-      position: { x, y },
+      x, y, w, h,
       color = '#fff',
-      size = this.gridSize
+      size = this.gridSize,
     } = options
     let { ctx } = this
     let prevStyle = ctx.fillStyle
     ctx.fillStyle = color
-    ctx.fillRect(this.posX2X(x), this.posY2Y(y), size, size)
+    ctx.fillRect(this.posX2X(x), this.posY2Y(y), size * (w ?? 1), size * (h ?? 1))
     ctx.fillStyle = prevStyle
   }
 

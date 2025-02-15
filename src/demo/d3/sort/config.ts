@@ -4,6 +4,7 @@ import bubble from '@/lib/algorithm/sort/bubble?raw'
 import selection from '@/lib/algorithm/sort/selection?raw'
 import insertion from '@/lib/algorithm/sort/insertion?raw'
 import merge from '@/lib/algorithm/sort/merge?raw'
+import display from './display.png'
 
 export default {
   codes: [
@@ -33,5 +34,8 @@ export default {
       lang: "ts"
     },
   ],
-  component
+  component,
+  display,
+  title: "排序算法可视化",
+  descriptions: ""
 }

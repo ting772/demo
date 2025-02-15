@@ -25,8 +25,8 @@ onMounted(() => {
 .pre {
   height: 100%;
   width: fit-content;
+  box-sizing: border-box;
   min-width: 100%;
   max-height: 100%;
-  // box-sizing: border-box;
 }
 </style>

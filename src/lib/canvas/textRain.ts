@@ -98,14 +98,21 @@ export class TextObj implements SceneObj {
   }
 }
 
+type TextRainOptions = {
+  scene: SceneInstance;//scene实例
+  maxNum?: number;//最大文字串数量
+}
 export class TextRain {
   scene: SceneInstance
   num = 0
   maxNum = 100
   colors = ['brown', 'red', 'green', 'yellow', "chocolate", 'pink', 'burlywood', 'chartreuse', 'cyan']
 
-  constructor(scene: SceneInstance) {
+  constructor(options: TextRainOptions) {
+    let { scene, maxNum } = options
     this.scene = scene
+    if (maxNum)
+      this.maxNum = maxNum
   }
 
   addText() {
@@ -134,5 +141,9 @@ export class TextRain {
     this.scene.run((delta: number) => {
       this.addText()
     })
+  }
+
+  stop() {
+    this.scene.stop()
   }
 }

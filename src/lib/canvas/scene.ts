@@ -18,8 +18,8 @@ export interface SceneObj {
 export class Scene {
   canvas: HTMLCanvasElement
   ctx: CanvasRenderingContext2D
-  width: number
-  height: number
+  width: number = 0
+  height: number = 0
   background: string
 
   _t0: number = 0;//起始时间
@@ -29,30 +29,33 @@ export class Scene {
 
   _raf = 0
 
+  setSize(width: number, height: number) {
+    this.canvas.width = width
+    this.canvas.height = height
+    this.width = width
+    this.height = height
+  }
+
   constructor(options: SceneOptions) {
     let { width, height, canvas, background } = options
     this.canvas = canvas
-    this.width = width
-    this.height = height
     this.ctx = canvas.getContext('2d')!
     this.background = background ?? '#000'
-
-    canvas.width = width
-    canvas.height = height
+    this.setSize(width, height)
   }
 
   _render() {
     let { width, height, ctx, background } = this
     ctx.fillStyle = background
     ctx.fillRect(0, 0, width, height)
-    let label = `${this._objects.length}个物体待渲染`
-    console.time(label)
+    // let label = `${this._objects.length}个物体待渲染`
+    // console.time(label)
 
     //内部可能有剔除溢出物体的操作，for of循环+splice会导致删除时闪烁
     for (let obj of [...this._objects]) {
       obj.render(this._dt)
     }
-    console.timeEnd(label)
+    // console.timeEnd(label)
   }
 
   _updateTime(time: number) {
@@ -88,5 +91,14 @@ export class Scene {
       if (obj.scene == this) { obj.scene = null }
     }
     return this
+  }
+
+  stop() {
+    if (this._raf) {
+      cancelAnimationFrame(this._raf)
+      this._t0 = 0
+      this._t1 = 0
+      this._dt = 0
+    }
   }
 }

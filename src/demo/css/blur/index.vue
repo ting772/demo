@@ -1,21 +1,41 @@
 <template>
-  <div class="box">
-    <el-checkbox v-model="blurSelf" label="模糊自身" border />
-    <el-checkbox v-model="blurBackdrop" label="模糊背后" border />
-    <div class="container">
-      <div class="el1">
-        财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人，
-        较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻）
-      </div>
-      <div :class="el2Class">
-        财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。
-      </div>
+  <div class="container">
+    <div class="el1">
+      财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人，
+      较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻）
+    </div>
+    <div :class="el2Class">
+      财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。
     </div>
   </div>
 </template>
-<script setup>
-const blurSelf = ref(false)
-const blurBackdrop = ref(false)
+<script setup lang="ts">
+import useGui from '@/hooks/useLilGui'
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
+
+const { obj } = useGui({
+  title: "css-模糊效果",
+  "模糊自身": {
+    value: [false],
+    onChange(v: boolean) {
+      blurSelf.value = v
+    }
+  },
+  "模糊背景": {
+    value: [false],
+    onChange(v: boolean) {
+      blurBackdrop.value = v
+    }
+  },
+  查看源码() {
+    emit('check-source')
+  }
+})
+
+const blurSelf = ref(obj['模糊自身'])
+const blurBackdrop = ref(obj['模糊背景'])
 const el2Class = computed(() => ([
   "el2",
   {
@@ -26,17 +46,6 @@ const el2Class = computed(() => ([
 </script>
 
 <style scoped>
-.box {
-  padding: 20px;
-}
-
-.container {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  margin-top: 20px;
-}
-
 .el1,
 .el2 {
   width: 300px;

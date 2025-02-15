@@ -2,6 +2,7 @@ import code from "./index.vue?raw"
 import codeScene from '@/lib/canvas/scene?raw'
 import codeTextRain from '@/lib/canvas/textRain?raw'
 import component from "./index.vue"
+import display from './display.png'
 
 export default {
   codes: [
@@ -21,5 +22,8 @@ export default {
       lang: "ts"
     },
   ],
-  component
+  component,
+  display,
+  title: "文字雨",
+  descriptions: ""
 }

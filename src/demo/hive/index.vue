@@ -8,6 +8,10 @@
 </template>
 <script setup lang="ts">
 import { arrayChunk } from '@/utils/utils'
+import useGui from '@/hooks/useLilGui'
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
 
 let imgs = [
   ...Object.values(
@@ -19,6 +23,13 @@ let imgs = [
 
 let row = 5
 imgs = ref(arrayChunk(imgs, Math.ceil(imgs.length / row)))
+
+useGui({
+  title: "蜂巢图片",
+  查看源码() {
+    emit("check-source")
+  }
+})
 
 //计算正六边形clip-path
 // function calcClipPath(cellSize, sideSize) {

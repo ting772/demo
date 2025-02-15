@@ -8,7 +8,7 @@ export enum DIRECTION {
   RIGHT = -2
 }
 
-type Speed = 1 | 2 | 3 | 4 | 5
+export type Speed = 1 | 2 | 3 | 4 | 5
 
 type SnakeOptions = {
   grid: InstanceType<typeof Grid>;
@@ -16,12 +16,6 @@ type SnakeOptions = {
   onStart?: () => void;
   onEnd?: () => void;
   onEat?: () => void;
-}
-
-
-type SnakeStartOptions = {
-  size?: number;
-  direction?: DIRECTION;
 }
 
 type Snake = {
@@ -36,54 +30,45 @@ type SnakeNode = {
   next: SnakeNode | null;
 }
 
+type SnakeStartOptions = {
+  length: number;
+  direction: DIRECTION
+}
+
 export class SnakeGame {
   grid: InstanceType<typeof Grid>;
   snake?: Snake | null;
   direction?: DIRECTION;
   speed?: Speed;
+  unitSize = 1;
+  _moveStep = 1;
   uninstallKeyboardEvent?: () => void;
-  moveStep: number;
   foodPos?: Position | null
   onStart?: () => void;
   onEnd?: () => void;
   onEat?: () => void;
+  _started = false;
+  stopRaf?: () => void
 
   constructor(options: SnakeOptions) {
     let { grid, speed, onStart, onEnd, onEat } = options
     this.grid = grid
-    this.speed = speed ?? 1
-    this.moveStep = [0, 100, 80, 64, 32, 16][this.speed] || 16
+    this.setSpeed(speed ?? 1)
     this.onStart = onStart
     this.onEat = onEat
     this.onEnd = onEnd
-  }
-
-  append(options: Position) {
-    let { x, y } = options
-    let node: SnakeNode = { x, y, prev: null, next: null }
-    if (!this.snake) throw Error("init start game first")
-    let snake = this.snake
-    if (!snake.head) {
-      snake.head = node
-      snake.tail = node
-    } else {
-      let tail = snake.tail!
-      snake.tail = node
-      tail.next = node
-      node.prev = tail
-    }
   }
 
   //判断是否结束
   isEnd() {
     if (!this.snake) throw Error("init start game first")
     let head = this.snake.head!
-    // console.log('是否越界：', isOutBound(head), '是否交叉：', isCross())
-    return this.grid.isOutBound(head) || this.isCross()
+    // console.log('是否越界：', isOutBound(head), '是否交叉：', _isCross())
+    return this.grid.isOutBound(head) || this._isCross()
   }
 
   //判断是否交叉
-  isCross() {
+  _isCross() {
     if (!this.snake) throw Error("init start game first")
     let head = this.snake.head!
     let current = head.next
@@ -95,32 +80,36 @@ export class SnakeGame {
   }
 
   //画蛇
-  drawSnake() {
+  _drawSnake() {
     if (!this.snake) throw Error("init start game first")
     let { snake } = this
     this.grid.fresh()
     let current = snake.head as SnakeNode | null
     while (current) {
       this.grid.fillGrid({
-        position: { x: current.x, y: current.y }
+        x: current.x,
+        y: current.y,
+        w: this.unitSize,
+        h: this.unitSize
       })
-      // console.log(current.x, current.y)
       current = current.next
     }
   }
 
   //画食物
-  drawFood() {
+  _drawFood() {
     if (this.foodPos) {
       this.grid.fillGrid({
-        position: { ...this.foodPos }
+        ...this.foodPos,
+        w: this.unitSize,
+        h: this.unitSize
       })
     }
   }
 
   draw() {
-    this.drawSnake()
-    this.drawFood()
+    this._drawSnake()
+    this._drawFood()
   }
 
   changeDirection(dir?: DIRECTION) {
@@ -137,25 +126,26 @@ export class SnakeGame {
    * @param headPos 头节点坐标
    * @returns boolean true代表吃到食物，false表示没有吃到
    */
-  testEatFood(headPos: Position) {
+  _testEatFood(headPos: Position) {
     let foodPos = this.foodPos
     let head = headPos
     return foodPos ? head.x == foodPos.x && head.y == foodPos.y : false
   }
 
   //移动
-  move() {
+  _move() {
     if (!this.snake) throw Error("init start game first")
-    let { snake, direction } = this
+    let { snake, direction, _moveStep } = this
     let head = snake.head!
     let tail = snake.tail!
 
     let nextHead: SnakeNode
+
     switch (direction!) {
       case DIRECTION.UP:
         nextHead = {
           x: head.x,
-          y: head.y - 1,
+          y: head.y - _moveStep,
           prev: null,
           next: null
         }
@@ -164,7 +154,7 @@ export class SnakeGame {
       case DIRECTION.DOWN:
         nextHead = {
           x: head.x,
-          y: head.y + 1,
+          y: head.y + _moveStep,
           prev: null,
           next: null
         }
@@ -172,7 +162,7 @@ export class SnakeGame {
 
       case DIRECTION.LEFT:
         nextHead = {
-          x: head.x - 1,
+          x: head.x - _moveStep,
           y: head.y,
           prev: null,
           next: null
@@ -181,14 +171,14 @@ export class SnakeGame {
 
       case DIRECTION.RIGHT:
         nextHead = {
-          x: head.x + 1,
+          x: head.x + _moveStep,
           y: head.y,
           prev: null,
           next: null
         }
         break;
     }
-    if (this.testEatFood(nextHead!)) {
+    if (this._testEatFood(nextHead!)) {
       this.foodPos = null
       this.onEat?.()
       nextHead.next = head
@@ -207,8 +197,9 @@ export class SnakeGame {
     return this.isEnd() ? false : (this.draw(), true)
   }
 
-  setupKeyboardEvent() {
+  _setupKeyboardEvent() {
     let fn = (e: KeyboardEvent) => {
+      console.log(e.key)
       this.changeDirection({
         w: DIRECTION.UP,
         s: DIRECTION.DOWN,
@@ -217,12 +208,12 @@ export class SnakeGame {
       }[e.key]
       )
     }
-    document.addEventListener('keydown', fn)
-    this.uninstallKeyboardEvent = () => document.removeEventListener('keydown', fn)
+    window.addEventListener('keydown', fn)
+    this.uninstallKeyboardEvent = () => window.removeEventListener('keydown', fn)
   }
 
   //生成食物坐标
-  generateFood() {
+  _generateFood() {
     if (!this.foodPos) {
       this.foodPos = {
         x: randomInt(this.grid.xMax),
@@ -231,63 +222,92 @@ export class SnakeGame {
     }
   }
 
-  start(options?: SnakeStartOptions) {
-    let {
-      size = 5,
-      direction = DIRECTION.RIGHT,
-    } = options || {}
-    this.direction = direction
-    this.onStart?.()
+  _createSnake({ length, direction }: SnakeStartOptions) {
     let snake = this.snake = {
       head: null,
       tail: null
     } as Snake
+
+    const _append = (options: Position) => {
+      let { x, y } = options
+      let node: SnakeNode = { x, y, prev: null, next: null }
+
+      let snake = this.snake!
+      if (!snake.head) {
+        snake.head = node
+        snake.tail = node
+      } else {
+        let tail = snake.tail!
+        snake.tail = node
+        tail.next = node
+        node.prev = tail
+      }
+    }
+
     //添加头节点
-    this.append({ x: 10, y: 10 })
-    let i = size
+    _append({ x: 50, y: 10 })
+    let i = length
     while (--i > 0) {
-      let tail = snake.tail
-      if (!tail) throw Error("snake tail not init");
+      let tail = snake.tail!;
       ({
-        [DIRECTION.UP]: () => { this.append({ x: tail.x, y: tail.y - 1 }) },
-        [DIRECTION.DOWN]: () => { this.append({ x: tail.x, y: tail.y + 1 }) },
-        [DIRECTION.LEFT]: () => { this.append({ x: tail.x + 1, y: tail.y }) },
-        [DIRECTION.RIGHT]: () => { this.append({ x: tail.x - 1, y: tail.y }) }
+        [DIRECTION.UP]: () => { _append({ x: tail.x, y: tail.y - 1 }) },
+        [DIRECTION.DOWN]: () => { _append({ x: tail.x, y: tail.y + 1 }) },
+        [DIRECTION.LEFT]: () => { _append({ x: tail.x + 1, y: tail.y }) },
+        [DIRECTION.RIGHT]: () => { _append({ x: tail.x - 1, y: tail.y }) }
       }[direction])();
     }
-    this.generateFood()
+
+    this._drawSnake()
+  }
+
+  setSpeed(n: Speed) {
+    this.speed = n
+    this._moveStep = 1
+  }
+
+  start(options?: SnakeStartOptions) {
+    if (this._started) return
+    this._started = true
+    let {
+      length = 1,
+      direction = DIRECTION.RIGHT,
+    } = options || {}
+    this.direction = direction
+    this.onStart?.()
+
+    this._createSnake({ length, direction })
+    this._generateFood()
     this.draw()
     if (!this.uninstallKeyboardEvent) {
-      this.setupKeyboardEvent()
+      this._setupKeyboardEvent()
     }
     let time: number, raf: number, success, run = (t: number) => {
-      if (!time || (t - time >= this.moveStep)) {
+      if (!time) {
         time = t
-        success = this.move()
-
-        //随机生成食物
-        if (randomInt(1000) > 500) {
-          this.generateFood()
-        }
-        if (!success) {
-          raf = 0
-          this.onEnd?.()
-          return
-        }
       }
-      raf = requestAnimationFrame(run)
+      success = this._move()
+
+      //随机生成食物
+      if (randomInt(1000) > 500) {
+        this._generateFood()
+      }
+      if (success) {
+        raf = requestAnimationFrame(run)
+        return
+      }
+
+      raf = 0
+      this.onEnd?.()
+      return
     }
     raf = requestAnimationFrame(run)
-    return {
-      stop() {
-        if (raf) { cancelAnimationFrame(raf) }
-      }
-    }
   }
 
   reset() {
     this.snake = null
     this.foodPos = null
+    this._started = false
+    this.stopRaf?.()
   }
 
   restart(options?: SnakeStartOptions) {
@@ -295,7 +315,7 @@ export class SnakeGame {
     this.start(options)
   }
 
-  uninstall() {
+  destory() {
     this.uninstallKeyboardEvent?.()
   }
 }

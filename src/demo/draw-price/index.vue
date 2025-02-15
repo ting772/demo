@@ -1,31 +1,5 @@
 <template>
   <div class="box">
-    <div>
-      <el-button type="primary" @click="startWander">巡航</el-button>
-      <el-button type="primary" @click="stop">停止</el-button>
-      <el-button type="primary" @click="mock">模拟接口返回预制数据</el-button>
-    </div>
-    <el-card class="card" shadow="always">
-      <el-form :model="form">
-        <el-form-item label="设定巡航速度">
-          <el-select placeholder="选择速度值，越大越快" v-model="form.speed" style="width:150px;">
-            <el-option v-for="n in 10" :value="n">{{ n }}</el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="设定最终选中项索引">
-          <el-input placeholder="输入抽奖选中项索引" v-model.number="form.targetIndex" style="width:150px;" />
-        </el-form-item>
-        <el-form-item label="轮转次数">
-          <el-input placeholder="输入抽奖轮转次数" v-model.number="form.loopTimes" style="width:150px;" />
-        </el-form-item>
-        <el-form-item label="旋转方向">
-          <el-switch v-model="form.direction" active-text="正向" inactive-text="反向" :active-value="DIRECTION.NORMAL"
-            :inactive-value="DIRECTION.REVERSE" />
-        </el-form-item>
-      </el-form>
-      <el-button style="margin-left:20px;margin-left: auto;" type="primary" @click="startDraw">抽奖</el-button>
-    </el-card>
     <el-card class="demo-card" shadow="always">
       <div style="display:flex;">
         <div :class="['block', selectedIndex == index ? 'selected' : '']" v-for="(,index) in arr">{{ index }}</div>
@@ -36,15 +10,20 @@
 <script setup lang="ts">
 import { drawPrice, DIRECTION } from '@/lib/draw-price.ts'
 import { randIndex } from '@/utils/utils'
+import useGui from '@/hooks/useLilGui'
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
 
+const selectedIndex = ref(1)
 const arr = [...Array(10)]
-const form = reactive({
+const form = {
   targetIndex: 2,
   loopTimes: 2,
   direction: DIRECTION.NORMAL,
-  speed: 5
-})
-const selectedIndex = ref(1)
+  speed: 5,
+}
+
 const { wander, stop, draw } = drawPrice(arr, {
   speed: form.speed,
   startIndex: selectedIndex.value,
@@ -70,13 +49,58 @@ function startDraw() {
   draw({ ...form })
 }
 
+onUnmounted(() => {
+  stop()
+  if (timer) {
+    clearTimeout(timer)
+  }
+})
+
+let timer: number
 function mock() {
   startWander()
-  setTimeout(() => {
+  timer = setTimeout(() => {
     form.targetIndex = randIndex(arr)
     startDraw()
+    timer = 0
+    console.log('aaaa')
   }, 2500)
 }
+
+useGui({
+  title: "抽奖",
+  设定巡航速度: {
+    value: [form.speed, 1, 10, 1],
+    onFinishChange(n: number) {
+      form.speed = n
+    }
+  },
+  设定最终选中项索引: {
+    value: [form.targetIndex, 0, arr.length - 1, 1],
+    onFinishChange(n: number) {
+      form.targetIndex = n
+    }
+  },
+  轮转次数: {
+    value: [form.loopTimes, 2, 20, 1],
+    onFinishChange(n: number) {
+      form.loopTimes = n
+    }
+  },
+  轮转方向: {
+    value: [form.direction == DIRECTION.NORMAL ? '正向' : '负向', ["正向", "负向"]],
+    onChange(n: string) {
+      form.direction = n == '正向' ? DIRECTION.NORMAL : DIRECTION.REVERSE
+    }
+  },
+  开始抽奖: startDraw,
+  开始巡航: startWander,
+  停止: stop,
+  模拟接口返回预制数据: mock,
+  查看源码() {
+    emit('check-source')
+  }
+})
 
 </script>
 <style scoped lang="scss">

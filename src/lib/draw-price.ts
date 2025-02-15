@@ -51,11 +51,13 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
 
   updateDt(speed)
 
+  type WanderOptions = { direction: DIRECTION, speed: Speed, startIndex?: number }
   //巡游
-  function wander(options: { direction: DIRECTION, speed: Speed }) {
+  function wander(options: WanderOptions) {
     clearRaf()
-    let { direction, speed } = options, last: number
+    let { direction, speed, startIndex } = options, last: number
     updateDt(speed)
+    if (isDef(startIndex)) { current = startIndex! }
 
     const loop = (time: number) => {
       if (!last) {
@@ -82,19 +84,23 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
     clearRaf()
   }
 
+  type DrawOptions = { loopTimes: number, targetIndex: number, direction: DIRECTION, speed: Speed, startIndex?: number }
   //开始抽
-  function draw(options: { loopTimes: number, targetIndex: number, direction: DIRECTION, speed: Speed }) {
+  function draw(options: DrawOptions) {
     clearRaf()
     let {
       loopTimes = 5,
       targetIndex = arr.length - 1,
       direction,
-      speed
+      speed,
+      startIndex
     } = options || {}
     loopTimes = Math.max(Math.ceil(Number(loopTimes)), 1) //循环次数 [1,]
     targetIndex = Math.max(0, Math.min(Number(targetIndex), arr.length - 1)) //最终抽奖落地项索引 [0,arr.length-1]
 
     updateDt(speed)
+
+    if (isDef(startIndex)) { current = startIndex! }
 
     let from = current, to
     let diff = targetIndex - from
@@ -130,7 +136,6 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
       }
       raf = requestAnimationFrame(loop)
     }
-
     raf = requestAnimationFrame(loop)
   }
 
