@@ -7,8 +7,17 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
+let base = process.env.base
+if (base) {
+  base = base.replace(/^\/|\/$/, '')
+}
+
+base = base ? `/${base}/` : "/"
+console.log('当前base：', base ?? '未定义')
+
 // https://vite.dev/config/
 export default defineConfig({
+  base,
   plugins: [
     vue(),
     vueDevTools(),
