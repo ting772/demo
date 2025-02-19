@@ -13,7 +13,8 @@ export function identity(x: any) { return x }
  */
 export function reusableArray<T>(createFn: () => T) {
   let arr = [] as T[]
-  return function get(count: number) {
+
+  function get(count: number) {
     let diff = count - arr.length
     if (diff > 0) {
       arr.push(...loopNGetResult(createFn, diff))
@@ -23,4 +24,11 @@ export function reusableArray<T>(createFn: () => T) {
 
     return arr
   }
+
+  //用于更新已有元素
+  get.update = function (cb: (item: T) => void) {
+    arr.forEach(item => cb(item))
+  }
+
+  return get
 }
