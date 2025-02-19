@@ -16,7 +16,6 @@ const emit = defineEmits<{
 }>()
 
 const { obj } = useGui({
-  title: "css-模糊效果",
   "模糊自身": {
     value: [false],
     onChange(v: boolean) {

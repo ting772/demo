@@ -63,12 +63,10 @@ function mock() {
     form.targetIndex = randIndex(arr)
     startDraw()
     timer = 0
-    console.log('aaaa')
   }, 2500)
 }
 
 useGui({
-  title: "抽奖",
   设定巡航速度: {
     value: [form.speed, 1, 10, 1],
     onFinishChange(n: number) {

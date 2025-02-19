@@ -137,7 +137,6 @@ let interval = 50
 onMounted(() => {
   getNumbers()
   let { helpers: { getAllControllers } } = useGui({
-    title: "常见排序算法演示",
     选择算法: {
       value: [initItem.label, algorithms.map(item => item.label)],
       onChange(name: string) {

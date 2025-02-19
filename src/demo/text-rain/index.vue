@@ -23,7 +23,6 @@ onMounted(() => {
   })
 
   let { obj } = useGui({
-    title: '设置',
     文字串数量: {
       value: [10, 10, 200, 10],
       onChange(v: number) {

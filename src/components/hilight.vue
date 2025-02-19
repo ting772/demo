@@ -23,10 +23,10 @@ onMounted(() => {
 
 <style lang="scss">
 .pre {
-  height: 100%;
+  display: block;
+  min-height: 100%;
   width: fit-content;
   box-sizing: border-box;
   min-width: 100%;
-  max-height: 100%;
 }
 </style>

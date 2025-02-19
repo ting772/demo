@@ -9,7 +9,7 @@ function autoLoad() {
   const config = getDemoConfig()
 
   for (let path in config) {
-    let { codes, component } = config[path]
+    let { codes, component, title } = config[path]
     let c = function demo() {
       return h(
         CodeDemo,
@@ -38,7 +38,10 @@ function autoLoad() {
        */
       path: routePath,
       name: routePath,
-      component: c
+      component: c,
+      meta: {
+        title
+      }
     })
   }
 }

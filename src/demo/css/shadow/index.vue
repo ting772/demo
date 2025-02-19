@@ -13,7 +13,6 @@ const emit = defineEmits<{
 }>()
 
 let { obj } = useGui({
-  title: "css-阴影",
   "添加box-shadow": {
     value: [false],
     onChange(v: boolean) { boxShadowFlag.value = v }

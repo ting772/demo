@@ -23,6 +23,7 @@ export default defineConfig({
       // global imports to register
       imports: [
         'vue',
+        "vue-router"
       ],
       resolvers: [ElementPlusResolver()],
     }),

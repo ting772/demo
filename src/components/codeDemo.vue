@@ -45,4 +45,8 @@ function source() {
   overflow: auto;
   padding: 0;
 }
+
+:deep(.el-tab-pane) {
+  height: 100%;
+}
 </style>

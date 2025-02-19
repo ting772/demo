@@ -22,7 +22,6 @@
 <script setup lang="ts">
 import { getDemoConfig } from '@/loadDemo'
 let configs = Object.values(getDemoConfig())
-console.log(configs)
 </script>
 
 <style lang="scss" scoped>

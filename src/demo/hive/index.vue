@@ -25,7 +25,6 @@ let row = 5
 imgs = ref(arrayChunk(imgs, Math.ceil(imgs.length / row)))
 
 useGui({
-  title: "蜂巢图片",
   查看源码() {
     emit("check-source")
   }
