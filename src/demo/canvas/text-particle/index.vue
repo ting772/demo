@@ -49,7 +49,6 @@ function resolveText(text: string, setPos?: boolean) {
   return config.done
 }
 
-
 function onEnter() {
   if (!input.value) return
   text = input.value
