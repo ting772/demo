@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts">
 import useGui from '@/hooks/useLilGui'
-import { rafLoop, registEvent, setupCoord } from '@thing772/utils'
+import { rafLoop, randomRgb, registEvent, setupCoord } from '@thing772/utils'
 
 const emit = defineEmits<{
   (e: 'check-source'): void
@@ -13,10 +13,23 @@ const emit = defineEmits<{
 
 const canvasRef = ref()
 let w = innerWidth, h = innerHeight, coord: ReturnType<typeof setupCoord>
-let fnStr = ref(''), fn = (x: number, t: number) => Math.sin(5 * x + 0.001 * t) + Math.cos(10 * x + 0.005 * t)
+let defaultFn = (x: number, t: number) => Math.sin(5 * x + 0.001 * t) + Math.cos(10 * x + 0.005 * t)
+let fnStr = ref(''), fn: typeof defaultFn | undefined = defaultFn
+let rate = 300, lineWidth = 1, strokeStyle = randomRgb()
 
 function onEnter() {
   fn = new Function("x", "t", `return ${fnStr.value}`) as (x: number, t: number) => number
+
+  try {
+    fn(0, 0)
+  } catch (err: any) {
+    ElMessage({
+      showClose: true,
+      message: err.message,
+      type: 'error',
+      grouping: true,
+    })
+  }
 }
 
 onMounted(() => {
@@ -24,6 +37,25 @@ onMounted(() => {
   const ctx = canvas.getContext('2d')!
 
   useGui({
+    采样率设置: {
+      value: [rate, 10, 1000, 10],
+      onFinishChange(n: number) {
+        rate = n
+      }
+    },
+    曲线粗细设置: {
+      value: [lineWidth, 1, 10, 1],
+      onFinishChange(n: number) {
+        lineWidth = n
+      }
+    },
+    曲线颜色设置: {
+      value: [strokeStyle],
+      isColor: true,
+      onFinishChange(str: string) {
+        strokeStyle = str
+      }
+    },
     查看源码() {
       emit("check-source")
     }
@@ -39,15 +71,26 @@ onMounted(() => {
   const stop = rafLoop((t) => {
     ctx.clearRect(0, 0, w, h)
     coord.setup()
-    if (typeof fn == 'function') {
-      coord.draw((x: number) => fn(x, t), {
-        rate: 300,
-        style: {
-          strokeStyle: 'red'
-        },
-        // label: fn.toString().replace(/ anonymous/, ''),//!todo 加上时间变动时，label会移动
-      })
-    }
+    coord.draw((x: number) => {
+      let ret = 0
+      try {
+        ret = fn!(x, t)
+      } catch { }
+      return ret
+    }, {
+      rate,
+      style: {
+        strokeStyle,
+        lineWidth,
+      },
+      label: {
+        name: fn!.toString().replace(/ anonymous/, ''),
+        pos: {
+          x: 100,
+          y: 100
+        }
+      },
+    })
   })
 
   const uninstall = registEvent(window, 'resize', () => {
