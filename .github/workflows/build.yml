@@ -26,7 +26,7 @@ jobs:
       - name: 安装依赖+打包
         run: |
           npm install
-          npm run build-only -- --base=demo/
+          npx cross-env VITE_USE_HASH=1 npm run build-only -- --base=demo/
 
       - name: 展示即将上传artifact的资源
         run: ls -alh ./dist
