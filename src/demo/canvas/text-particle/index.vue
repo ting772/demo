@@ -57,7 +57,7 @@ function onEnter() {
 
 onMounted(() => {
   let canvas = canvasRef.value
-  const ctx = canvas.getContext('2d')!
+  const ctx = canvas.getContext('2d', { willReadFrequently: true })!
 
   Object.assign(canvas, {
     width: w,
@@ -89,7 +89,7 @@ onMounted(() => {
       }
     },
     采样间隔调整: {
-      value: [gap, 0, 20, 1],
+      value: [gap, 1, 20, 1],
       onFinishChange(n: number) {
         textParticles.gap = n
         resolveText(text, true)
