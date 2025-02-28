@@ -1,4 +1,4 @@
-var Wn=Object.defineProperty;var Ln=(l,n,s)=>n in l?Wn(l,n,{enumerable:!0,configurable:!0,writable:!0,value:s}):l[n]=s;var _=(l,n,s)=>Ln(l,typeof n!="symbol"?n+"":n,s);import{r as Gn,c as vn,o as j,d as z,a as C,b as xn,e as D,P as Hn,f as F,g as G,t as un,n as ln,u as K,h as W,i as qn,w as A,E as Vn,F as X,j as tn,k as Kn,l as Un,m as dn,p as yn,q as Xn,s as Y,v as Yn,x as Qn,y as P,z as H,A as Zn,B as hn,C as L,D as an,G as En,H as Fn,I as V,J,K as Sn,L as Jn,M as k,N as On,O as ne,Q as Cn,R as Tn,S as Mn,T as pn,U as ee,V as te,W as ae,X as fn,Y as Bn,Z as ie,_ as se,$ as le,a0 as re,a1 as oe,a2 as ce,a3 as ue,a4 as de,a5 as he,a6 as fe,a7 as me,a8 as pe,a9 as ge,aa as zn,ab as In,ac as ve,ad as xe,ae as ye,af as be,ag as _e,ah as we,ai as Re,aj as Se,ak as Ce,al as Be}from"./vendor-DHM6-wHl.js";(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))t(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&t(o)}).observe(document,{childList:!0,subtree:!0});function s(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function t(e){if(e.ep)return;e.ep=!0;const a=s(e);fetch(e.href,a)}})();const q=(l,n)=>{const s=l.__vccOpts||l;for(const[t,e]of n)s[t]=e;return s},Ie={};function ke(l,n){const s=Gn("RouterView");return j(),vn(s)}const je=q(Ie,[["render",ke]]),Ee={class:"pre"},Fe=z({__name:"hilight",props:{code:{},lang:{}},setup(l){const n=l,s=C(),t=xn(()=>n.lang?`lang-${n.lang}`:"auto");return D(()=>{Hn.highlightElement(s.value)}),(e,a)=>(j(),F("pre",Ee,[G("code",{class:ln(K(t)),ref_key:"codeRef",ref:s},un(e.code),3)]))}}),Oe={class:"container"},Te={class:"dialog-footer"},Me=z({__name:"codeDemo",props:{codes:{}},setup(l){const n=C(!1);function s(){n.value=!0}return(t,e)=>{const a=Kn,o=Vn,r=Un,i=Xn;return j(),F(X,null,[G("div",Oe,[qn(t.$slots,"default",{checkSource:s},void 0,!0)]),W(i,{modelValue:K(n),"onUpdate:modelValue":e[1]||(e[1]=c=>yn(n)?n.value=c:null),title:"",width:"50vw",top:"50px"},{footer:A(()=>[G("span",Te,[W(r,{type:"primary",onClick:e[0]||(e[0]=c=>n.value=!1)},{default:A(()=>e[2]||(e[2]=[dn("关闭")])),_:1})])]),default:A(()=>[W(o,{type:"border-card"},{default:A(()=>[(j(!0),F(X,null,tn(t.codes,c=>(j(),vn(a,{label:c.name,key:c.name,lazy:""},{default:A(()=>[W(Fe,{code:c.code,lang:c.lang},null,8,["code","lang"])]),_:2},1032,["label"]))),128))]),_:1})]),_:1},8,["modelValue"])],64)}}}),ze=q(Me,[["__scopeId","data-v-65455990"]]),$e=`<template>
+var Gn=Object.defineProperty;var Hn=(l,n,s)=>n in l?Gn(l,n,{enumerable:!0,configurable:!0,writable:!0,value:s}):l[n]=s;var w=(l,n,s)=>Hn(l,typeof n!="symbol"?n+"":n,s);import{r as Vn,c as xn,o as E,d as $,a as B,b as yn,e as P,P as qn,f as M,g as H,t as dn,n as rn,u as X,h as L,i as Kn,w as W,E as Xn,F as Y,j as an,k as Un,l as Yn,m as hn,p as bn,q as Qn,s as Q,v as Zn,x as Jn,y as A,z as V,A as ne,B as fn,C as G,D as sn,G as Fn,H as Mn,I as On,J as K,K as J,L as Rn,M as ee,N as j,O as Tn,Q as te,R as Bn,S as zn,T as $n,U as gn,V as ae,W as ie,X as se,Y as mn,Z as kn,_ as le,$ as re,a0 as oe,a1 as ce,a2 as ue,a3 as de,a4 as he,a5 as fe,a6 as me,a7 as pe,a8 as ge,a9 as ve,aa as xe,ab as Nn,ac as In,ad as ye,ae as be,af as _e,ag as we,ah as Se,ai as Ce,aj as Re,ak as Be,al as ke,am as Ie}from"./vendor-BNoPmV9c.js";(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))t(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const u of i.addedNodes)u.tagName==="LINK"&&u.rel==="modulepreload"&&t(u)}).observe(document,{childList:!0,subtree:!0});function s(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function t(e){if(e.ep)return;e.ep=!0;const i=s(e);fetch(e.href,i)}})();const q=(l,n)=>{const s=l.__vccOpts||l;for(const[t,e]of n)s[t]=e;return s},je={};function Ee(l,n){const s=Vn("RouterView");return E(),xn(s)}const Fe=q(je,[["render",Ee]]),Me={class:"pre"},Oe=$({__name:"hilight",props:{code:{},lang:{}},setup(l){const n=l,s=B(),t=yn(()=>n.lang?`lang-${n.lang}`:"auto");return P(()=>{qn.highlightElement(s.value)}),(e,i)=>(E(),M("pre",Me,[H("code",{class:rn(X(t)),ref_key:"codeRef",ref:s},dn(e.code),3)]))}}),Te={class:"container"},ze={class:"dialog-footer"},$e=$({__name:"codeDemo",props:{codes:{}},setup(l){const n=B(!1);function s(){n.value=!0}return(t,e)=>{const i=Un,u=Xn,o=Yn,a=Qn;return E(),M(Y,null,[H("div",Te,[Kn(t.$slots,"default",{checkSource:s},void 0,!0)]),L(a,{modelValue:X(n),"onUpdate:modelValue":e[1]||(e[1]=h=>bn(n)?n.value=h:null),title:"",width:"50vw",top:"50px"},{footer:W(()=>[H("span",ze,[L(o,{type:"primary",onClick:e[0]||(e[0]=h=>n.value=!1)},{default:W(()=>e[2]||(e[2]=[hn("关闭")])),_:1})])]),default:W(()=>[L(u,{type:"border-card"},{default:W(()=>[(E(!0),M(Y,null,an(t.codes,h=>(E(),xn(i,{label:h.name,key:h.name,lazy:""},{default:W(()=>[L(Oe,{code:h.code,lang:h.lang},null,8,["code","lang"])]),_:2},1032,["label"]))),128))]),_:1})]),_:1},8,["modelValue"])],64)}}}),Ne=q($e,[["__scopeId","data-v-65455990"]]),De=`<template>
   <audio ref="audioRef" :src="src" id="audio" controls></audio>
   <canvas ref="canvasRef"></canvas>
 </template>
@@ -46,7 +46,7 @@ audio {
   transform: translate(-50%);
 }
 </style>
-`,Ne=`import { rafLoop } from '@thing772/utils'
+`,Pe=`import { rafLoop } from '@thing772/utils'
 
 /**
  * 画音频波形
@@ -105,7 +105,7 @@ export function visualize(audioSource: HTMLMediaElement, canvas: HTMLCanvasEleme
     start
   }
 }
-`;function De(l,n){const s=new AudioContext;let t=s.createMediaElementSource(l);const e=s.createAnalyser();t.connect(e),e.connect(s.destination),e.fftSize=512;const a=e.frequencyBinCount,o=new Uint8Array(a),r=n.getContext("2d");let i=n.width,c=n.height;function g(){e.getByteTimeDomainData(o),r.save(),Object.assign(r,{fillStyle:"red"});const u=i/a;for(let m=0;m<a;m+=4){let f=o[m]/255*c;r.fillRect(u*m,c-f,u,f)}r.fill(),r.restore()}function d(u,m){i=n.width=u,c=n.height=m}function p(){return Y(()=>{r.clearRect(0,0,i,c),g()})}return{setSize:d,start:p}}const Pe="/demo/assets/media/%E5%8C%96%E5%87%A1-DF7X08YA.ogg";function $(l){if(!l.title){let s=Yn().meta.title;s&&(l.title=s)}let n=Qn(l);return P(()=>{n.gui.destroy()}),n}const Ae=["src"],We=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;$({查看源码(){s("check-source")}});const t=C(),e=C();return D(()=>{let a;e.value.onplay=()=>{const{start:o,setSize:r}=De(e.value,t.value);a=H(window,"resize",()=>{r(innerWidth,innerHeight)},{immediate:!0}),o()},P(()=>{a&&a()})}),(a,o)=>(j(),F(X,null,[G("audio",{ref_key:"audioRef",ref:e,src:K(Pe),id:"audio",controls:""},null,8,Ae),G("canvas",{ref_key:"canvasRef",ref:t},null,512)],64))}}),Le=q(We,[["__scopeId","data-v-24237bd0"]]),Ge="/demo/assets/imgs/display-_9yby0tz.png",He={codes:[{name:"index.vue",code:$e,lang:"js"},{name:"audio-wave",code:Ne,lang:"ts"}],component:Le,display:Ge,title:"音频波形",descriptions:""},qe=`<template>
+`;function Ae(l,n){const s=new AudioContext;let t=s.createMediaElementSource(l);const e=s.createAnalyser();t.connect(e),e.connect(s.destination),e.fftSize=512;const i=e.frequencyBinCount,u=new Uint8Array(i),o=n.getContext("2d");let a=n.width,h=n.height;function g(){e.getByteTimeDomainData(u),o.save(),Object.assign(o,{fillStyle:"red"});const d=a/i;for(let c=0;c<i;c+=4){let f=u[c]/255*h;o.fillRect(d*c,h-f,d,f)}o.fill(),o.restore()}function r(d,c){a=n.width=d,h=n.height=c}function m(){return Q(()=>{o.clearRect(0,0,a,h),g()})}return{setSize:r,start:m}}const We="/demo/assets/media/%E5%8C%96%E5%87%A1-DF7X08YA.ogg";function D(l){if(!l.title){let s=Zn().meta.title;s&&(l.title=s)}let n=Jn(l);return A(()=>{n.gui.destroy()}),n}const Le=["src"],Ge=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;D({查看源码(){s("check-source")}});const t=B(),e=B();return P(()=>{let i;e.value.onplay=()=>{const{start:u,setSize:o}=Ae(e.value,t.value);i=V(window,"resize",()=>{o(innerWidth,innerHeight)},{immediate:!0}),u()},A(()=>{i&&i()})}),(i,u)=>(E(),M(Y,null,[H("audio",{ref_key:"audioRef",ref:e,src:X(We),id:"audio",controls:""},null,8,Le),H("canvas",{ref_key:"canvasRef",ref:t},null,512)],64))}}),He=q(Ge,[["__scopeId","data-v-24237bd0"]]),Ve="/demo/assets/imgs/display-_9yby0tz.png",qe={codes:[{name:"index.vue",code:De,lang:"js"},{name:"audio-wave",code:Pe,lang:"ts"}],component:He,display:Ve,title:"音频波形",descriptions:""},Ke=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -118,48 +118,71 @@ const emit = defineEmits<{
   (e: 'check-source'): void
 }>()
 
-
 let xMax: number, yMax: number, w: number, h: number, it: any
+let ctx: any
+let guiHandler: any
+
 const bgRef = ref('#c5afbb')
 const gridSize = ref(30)
 const canvasRef = ref()
-const ctxRef = ref()
 
 const start = reactive({ x: 20, y: 10 })
 const end = reactive({ x: 0, y: 0 })
 
-const updateView = () => {
+const updateView = (initiate?: () => void) => {
   let canvas = canvasRef.value
-  if (!canvas!) return
   w = alignBy(innerWidth, gridSize.value)
   h = alignBy(innerHeight, gridSize.value)
   canvas.width = w
   canvas.height = h
   xMax = w / gridSize.value - 1
   yMax = h / gridSize.value - 1
+
+  initiate?.()
+
+  let getControllerByKey = guiHandler.helpers.getControllerByKey
+
+  let options = {
+    '设置起始点X': {
+      max: xMax,
+      setValue: start.x
+    },
+    '设置起始点Y': {
+      max: yMax,
+      setValue: start.y
+    },
+    '设置终点X': {
+      max: xMax,
+      setValue: end.x
+    },
+    '设置终点Y': {
+      max: yMax,
+      setValue: end.y
+    }
+  } as any
+
+  for (let key in options) {
+    let ctl = getControllerByKey(key)
+    let v = options[key]
+    for (let attr in v) {
+      ctl[attr](v[attr])
+    }
+  }
 }
 
 watch([canvasRef, bgRef], ([canvas, bg]) => {
-  if (!canvas) return
   setElement(canvas, {
     'background-color': bg
   })
 })
 
-watch([canvasRef, ctxRef], ([canvas, ctx]) => {
-  if (!canvas! || !ctx!) return
-  updateView()
-  reDraw()
-})
-
 watch(gridSize, () => {
+  timer.value = 0
   updateView()
   reDraw()
 })
 
 const fillPos = (x: number, y: number, options: object) => {
-  let ctx = ctxRef.value
-  if (!ctx) return
   ctx.save()
   Object.assign(ctx, options)
   ctx.fillRect(x * gridSize.value, y * gridSize.value, gridSize.value, gridSize.value)
@@ -175,7 +198,6 @@ const fillEndPoint = (x: number, y: number) => {
 }
 
 const reDraw = (draw?: () => void) => {
-  let ctx = ctxRef.value
   let canvas = canvasRef.value
   ctx.clearRect(0, 0, w, h)
   setupGrid({
@@ -194,85 +216,19 @@ const reDraw = (draw?: () => void) => {
 
 watch([start, end], () => {
   reDraw()
+  timer.value = 0
   it = bfsGenerator(start, end, xMax, yMax)
 })
 
+let timer = ref(0)
+
+watch(timer, (newV, oldV) => {
+  if (newV == 0 && oldV > 0) {
+    clearInterval(oldV)
+  }
+}, { flush: 'sync' })
+
 const itv = shallowRef()
-
-let timer: number
-
-const updateGui = () => {
-  useGui({
-    设置背景色: {
-      value: [bgRef.value],
-      isColor: true,
-      onFinishChange(n: string) {
-        bgRef.value = n
-      }
-    },
-    网格大小设置: {
-      value: [gridSize.value, 5, 50, 1],
-      onFinishChange(n: number) {
-        gridSize.value = n
-
-      }
-    },
-    设置起始点X: {
-      value: [start.x, 0, xMax, 1],
-      onFinishChange(n: number) {
-        start.x = n
-      }
-    },
-    设置起始点Y: {
-      value: [start.y, 0, yMax, 1],
-      onFinishChange(n: number) {
-        start.y = n
-      }
-    },
-    设置终点X: {
-      value: [end.x, 0, xMax, 1],
-      onFinishChange(n: number) {
-        end.x = n
-      }
-    },
-    设置终点Y: {
-      value: [end.y, 0, yMax, 1],
-      onFinishChange(n: number) {
-        end.y = n
-      }
-    },
-    自动bfs迭代() {
-      if (!it!) return
-      if (timer) clearInterval(timer)
-      timer = setInterval(() => {
-        const v = it.next()
-        itv.value = v
-        if (v.done) {
-          clearInterval(timer)
-          timer = 0
-        }
-      }, 100)
-    },
-    bfs巡路() {
-      console.time('bfs寻路耗时')
-      if (timer) {
-        clearInterval(timer)
-        timer = 0
-      }
-      let v = bfs(start, end, xMax, yMax)
-      if (!v) {
-        throw Error("没有找到终点")
-      }
-      console.timeEnd('bfs寻路耗时')
-      reDraw(() => {
-        drawPath(v.current)
-      })
-    },
-    查看源码() {
-      emit("check-source")
-    }
-  })
-}
 
 function drawNode(v: any) {
   let {
@@ -314,19 +270,92 @@ watch(itv, (v) => {
   }
 })
 
+const setupGui = () => {
+  guiHandler = useGui({
+    设置背景色: {
+      value: [bgRef.value],
+      isColor: true,
+      onFinishChange(n: string) {
+        bgRef.value = n
+      }
+    },
+    网格大小设置: {
+      value: [gridSize.value, 5, 50, 1],
+      onFinishChange(n: number) {
+        gridSize.value = n
+
+      }
+    },
+    设置起始点X: {
+      value: [start.x, 0, xMax, 1],
+      onFinishChange(n: number) {
+        start.x = n
+      }
+    },
+    设置起始点Y: {
+      value: [start.y, 0, yMax, 1],
+      onFinishChange(n: number) {
+        start.y = n
+      }
+    },
+    设置终点X: {
+      value: [end.x, 0, xMax, 1],
+      onFinishChange(n: number) {
+        end.x = n
+      }
+    },
+    设置终点Y: {
+      value: [end.y, 0, yMax, 1],
+      onFinishChange(n: number) {
+        end.y = n
+      }
+    },
+    自动bfs迭代() {
+      if (!it!) return
+      timer.value = 0
+
+      timer.value = setInterval(() => {
+        const v = it.next()
+        itv.value = v
+        if (v.done) {
+          timer.value = 0
+        }
+      }, 100)
+    },
+    bfs巡路() {
+      console.time('bfs寻路耗时')
+      timer.value = 0
+      let v = bfs(start, end, xMax, yMax)
+      if (!v) {
+        throw Error("没有找到终点")
+      }
+      console.timeEnd('bfs寻路耗时')
+      reDraw(() => {
+        drawPath(v.current)
+      })
+    },
+    查看源码() {
+      emit("check-source")
+    }
+  })
+}
 
 onMounted(() => {
   let canvas = canvasRef.value
-  ctxRef.value = canvas.getContext('2d')!
-
-  updateView()
-  Object.assign(end, { x: ~~(xMax! / 2), y: ~~(yMax! / 2) })
+  ctx = canvas.getContext('2d')!
+  setupGui()
+  updateView(() => {
+    //调整终点位置
+    Object.assign(end, { x: ~~(xMax! / 2), y: ~~(yMax! / 2) })
+  })
   it = bfsGenerator(start, end, xMax, yMax)
 
-  updateGui()
+  onBeforeUnmount(() => {
+    timer.value = 0
+  })
 })
 <\/script>
-`;function $n(l){return Math.floor(Math.random()*l.length)}function Nn(l){return l[$n(l)]}function Ve(l,n=1e3){let s=[];for(let t=0;t<l;t++)s.push(Z(n));return s}function Z(l=1e3){return Math.ceil(Math.random()*l)}function Ke(l,n){return l.reduce((s,t,e)=>(e%n==0&&s.push(l.slice(e,e+n)),s),[])}function sn(l,n,s){let t=l[n];l[n]=l[s],l[s]=t}function cn(l){return l!=null}function rn(l){return typeof l=="function"}function gn(l){return l}function bn(l){let n=[];function s(t){let e=t-n.length;return e>0?n.push(...Zn(l,e)):e<0&&(n=n.slice(0,e)),n}return s.update=function(t){n.forEach(e=>t(e))},s}function mn(l,n){return~~(l/n)*n}function*kn(l,n,s,t){let e=[{...l}],a=[],o={...n},r={},i;const c=(d,p)=>{if(!(d>s||p>t||d<0||p<0))return{x:d,y:p}},g=d=>`${d.x}-${d.y}`;for(;e.length>0;){if(i&&(r[g(i)]=!0,a.push({...i})),i=e.shift(),delete r[g(i)],i.x==o.x&&i.y==o.y)return{current:i,visited:[...a],pending:[...e]};let d=c(i.x,i.y-1),p=c(i.x+1,i.y),u=c(i.x,i.y+1),m=c(i.x-1,i.y),f=[d,p,u,m].filter(Boolean);f=f.filter(x=>!r[g(x)]),f.length!=0&&(f.forEach(x=>{x.parent=i,r[g(x)]=!0}),e.push(...f),yield{current:i,visited:[...a],pending:[...e]})}}function Ue(l,n,s,t){let e=[{...l}],a=[],o={...n},r={},i;const c=(d,p)=>{if(!(d>s||p>t||d<0||p<0))return{x:d,y:p}},g=d=>`${d.x}-${d.y}`;for(;e.length>0;){if(i&&(r[g(i)]=!0,a.push({...i})),i=e.shift(),delete r[g(i)],i.x==o.x&&i.y==o.y)return{current:i,visited:[...a],pending:[...e]};let d=c(i.x,i.y-1),p=c(i.x+1,i.y),u=c(i.x,i.y+1),m=c(i.x-1,i.y),f=[d,p,u,m].filter(Boolean);f=f.filter(x=>!r[g(x)]),f.length!=0&&(f.forEach(x=>{x.parent=i,r[g(x)]=!0}),e.push(...f))}}const Xe=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t,e,a,o,r;const i=C("#c5afbb"),c=C(30),g=C(),d=C(),p=hn({x:20,y:10}),u=hn({x:0,y:0}),m=()=>{let h=g.value;h&&(a=mn(innerWidth,c.value),o=mn(innerHeight,c.value),h.width=a,h.height=o,t=a/c.value-1,e=o/c.value-1)};L([g,i],([h,R])=>{h&&En(h,{"background-color":R})}),L([g,d],([h,R])=>{!h||!R||(m(),v())}),L(c,()=>{m(),v()});const f=(h,R,T)=>{let M=d.value;M&&(M.save(),Object.assign(M,T),M.fillRect(h*c.value,R*c.value,c.value,c.value),M.restore())},x=(h,R)=>{f(h,R,{fillStyle:"red"})},b=(h,R)=>{f(h,R,{fillStyle:"green"})},v=h=>{let R=d.value,T=g.value;R.clearRect(0,0,a,o),Fn({width:a,height:o,gridSize:c.value,canvas:T,ctx:R,lineWidth:1,gridLineColor:"#fff"}),typeof h=="function"&&h(),x(p.x,p.y),b(u.x,u.y)};L([p,u],()=>{v(),r=kn(p,u,t,e)});const w=an();let y;const S=()=>{$({设置背景色:{value:[i.value],isColor:!0,onFinishChange(h){i.value=h}},网格大小设置:{value:[c.value,5,50,1],onFinishChange(h){c.value=h}},设置起始点X:{value:[p.x,0,t,1],onFinishChange(h){p.x=h}},设置起始点Y:{value:[p.y,0,e,1],onFinishChange(h){p.y=h}},设置终点X:{value:[u.x,0,t,1],onFinishChange(h){u.x=h}},设置终点Y:{value:[u.y,0,e,1],onFinishChange(h){u.y=h}},自动bfs迭代(){r&&(y&&clearInterval(y),y=setInterval(()=>{const h=r.next();w.value=h,h.done&&(clearInterval(y),y=0)},100))},bfs巡路(){console.time("bfs寻路耗时"),y&&(clearInterval(y),y=0);let h=Ue(p,u,t,e);if(!h)throw Error("没有找到终点");console.timeEnd("bfs寻路耗时"),v(()=>{O(h.current)})},查看源码(){s("check-source")}})};function E(h){let{current:R,pending:T,visited:M}=h;v(()=>{f(R.x,R.y,{fillStyle:"gold"}),T.forEach(I=>{const{x:B,y:N}=I;f(B,N,{fillStyle:"pink"})}),M.forEach(I=>{const{x:B,y:N}=I;f(B,N,{fillStyle:"black"})})})}function O(h){for(;h;)f(h.x,h.y,{fillStyle:"blue"}),h=h.parent;x(p.x,p.y),b(u.x,u.y)}return L(w,h=>{let{value:R,done:T}=h;T&&!R||(E(R),T&&O(R.current))}),D(()=>{let h=g.value;d.value=h.getContext("2d"),m(),Object.assign(u,{x:~~(t/2),y:~~(e/2)}),r=kn(p,u,t,e),S()}),(h,R)=>(j(),F("canvas",{ref_key:"canvasRef",ref:g},null,512))}}),Ye="/demo/assets/imgs/display-BFxeQr0P.png",Qe=`export type Index = { x: number; y: number }
+`;function Dn(l){return Math.floor(Math.random()*l.length)}function Pn(l){return l[Dn(l)]}function Xe(l,n=1e3){let s=[];for(let t=0;t<l;t++)s.push(Z(n));return s}function Z(l=1e3){return Math.ceil(Math.random()*l)}function Ue(l,n){return l.reduce((s,t,e)=>(e%n==0&&s.push(l.slice(e,e+n)),s),[])}function ln(l,n,s){let t=l[n];l[n]=l[s],l[s]=t}function un(l){return l!=null}function on(l){return typeof l=="function"}function vn(l){return l}function _n(l){let n=[];function s(t){let e=t-n.length;return e>0?n.push(...ne(l,e)):e<0&&(n=n.slice(0,e)),n}return s.update=function(t){n.forEach(e=>t(e))},s}function pn(l,n){return~~(l/n)*n}function*jn(l,n,s,t){let e=[{...l}],i=[],u={...n},o={},a;const h=(r,m)=>{if(!(r>s||m>t||r<0||m<0))return{x:r,y:m}},g=r=>`${r.x}-${r.y}`;for(;e.length>0;){if(a&&(o[g(a)]=!0,i.push({...a})),a=e.shift(),delete o[g(a)],a.x==u.x&&a.y==u.y)return{current:a,visited:[...i],pending:[...e]};let r=h(a.x,a.y-1),m=h(a.x+1,a.y),d=h(a.x,a.y+1),c=h(a.x-1,a.y),f=[r,m,d,c].filter(Boolean);f=f.filter(x=>!o[g(x)]),f.length!=0&&(f.forEach(x=>{x.parent=a,o[g(x)]=!0}),e.push(...f),yield{current:a,visited:[...i],pending:[...e]})}}function Ye(l,n,s,t){let e=[{...l}],i=[],u={...n},o={},a;const h=(r,m)=>{if(!(r>s||m>t||r<0||m<0))return{x:r,y:m}},g=r=>`${r.x}-${r.y}`;for(;e.length>0;){if(a&&(o[g(a)]=!0,i.push({...a})),a=e.shift(),delete o[g(a)],a.x==u.x&&a.y==u.y)return{current:a,visited:[...i],pending:[...e]};let r=h(a.x,a.y-1),m=h(a.x+1,a.y),d=h(a.x,a.y+1),c=h(a.x-1,a.y),f=[r,m,d,c].filter(Boolean);f=f.filter(x=>!o[g(x)]),f.length!=0&&(f.forEach(x=>{x.parent=a,o[g(x)]=!0}),e.push(...f))}}const Qe=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t,e,i,u,o,a,h;const g=B("#c5afbb"),r=B(30),m=B(),d=fn({x:20,y:10}),c=fn({x:0,y:0}),f=p=>{let S=m.value;i=pn(innerWidth,r.value),u=pn(innerHeight,r.value),S.width=i,S.height=u,t=i/r.value-1,e=u/r.value-1,p==null||p();let T=h.helpers.getControllerByKey,k={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:e,setValue:d.y},设置终点X:{max:t,setValue:c.x},设置终点Y:{max:e,setValue:c.y}};for(let R in k){let z=T(R),N=k[R];for(let en in N)z[en](N[en])}};G([m,g],([p,S])=>{Mn(p,{"background-color":S})}),G(r,()=>{y.value=0,f(),_()});const x=(p,S,T)=>{a.save(),Object.assign(a,T),a.fillRect(p*r.value,S*r.value,r.value,r.value),a.restore()},b=(p,S)=>{x(p,S,{fillStyle:"red"})},v=(p,S)=>{x(p,S,{fillStyle:"green"})},_=p=>{let S=m.value;a.clearRect(0,0,i,u),On({width:i,height:u,gridSize:r.value,canvas:S,ctx:a,lineWidth:1,gridLineColor:"#fff"}),typeof p=="function"&&p(),b(d.x,d.y),v(c.x,c.y)};G([d,c],()=>{_(),y.value=0,o=jn(d,c,t,e)});let y=B(0);G(y,(p,S)=>{p==0&&S>0&&clearInterval(S)},{flush:"sync"});const C=sn();function F(p){let{current:S,pending:T,visited:k}=p;_(()=>{x(S.x,S.y,{fillStyle:"gold"}),T.forEach(R=>{const{x:z,y:N}=R;x(z,N,{fillStyle:"pink"})}),k.forEach(R=>{const{x:z,y:N}=R;x(z,N,{fillStyle:"black"})})})}function O(p){for(;p;)x(p.x,p.y,{fillStyle:"blue"}),p=p.parent;b(d.x,d.y),v(c.x,c.y)}G(C,p=>{let{value:S,done:T}=p;T&&!S||(F(S),T&&O(S.current))});const I=()=>{h=D({设置背景色:{value:[g.value],isColor:!0,onFinishChange(p){g.value=p}},网格大小设置:{value:[r.value,5,50,1],onFinishChange(p){r.value=p}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(p){d.x=p}},设置起始点Y:{value:[d.y,0,e,1],onFinishChange(p){d.y=p}},设置终点X:{value:[c.x,0,t,1],onFinishChange(p){c.x=p}},设置终点Y:{value:[c.y,0,e,1],onFinishChange(p){c.y=p}},自动bfs迭代(){o&&(y.value=0,y.value=setInterval(()=>{const p=o.next();C.value=p,p.done&&(y.value=0)},100))},bfs巡路(){console.time("bfs寻路耗时"),y.value=0;let p=Ye(d,c,t,e);if(!p)throw Error("没有找到终点");console.timeEnd("bfs寻路耗时"),_(()=>{O(p.current)})},查看源码(){s("check-source")}})};return P(()=>{a=m.value.getContext("2d"),I(),f(()=>{Object.assign(c,{x:~~(t/2),y:~~(e/2)})}),o=jn(d,c,t,e),Fn(()=>{y.value=0})}),(p,S)=>(E(),M("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),Ze="/demo/assets/imgs/display-BFxeQr0P.png",Je=`export type Index = { x: number; y: number }
 type IndexWithParent = Index & { parent?: IndexWithParent }
 
 /**
@@ -462,7 +491,7 @@ export function bfs(start: Index, end: Index, xMax: number, yMax: number) {
     queue.push(...available)
   }
 }
-`,Ze={codes:[{name:"index.vue",code:qe,lang:"js"},{name:"bfs.ts",code:Qe,lang:"ts"}],component:Xe,display:Ye,title:"canvas网格——广度优先搜索",descriptions:""},Je=`<template>
+`,nt={codes:[{name:"index.vue",code:Ke,lang:"js"},{name:"bfs.ts",code:Je,lang:"ts"}],component:Qe,display:Ze,title:"canvas网格——广度优先搜索",descriptions:""},et=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -586,7 +615,7 @@ export class Ball {
     ctx.restore();
   }
 }
-`;class U{constructor(n){_(this,"x",0);_(this,"y",0);_(this,"r",0);_(this,"vx",0);_(this,"vy",0);_(this,"ax",0);_(this,"ay",0);_(this,"styleOptions",{});n&&this.set(n)}reset(n){return Object.assign(this,{x:0,y:0,r:0,vx:0,vy:0,ax:0,ay:0,...n?{styleOptions:{}}:null})}set(n){return Object.assign(this,n)}update(){return this.vy+=this.ay,this.y+=this.vy,this.vx+=this.ax,this.x+=this.vx,this}render(n){n.save();let{x:s,y:t,r:e,styleOptions:a}=this;Object.assign(n,a),n.beginPath(),n.arc(s,t,e,0,Math.PI*2),a.fillStyle&&n.fill(),a.strokeStyle&&n.stroke(),n.restore()}}const nt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;$({查看源码(){s("check-source")}});const t=C();return D(()=>{let e=t.value,a,o,r,i=e.getContext("2d");const c=H(window,"resize",()=>{Object.assign(e,{width:a=innerWidth,height:o=innerHeight})},{immediate:!0}),g=H(e,"mousemove",function(p){r={x:p.offsetX,y:p.offsetY}});let d=new U({r:100,x:a/2,y:o/2,styleOptions:{fillStyle:V()}});Y(()=>{i.clearRect(0,0,a,o),r&&(d.x=J(d.x,r.x,.05),d.y=J(d.y,r.y,.05)),d.render(i)}),P(()=>{c(),g()})}),(e,a)=>(j(),F("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),et="/demo/assets/imgs/display-IdleEMXt.png",tt={codes:[{name:"index.vue",code:Je,lang:"js"},{name:"ball.ts",code:nn,lang:"ts"}],component:nt,display:et,title:"缓动追逐",descriptions:""},at=`<template>
+`;class U{constructor(n){w(this,"x",0);w(this,"y",0);w(this,"r",0);w(this,"vx",0);w(this,"vy",0);w(this,"ax",0);w(this,"ay",0);w(this,"styleOptions",{});n&&this.set(n)}reset(n){return Object.assign(this,{x:0,y:0,r:0,vx:0,vy:0,ax:0,ay:0,...n?{styleOptions:{}}:null})}set(n){return Object.assign(this,n)}update(){return this.vy+=this.ay,this.y+=this.vy,this.vx+=this.ax,this.x+=this.vx,this}render(n){n.save();let{x:s,y:t,r:e,styleOptions:i}=this;Object.assign(n,i),n.beginPath(),n.arc(s,t,e,0,Math.PI*2),i.fillStyle&&n.fill(),i.strokeStyle&&n.stroke(),n.restore()}}const tt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;D({查看源码(){s("check-source")}});const t=B();return P(()=>{let e=t.value,i,u,o,a=e.getContext("2d");const h=V(window,"resize",()=>{Object.assign(e,{width:i=innerWidth,height:u=innerHeight})},{immediate:!0}),g=V(e,"mousemove",function(m){o={x:m.offsetX,y:m.offsetY}});let r=new U({r:100,x:i/2,y:u/2,styleOptions:{fillStyle:K()}});Q(()=>{a.clearRect(0,0,i,u),o&&(r.x=J(r.x,o.x,.05),r.y=J(r.y,o.y,.05)),r.render(a)}),A(()=>{h(),g()})}),(e,i)=>(E(),M("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),at="/demo/assets/imgs/display-IdleEMXt.png",it={codes:[{name:"index.vue",code:et,lang:"js"},{name:"ball.ts",code:nn,lang:"ts"}],component:tt,display:at,title:"缓动追逐",descriptions:""},st=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -723,7 +752,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,_n=`import { rafLoop, updateBallVelocityInRect, isFunc } from '@thing772/utils'
+`,wn=`import { rafLoop, updateBallVelocityInRect, isFunc } from '@thing772/utils'
 import { type UpdateBallVelocityInRectOptions } from '@thing772/utils'
 import { reusableArray } from '@/utils/utils'
 import { Ball } from '@/utils/class/ball';
@@ -813,7 +842,7 @@ export function ballsWanderInRect<T extends Ball>(options: BallsWanderInRectOpti
     updateBalls,
   }
 }
-`;function wn(l){let{canvas:n,ballsNum:s,createBallFac:t,onBallUpdate:e,speedDecay:a,preRender:o,postRender:r}=l,i=n.width,c=n.height;const g=n.getContext("2d");let d=[];const p=bn(t);function u(y){d=p(y),f()}function m(y){Object.assign(n,y),i=y.width,c=y.height,f()}function f(y){d.forEach(S=>{Sn(y)&&y(S),S.render(g)})}function x(){g.clearRect(0,0,i,c);for(let y of d)Sn(e)?e(y):(y.update(),Jn(y,{wBox:[0,i],hBox:[0,c],speedDecay:a}));o==null||o(d,g),d.forEach(y=>y.render(g)),r==null||r(d,g)}function b(y){g.clearRect(0,0,i,c),f(y)}u(s);let v;function w(){return v&&v(),v=Y(()=>{x()})}return{start:w,setBallNum:u,setSize:m,render:x,updateBalls:b}}const it=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=80,e=1,a=3,o=3,r=100,i;$({小球个数:{value:[t,1,1e3,10],onFinishChange(u){t=u,d.setBallNum(u)}},小球半径上限:{value:[e,1,100,1],onFinishChange(u){e=u,d.updateBalls(m=>{m.r=k(1,u)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(u){a=u,d.updateBalls(m=>{m.vx=k(1,u)})}},小球y方向移动速度上限:{value:[o,1,15,.5],onFinishChange(u){o=u,d.updateBalls(m=>{m.vy=k(1,u)})}},小球连接范围阈值:{value:[r,50,300,1],onFinishChange(u){r=u}},查看源码(){s("check-source")}});let c;const g=C();let d,p;return D(()=>{let u=g.value,m=innerWidth,f=innerHeight;Object.assign(u,{width:m,height:f}),d=wn({canvas:u,ballsNum:t,createBallFac:()=>new U({x:k(10,m-10),y:k(10,f-10),r:k(1,e),vx:k(1,a),vy:k(1,o),styleOptions:{fillStyle:V()}}),preRender(v,w){i||(i=On(w,{strokeStyle:V(),lineWidth:1})),p&&(v=v.concat(p));for(let y=0;y<v.length;y++)for(let S=y+1;S<v.length;S++){let E=v[y],O=v[S];ne(E,O)<r&&i(E,O)}p&&v.pop()}});const x=H(window,"resize",()=>{m=innerWidth,f=innerHeight,d.setSize({width:m,height:f})},{immediate:!0}),b=H(u,"mousemove",v=>{p={x:v.offsetX,y:v.offsetY}},{needLog:!0});c=d.start(),P(()=>{x(),b(),c&&c()})}),(u,m)=>(j(),F("canvas",{ref_key:"canvasRef",ref:g},null,512))}}),st="/demo/assets/imgs/display-y86Fu395.png",lt={codes:[{name:"index.vue",code:at,lang:"js"},{name:"wander-balls.ts",code:_n,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:it,display:st,title:"粒子小球连线",descriptions:""},rt=`<template>
+`;function Sn(l){let{canvas:n,ballsNum:s,createBallFac:t,onBallUpdate:e,speedDecay:i,preRender:u,postRender:o}=l,a=n.width,h=n.height;const g=n.getContext("2d");let r=[];const m=_n(t);function d(y){r=m(y),f()}function c(y){Object.assign(n,y),a=y.width,h=y.height,f()}function f(y){r.forEach(C=>{Rn(y)&&y(C),C.render(g)})}function x(){g.clearRect(0,0,a,h);for(let y of r)Rn(e)?e(y):(y.update(),ee(y,{wBox:[0,a],hBox:[0,h],speedDecay:i}));u==null||u(r,g),r.forEach(y=>y.render(g)),o==null||o(r,g)}function b(y){g.clearRect(0,0,a,h),f(y)}d(s);let v;function _(){return v&&v(),v=Q(()=>{x()})}return{start:_,setBallNum:d,setSize:c,render:x,updateBalls:b}}const lt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=80,e=1,i=3,u=3,o=100,a;D({小球个数:{value:[t,1,1e3,10],onFinishChange(d){t=d,r.setBallNum(d)}},小球半径上限:{value:[e,1,100,1],onFinishChange(d){e=d,r.updateBalls(c=>{c.r=j(1,d)})}},小球x方向移动速度上限:{value:[i,1,15,.5],onFinishChange(d){i=d,r.updateBalls(c=>{c.vx=j(1,d)})}},小球y方向移动速度上限:{value:[u,1,15,.5],onFinishChange(d){u=d,r.updateBalls(c=>{c.vy=j(1,d)})}},小球连接范围阈值:{value:[o,50,300,1],onFinishChange(d){o=d}},查看源码(){s("check-source")}});let h;const g=B();let r,m;return P(()=>{let d=g.value,c=innerWidth,f=innerHeight;Object.assign(d,{width:c,height:f}),r=Sn({canvas:d,ballsNum:t,createBallFac:()=>new U({x:j(10,c-10),y:j(10,f-10),r:j(1,e),vx:j(1,i),vy:j(1,u),styleOptions:{fillStyle:K()}}),preRender(v,_){a||(a=Tn(_,{strokeStyle:K(),lineWidth:1})),m&&(v=v.concat(m));for(let y=0;y<v.length;y++)for(let C=y+1;C<v.length;C++){let F=v[y],O=v[C];te(F,O)<o&&a(F,O)}m&&v.pop()}});const x=V(window,"resize",()=>{c=innerWidth,f=innerHeight,r.setSize({width:c,height:f})},{immediate:!0}),b=V(d,"mousemove",v=>{m={x:v.offsetX,y:v.offsetY}},{needLog:!0});h=r.start(),A(()=>{x(),b(),h&&h()})}),(d,c)=>(E(),M("canvas",{ref_key:"canvasRef",ref:g},null,512))}}),rt="/demo/assets/imgs/display-y86Fu395.png",ot={codes:[{name:"index.vue",code:st,lang:"js"},{name:"wander-balls.ts",code:wn,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:lt,display:rt,title:"粒子小球连线",descriptions:""},ct=`<template>
   <canvas ref="canvasRef"></canvas>
   <el-input class="input" v-model="fnStr" placeholder="参数:（x:x坐标，t：时间参数），输入x和t的表达式" size="large"
     @keyup.enter="onEnter"></el-input>
@@ -938,7 +967,7 @@ onMounted(() => {
   box-shadow: 0 0 10px 5px #409EFF;
 }
 </style>
-`,ot=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=C();let e=innerWidth,a=innerHeight,o,r=(m,f)=>Math.sin(5*m+.001*f)+Math.cos(10*m+.005*f),i=C(""),c=r,g=300,d=1,p=V();function u(){c=new Function("x","t",`return ${i.value}`);try{c(0,0)}catch(m){pn({showClose:!0,message:m.message,type:"error",grouping:!0})}}return D(()=>{let m=t.value;const f=m.getContext("2d");$({采样率设置:{value:[g,10,1e3,10],onFinishChange(v){g=v}},曲线粗细设置:{value:[d,1,10,1],onFinishChange(v){d=v}},曲线颜色设置:{value:[p],isColor:!0,onFinishChange(v){p=v}},查看源码(){s("check-source")}}),o=Cn({canvas:m,ctx:f,width:e,height:a});const x=Y(v=>{f.clearRect(0,0,e,a),o.setup(),o.draw(w=>{let y=0;try{y=c(w,v)}catch{}return y},{rate:g,style:{strokeStyle:p,lineWidth:d},label:{name:c.toString().replace(/ anonymous/,""),pos:{x:100,y:100}}})}),b=H(window,"resize",()=>{e=innerWidth,a=innerHeight,o=Cn({canvas:m,ctx:f,width:e,height:a})});P(()=>{b(),x()})}),(m,f)=>{const x=Mn;return j(),F(X,null,[G("canvas",{ref_key:"canvasRef",ref:t},null,512),W(x,{class:"input",modelValue:K(i),"onUpdate:modelValue":f[0]||(f[0]=b=>yn(i)?i.value=b:i=b),placeholder:"参数:（x:x坐标，t：时间参数），输入x和t的表达式",size:"large",onKeyup:Tn(u,["enter"])},null,8,["modelValue"])],64)}}}),ct=q(ot,[["__scopeId","data-v-6125c1c8"]]),ut="/demo/assets/imgs/display-BsbAITaj.png",dt={codes:[{name:"index.vue",code:rt,lang:"js"}],component:ct,display:ut,title:"笛卡尔坐标系函数绘制",descriptions:""},ht=`<template>
+`,ut=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=B();let e=innerWidth,i=innerHeight,u,o=(c,f)=>Math.sin(5*c+.001*f)+Math.cos(10*c+.005*f),a=B(""),h=o,g=300,r=1,m=K();function d(){h=new Function("x","t",`return ${a.value}`);try{h(0,0)}catch(c){gn({showClose:!0,message:c.message,type:"error",grouping:!0})}}return P(()=>{let c=t.value;const f=c.getContext("2d");D({采样率设置:{value:[g,10,1e3,10],onFinishChange(v){g=v}},曲线粗细设置:{value:[r,1,10,1],onFinishChange(v){r=v}},曲线颜色设置:{value:[m],isColor:!0,onFinishChange(v){m=v}},查看源码(){s("check-source")}}),u=Bn({canvas:c,ctx:f,width:e,height:i});const x=Q(v=>{f.clearRect(0,0,e,i),u.setup(),u.draw(_=>{let y=0;try{y=h(_,v)}catch{}return y},{rate:g,style:{strokeStyle:m,lineWidth:r},label:{name:h.toString().replace(/ anonymous/,""),pos:{x:100,y:100}}})}),b=V(window,"resize",()=>{e=innerWidth,i=innerHeight,u=Bn({canvas:c,ctx:f,width:e,height:i})});A(()=>{b(),x()})}),(c,f)=>{const x=$n;return E(),M(Y,null,[H("canvas",{ref_key:"canvasRef",ref:t},null,512),L(x,{class:"input",modelValue:X(a),"onUpdate:modelValue":f[0]||(f[0]=b=>bn(a)?a.value=b:a=b),placeholder:"参数:（x:x坐标，t：时间参数），输入x和t的表达式",size:"large",onKeyup:zn(d,["enter"])},null,8,["modelValue"])],64)}}}),dt=q(ut,[["__scopeId","data-v-6125c1c8"]]),ht="/demo/assets/imgs/display-BsbAITaj.png",ft={codes:[{name:"index.vue",code:ct,lang:"js"}],component:dt,display:ht,title:"笛卡尔坐标系函数绘制",descriptions:""},mt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -952,46 +981,70 @@ const emit = defineEmits<{
 }>()
 
 let xMax: number, yMax: number, w: number, h: number, it: any
+let ctx: any
+let guiHandler: any
+
 const bgRef = ref('#c5afbb')
 const gridSize = ref(30)
 const canvasRef = ref()
-const ctxRef = ref()
 
 const start = reactive({ x: 20, y: 10 })
 const end = reactive({ x: 0, y: 0 })
 
-const updateView = () => {
+const updateView = (initiate?: () => void) => {
   let canvas = canvasRef.value
-  if (!canvas!) return
   w = alignBy(innerWidth, gridSize.value)
   h = alignBy(innerHeight, gridSize.value)
   canvas.width = w
   canvas.height = h
   xMax = w / gridSize.value - 1
   yMax = h / gridSize.value - 1
+
+  initiate?.()
+
+  let getControllerByKey = guiHandler.helpers.getControllerByKey
+
+  let options = {
+    '设置起始点X': {
+      max: xMax,
+      setValue: start.x
+    },
+    '设置起始点Y': {
+      max: yMax,
+      setValue: start.y
+    },
+    '设置终点X': {
+      max: xMax,
+      setValue: end.x
+    },
+    '设置终点Y': {
+      max: yMax,
+      setValue: end.y
+    }
+  } as any
+
+  for (let key in options) {
+    let ctl = getControllerByKey(key)
+    let v = options[key]
+    for (let attr in v) {
+      ctl[attr](v[attr])
+    }
+  }
 }
 
 watch([canvasRef, bgRef], ([canvas, bg]) => {
-  if (!canvas) return
   setElement(canvas, {
     'background-color': bg
   })
 })
 
-watch([canvasRef, ctxRef], ([canvas, ctx]) => {
-  if (!canvas! || !ctx!) return
-  updateView()
-  reDraw()
-})
-
 watch(gridSize, () => {
+  timer.value = 0
   updateView()
   reDraw()
 })
 
 const fillPos = (x: number, y: number, options: object) => {
-  let ctx = ctxRef.value
-  if (!ctx) return
   ctx.save()
   Object.assign(ctx, options)
   ctx.fillRect(x * gridSize.value, y * gridSize.value, gridSize.value, gridSize.value)
@@ -1007,7 +1060,6 @@ const fillEndPoint = (x: number, y: number) => {
 }
 
 const reDraw = (draw?: () => void) => {
-  let ctx = ctxRef.value
   let canvas = canvasRef.value
   ctx.clearRect(0, 0, w, h)
   setupGrid({
@@ -1026,85 +1078,19 @@ const reDraw = (draw?: () => void) => {
 
 watch([start, end], () => {
   reDraw()
+  timer.value = 0
   it = dfsGenerator(start, end, xMax, yMax)
 })
 
+let timer = ref(0)
+
+watch(timer, (newV, oldV) => {
+  if (newV == 0 && oldV > 0) {
+    clearInterval(oldV)
+  }
+}, { flush: 'sync' })
+
 const itv = shallowRef()
-
-let timer: number
-
-const updateGui = () => {
-  useGui({
-    设置背景色: {
-      value: [bgRef.value],
-      isColor: true,
-      onFinishChange(n: string) {
-        bgRef.value = n
-      }
-    },
-    网格大小设置: {
-      value: [gridSize.value, 5, 50, 1],
-      onFinishChange(n: number) {
-        gridSize.value = n
-
-      }
-    },
-    设置起始点X: {
-      value: [start.x, 0, xMax, 1],
-      onFinishChange(n: number) {
-        start.x = n
-      }
-    },
-    设置起始点Y: {
-      value: [start.y, 0, yMax, 1],
-      onFinishChange(n: number) {
-        start.y = n
-      }
-    },
-    设置终点X: {
-      value: [end.x, 0, xMax, 1],
-      onFinishChange(n: number) {
-        end.x = n
-      }
-    },
-    设置终点Y: {
-      value: [end.y, 0, yMax, 1],
-      onFinishChange(n: number) {
-        end.y = n
-      }
-    },
-    自动dfs迭代() {
-      if (!it!) return
-      if (timer) clearInterval(timer)
-      timer = setInterval(() => {
-        const v = it.next()
-        itv.value = v
-        if (v.done) {
-          clearInterval(timer)
-          timer = 0
-        }
-      }, 100)
-    },
-    dfs巡路() {
-      console.time('dfs寻路耗时')
-      if (timer) {
-        clearInterval(timer)
-        timer = 0
-      }
-      let v = dfs(start, end, xMax, yMax)
-      if (!v) {
-        throw Error("没有找到终点")
-      }
-      console.timeEnd('dfs寻路耗时')
-      reDraw(() => {
-        drawPath(v.current)
-      })
-    },
-    查看源码() {
-      emit("check-source")
-    }
-  })
-}
 
 function drawNode(v: any) {
   let {
@@ -1146,19 +1132,92 @@ watch(itv, (v) => {
   }
 })
 
+const setupGui = () => {
+  guiHandler = useGui({
+    设置背景色: {
+      value: [bgRef.value],
+      isColor: true,
+      onFinishChange(n: string) {
+        bgRef.value = n
+      }
+    },
+    网格大小设置: {
+      value: [gridSize.value, 5, 50, 1],
+      onFinishChange(n: number) {
+        gridSize.value = n
+
+      }
+    },
+    设置起始点X: {
+      value: [start.x, 0, xMax, 1],
+      onFinishChange(n: number) {
+        start.x = n
+      }
+    },
+    设置起始点Y: {
+      value: [start.y, 0, yMax, 1],
+      onFinishChange(n: number) {
+        start.y = n
+      }
+    },
+    设置终点X: {
+      value: [end.x, 0, xMax, 1],
+      onFinishChange(n: number) {
+        end.x = n
+      }
+    },
+    设置终点Y: {
+      value: [end.y, 0, yMax, 1],
+      onFinishChange(n: number) {
+        end.y = n
+      }
+    },
+    自动dfs迭代() {
+      if (!it!) return
+      timer.value = 0
+
+      timer.value = setInterval(() => {
+        const v = it.next()
+        itv.value = v
+        if (v.done) {
+          timer.value = 0
+        }
+      }, 100)
+    },
+    dfs巡路() {
+      console.time('dfs寻路耗时')
+      timer.value = 0
+      let v = dfs(start, end, xMax, yMax)
+      if (!v) {
+        throw Error("没有找到终点")
+      }
+      console.timeEnd('dfs寻路耗时')
+      reDraw(() => {
+        drawPath(v.current)
+      })
+    },
+    查看源码() {
+      emit("check-source")
+    }
+  })
+}
 
 onMounted(() => {
   let canvas = canvasRef.value
-  ctxRef.value = canvas.getContext('2d')!
-
-  updateView()
-  Object.assign(end, { x: ~~(xMax! / 2), y: ~~(yMax! / 2) })
+  ctx = canvas.getContext('2d')!
+  setupGui()
+  updateView(() => {
+    //调整终点位置
+    Object.assign(end, { x: ~~(xMax! / 2), y: ~~(yMax! / 2) })
+  })
   it = dfsGenerator(start, end, xMax, yMax)
 
-  updateGui()
+  onBeforeUnmount(() => {
+    timer.value = 0
+  })
 })
 <\/script>
-`;function*jn(l,n,s,t){let e=[{...l}],a=[],o={...n},r={},i;const c=m=>{r[u(m)]=!0,a.push({...m})},g=()=>{let m=e.shift();return delete r[u(m)],m},d=m=>{m.forEach(f=>{r[u(f)]=!0}),e.unshift(...m)},p=(m,f)=>{if(!(m>s||f>t||m<0||f<0))return{x:m,y:f}},u=m=>`${m.x}-${m.y}`;for(;e.length>0;){if(i&&c(i),i=g(),i.x==o.x&&i.y==o.y)return{current:i,visited:[...a],pending:[...e]};let m=p(i.x,i.y-1),f=p(i.x+1,i.y),x=p(i.x,i.y+1),b=p(i.x-1,i.y),v=[m,f,x,b].filter(Boolean);v=v.filter(w=>!r[u(w)]),v.forEach(w=>{w.parent=i}),v.length!=0&&(d(v),yield{current:i,visited:[...a],pending:[...e]})}}function ft(l,n,s,t){let e=[{...l}],a=[],o={...n},r={},i;const c=m=>{r[u(m)]=!0,a.push({...m})},g=()=>{let m=e.shift();return delete r[u(m)],m},d=m=>{m.forEach(f=>{r[u(f)]=!0}),e.unshift(...m)},p=(m,f)=>{if(!(m>s||f>t||m<0||f<0))return{x:m,y:f}},u=m=>`${m.x}-${m.y}`;for(;e.length>0;){if(i&&c(i),i=g(),i.x==o.x&&i.y==o.y)return{current:i,visited:[...a],pending:[...e]};let m=p(i.x,i.y-1),f=p(i.x+1,i.y),x=p(i.x,i.y+1),b=p(i.x-1,i.y),v=[m,f,x,b].filter(Boolean);v=v.filter(w=>!r[u(w)]),v.forEach(w=>{w.parent=i}),v.length!=0&&d(v)}}const mt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t,e,a,o,r;const i=C("#c5afbb"),c=C(30),g=C(),d=C(),p=hn({x:20,y:10}),u=hn({x:0,y:0}),m=()=>{let h=g.value;h&&(a=mn(innerWidth,c.value),o=mn(innerHeight,c.value),h.width=a,h.height=o,t=a/c.value-1,e=o/c.value-1)};L([g,i],([h,R])=>{h&&En(h,{"background-color":R})}),L([g,d],([h,R])=>{!h||!R||(m(),v())}),L(c,()=>{m(),v()});const f=(h,R,T)=>{let M=d.value;M&&(M.save(),Object.assign(M,T),M.fillRect(h*c.value,R*c.value,c.value,c.value),M.restore())},x=(h,R)=>{f(h,R,{fillStyle:"red"})},b=(h,R)=>{f(h,R,{fillStyle:"green"})},v=h=>{let R=d.value,T=g.value;R.clearRect(0,0,a,o),Fn({width:a,height:o,gridSize:c.value,canvas:T,ctx:R,lineWidth:1,gridLineColor:"#fff"}),typeof h=="function"&&h(),x(p.x,p.y),b(u.x,u.y)};L([p,u],()=>{v(),r=jn(p,u,t,e)});const w=an();let y;const S=()=>{$({设置背景色:{value:[i.value],isColor:!0,onFinishChange(h){i.value=h}},网格大小设置:{value:[c.value,5,50,1],onFinishChange(h){c.value=h}},设置起始点X:{value:[p.x,0,t,1],onFinishChange(h){p.x=h}},设置起始点Y:{value:[p.y,0,e,1],onFinishChange(h){p.y=h}},设置终点X:{value:[u.x,0,t,1],onFinishChange(h){u.x=h}},设置终点Y:{value:[u.y,0,e,1],onFinishChange(h){u.y=h}},自动dfs迭代(){r&&(y&&clearInterval(y),y=setInterval(()=>{const h=r.next();w.value=h,h.done&&(clearInterval(y),y=0)},100))},dfs巡路(){console.time("dfs寻路耗时"),y&&(clearInterval(y),y=0);let h=ft(p,u,t,e);if(!h)throw Error("没有找到终点");console.timeEnd("dfs寻路耗时"),v(()=>{O(h.current)})},查看源码(){s("check-source")}})};function E(h){let{current:R,pending:T,visited:M}=h;v(()=>{f(R.x,R.y,{fillStyle:"gold"}),T.forEach(I=>{const{x:B,y:N}=I;f(B,N,{fillStyle:"pink"})}),M.forEach(I=>{const{x:B,y:N}=I;f(B,N,{fillStyle:"black"})})})}function O(h){for(;h;)f(h.x,h.y,{fillStyle:"blue"}),h=h.parent;x(p.x,p.y),b(u.x,u.y)}return L(w,h=>{let{value:R,done:T}=h;T&&!R||(E(R),T&&O(R.current))}),D(()=>{let h=g.value;d.value=h.getContext("2d"),m(),Object.assign(u,{x:~~(t/2),y:~~(e/2)}),r=jn(p,u,t,e),S()}),(h,R)=>(j(),F("canvas",{ref_key:"canvasRef",ref:g},null,512))}}),pt="/demo/assets/imgs/display-BRS54xHs.png",gt=`export type Index = { x: number; y: number }
+`;function*En(l,n,s,t){let e=[{...l}],i=[],u={...n},o={},a;const h=c=>{o[d(c)]=!0,i.push({...c})},g=()=>{let c=e.shift();return delete o[d(c)],c},r=c=>{c.forEach(f=>{o[d(f)]=!0}),e.unshift(...c)},m=(c,f)=>{if(!(c>s||f>t||c<0||f<0))return{x:c,y:f}},d=c=>`${c.x}-${c.y}`;for(;e.length>0;){if(a&&h(a),a=g(),a.x==u.x&&a.y==u.y)return{current:a,visited:[...i],pending:[...e]};let c=m(a.x,a.y-1),f=m(a.x+1,a.y),x=m(a.x,a.y+1),b=m(a.x-1,a.y),v=[c,f,x,b].filter(Boolean);v=v.filter(_=>!o[d(_)]),v.forEach(_=>{_.parent=a}),v.length!=0&&(r(v),yield{current:a,visited:[...i],pending:[...e]})}}function pt(l,n,s,t){let e=[{...l}],i=[],u={...n},o={},a;const h=c=>{o[d(c)]=!0,i.push({...c})},g=()=>{let c=e.shift();return delete o[d(c)],c},r=c=>{c.forEach(f=>{o[d(f)]=!0}),e.unshift(...c)},m=(c,f)=>{if(!(c>s||f>t||c<0||f<0))return{x:c,y:f}},d=c=>`${c.x}-${c.y}`;for(;e.length>0;){if(a&&h(a),a=g(),a.x==u.x&&a.y==u.y)return{current:a,visited:[...i],pending:[...e]};let c=m(a.x,a.y-1),f=m(a.x+1,a.y),x=m(a.x,a.y+1),b=m(a.x-1,a.y),v=[c,f,x,b].filter(Boolean);v=v.filter(_=>!o[d(_)]),v.forEach(_=>{_.parent=a}),v.length!=0&&r(v)}}const gt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t,e,i,u,o,a,h;const g=B("#c5afbb"),r=B(30),m=B(),d=fn({x:20,y:10}),c=fn({x:0,y:0}),f=p=>{let S=m.value;i=pn(innerWidth,r.value),u=pn(innerHeight,r.value),S.width=i,S.height=u,t=i/r.value-1,e=u/r.value-1,p==null||p();let T=h.helpers.getControllerByKey,k={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:e,setValue:d.y},设置终点X:{max:t,setValue:c.x},设置终点Y:{max:e,setValue:c.y}};for(let R in k){let z=T(R),N=k[R];for(let en in N)z[en](N[en])}};G([m,g],([p,S])=>{Mn(p,{"background-color":S})}),G(r,()=>{y.value=0,f(),_()});const x=(p,S,T)=>{a.save(),Object.assign(a,T),a.fillRect(p*r.value,S*r.value,r.value,r.value),a.restore()},b=(p,S)=>{x(p,S,{fillStyle:"red"})},v=(p,S)=>{x(p,S,{fillStyle:"green"})},_=p=>{let S=m.value;a.clearRect(0,0,i,u),On({width:i,height:u,gridSize:r.value,canvas:S,ctx:a,lineWidth:1,gridLineColor:"#fff"}),typeof p=="function"&&p(),b(d.x,d.y),v(c.x,c.y)};G([d,c],()=>{_(),y.value=0,o=En(d,c,t,e)});let y=B(0);G(y,(p,S)=>{p==0&&S>0&&clearInterval(S)},{flush:"sync"});const C=sn();function F(p){let{current:S,pending:T,visited:k}=p;_(()=>{x(S.x,S.y,{fillStyle:"gold"}),T.forEach(R=>{const{x:z,y:N}=R;x(z,N,{fillStyle:"pink"})}),k.forEach(R=>{const{x:z,y:N}=R;x(z,N,{fillStyle:"black"})})})}function O(p){for(;p;)x(p.x,p.y,{fillStyle:"blue"}),p=p.parent;b(d.x,d.y),v(c.x,c.y)}G(C,p=>{let{value:S,done:T}=p;T&&!S||(F(S),T&&O(S.current))});const I=()=>{h=D({设置背景色:{value:[g.value],isColor:!0,onFinishChange(p){g.value=p}},网格大小设置:{value:[r.value,5,50,1],onFinishChange(p){r.value=p}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(p){d.x=p}},设置起始点Y:{value:[d.y,0,e,1],onFinishChange(p){d.y=p}},设置终点X:{value:[c.x,0,t,1],onFinishChange(p){c.x=p}},设置终点Y:{value:[c.y,0,e,1],onFinishChange(p){c.y=p}},自动dfs迭代(){o&&(y.value=0,y.value=setInterval(()=>{const p=o.next();C.value=p,p.done&&(y.value=0)},100))},dfs巡路(){console.time("dfs寻路耗时"),y.value=0;let p=pt(d,c,t,e);if(!p)throw Error("没有找到终点");console.timeEnd("dfs寻路耗时"),_(()=>{O(p.current)})},查看源码(){s("check-source")}})};return P(()=>{a=m.value.getContext("2d"),I(),f(()=>{Object.assign(c,{x:~~(t/2),y:~~(e/2)})}),o=En(d,c,t,e),Fn(()=>{y.value=0})}),(p,S)=>(E(),M("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),vt="/demo/assets/imgs/display-BRS54xHs.png",xt=`export type Index = { x: number; y: number }
 type IndexWithParent = Index & { parent?: IndexWithParent }
 
 /**
@@ -1323,7 +1382,7 @@ export function dfs(start: Index, end: Index, xMax: number, yMax: number) {
     addToQueue(available)
   }
 }
-`,vt={codes:[{name:"index.vue",code:ht,lang:"js"},{name:"dfs.ts",code:gt,lang:"ts"}],component:mt,display:pt,title:"canvas网格——深度优先搜索",descriptions:""},xt=`<template>
+`,yt={codes:[{name:"index.vue",code:mt,lang:"js"},{name:"dfs.ts",code:xt,lang:"ts"}],component:gt,display:vt,title:"canvas网格——深度优先搜索",descriptions:""},bt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1438,7 +1497,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,yt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;$({查看源码(){s("check-source")}});const t=C();return D(()=>{let e=t.value,a,o,r,i=e.getContext("2d");const c=H(window,"resize",()=>{Object.assign(e,{width:a=innerWidth,height:o=innerHeight})},{immediate:!0}),g=H(e,"mousemove",function(x){r={x:x.offsetX,y:x.offsetY}});let d=[new U({r:50,x:a/2-80,y:o/2,styleOptions:{fillStyle:V()}}),new U({r:50,x:a/2+80,y:o/2,styleOptions:{fillStyle:V()}})],p=d.map(x=>new U({r:x.r/4,x:x.x,y:x.y,styleOptions:{fillStyle:V()}})),u=new U({r:200,x:a/2,y:o/2,styleOptions:{fillStyle:"#E6A23C"}}),m=On(i,{strokeStyle:"#fff",lineWidth:"10",lineCap:"round"}),f=.05;Y(()=>{i.clearRect(0,0,a,o),u.render(i),d.forEach(x=>{x.render(i)}),p.forEach((x,b)=>{if(r){let v=x.x=J(x.x,r.x,f),w=x.y=J(x.y,r.y,f),y=d[b],S={x:y.x,y:y.y,r:y.r-10};if(!ee(S,x)){x.x=v,x.y=w;let E=te(S,r);Object.assign(x,ae(S,E,S.r-x.r))}}x.render(i)}),m({x:a/2-50,y:o/2+100},{x:a/2+50,y:o/2+100})}),P(()=>{c(),g()})}),(e,a)=>(j(),F("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),bt="/demo/assets/imgs/display-BcjSOcDf.png",_t={codes:[{name:"index.vue",code:xt,lang:"js"},{name:"ball.ts",code:nn,lang:"ts"}],component:yt,display:bt,title:"会动的眼球",descriptions:""},wt=`<template>
+`,_t=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;D({查看源码(){s("check-source")}});const t=B();return P(()=>{let e=t.value,i,u,o,a=e.getContext("2d");const h=V(window,"resize",()=>{Object.assign(e,{width:i=innerWidth,height:u=innerHeight})},{immediate:!0}),g=V(e,"mousemove",function(x){o={x:x.offsetX,y:x.offsetY}});let r=[new U({r:50,x:i/2-80,y:u/2,styleOptions:{fillStyle:K()}}),new U({r:50,x:i/2+80,y:u/2,styleOptions:{fillStyle:K()}})],m=r.map(x=>new U({r:x.r/4,x:x.x,y:x.y,styleOptions:{fillStyle:K()}})),d=new U({r:200,x:i/2,y:u/2,styleOptions:{fillStyle:"#E6A23C"}}),c=Tn(a,{strokeStyle:"#fff",lineWidth:"10",lineCap:"round"}),f=.05;Q(()=>{a.clearRect(0,0,i,u),d.render(a),r.forEach(x=>{x.render(a)}),m.forEach((x,b)=>{if(o){let v=x.x=J(x.x,o.x,f),_=x.y=J(x.y,o.y,f),y=r[b],C={x:y.x,y:y.y,r:y.r-10};if(!ae(C,x)){x.x=v,x.y=_;let F=ie(C,o);Object.assign(x,se(C,F,C.r-x.r))}}x.render(a)}),c({x:i/2-50,y:u/2+100},{x:i/2+50,y:u/2+100})}),A(()=>{h(),g()})}),(e,i)=>(E(),M("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),wt="/demo/assets/imgs/display-BcjSOcDf.png",St={codes:[{name:"index.vue",code:bt,lang:"js"},{name:"ball.ts",code:nn,lang:"ts"}],component:_t,display:wt,title:"会动的眼球",descriptions:""},Ct=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1638,7 +1697,7 @@ export function fallingBalls(options: fallingBallsOptions) {
     render
   }
 }
-`;function St(l){let{canvas:n,num:s,onAllStopped:t}=l;const e=n.getContext("2d");let a=n.width,o=n.height,r=[],i=!1,c=!1;const g=bn(()=>new U(d()));function d(){return{x:k(10,a-10),y:k(10,o-10),r:4,ax:0,ay:k(.1,2,!1),vx:0,vy:k(1,3),styleOptions:{fillStyle:V()},stopped:!1}}function p(v){r=g(v)}function u(){for(let v of r)v.reset().set(d());if(c=!1,!i)return b()}function m(v){Object.assign(n,v),a=v.width,o=v.height}function f(v){return v.stopped||fn(v.vy,0,1)&&fn(v.y+v.r,o,1)}function x(){if(r.length!=0){e.clearRect(0,0,a,o);for(let v of r)if(v.update(),v.y+v.r>o&&(v.y=o-v.r,v.vy*=-.7),v.render(e),f(v)&&(v.stopped=!0,r.every(f))){i=!1,c=!0;try{t==null||t()}catch(w){console.error(w)}return!1}}}p(s);function b(){if(i)return;i=!0,c&&u();let v=Y(x);return()=>{i&&(i=!1,v())}}return{start:b,reset:u,setBallsNum:p,setSize:m,render:x}}const Ct=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100;const e=C(),{helpers:{getControllerByKey:a}}=$({小球个数:{value:[t,1,1e3,10],onFinishChange(c){t=c,r.setBallsNum(c)}},开始(){let c=r.start();c&&(e.value=c)},暂停:{value:[function(){e.value()}],disable:!e.value},重置(){let c=r.reset();c&&(e.value=c)},查看源码(){s("check-source")}});L(e,c=>{a("暂停").enable(!!c)});const o=C();let r;function i(){pn({showClose:!0,message:"所有小球都停止运动了",type:"success",grouping:!0})}return D(()=>{let c=o.value;Object.assign(c,{width:innerWidth,height:innerHeight}),r=St({num:t,canvas:c,onAllStopped:i});const g=H(window,"resize",()=>{r.setSize({width:innerWidth,height:innerHeight})},{immediate:!0});r.render(),P(()=>{g(),e.value&&e.value()})}),(c,g)=>(j(),F("canvas",{ref_key:"canvasRef",ref:o},null,512))}}),Bt="/demo/assets/imgs/display-DOU4TeMC.png",It={codes:[{name:"index.vue",code:wt,lang:"js"},{name:"falling-balls.ts",code:Rt,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:Ct,display:Bt,title:"下落的小球",descriptions:""},kt=`<template>
+`;function Bt(l){let{canvas:n,num:s,onAllStopped:t}=l;const e=n.getContext("2d");let i=n.width,u=n.height,o=[],a=!1,h=!1;const g=_n(()=>new U(r()));function r(){return{x:j(10,i-10),y:j(10,u-10),r:4,ax:0,ay:j(.1,2,!1),vx:0,vy:j(1,3),styleOptions:{fillStyle:K()},stopped:!1}}function m(v){o=g(v)}function d(){for(let v of o)v.reset().set(r());if(h=!1,!a)return b()}function c(v){Object.assign(n,v),i=v.width,u=v.height}function f(v){return v.stopped||mn(v.vy,0,1)&&mn(v.y+v.r,u,1)}function x(){if(o.length!=0){e.clearRect(0,0,i,u);for(let v of o)if(v.update(),v.y+v.r>u&&(v.y=u-v.r,v.vy*=-.7),v.render(e),f(v)&&(v.stopped=!0,o.every(f))){a=!1,h=!0;try{t==null||t()}catch(_){console.error(_)}return!1}}}m(s);function b(){if(a)return;a=!0,h&&d();let v=Q(x);return()=>{a&&(a=!1,v())}}return{start:b,reset:d,setBallsNum:m,setSize:c,render:x}}const kt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100;const e=B(),{helpers:{getControllerByKey:i}}=D({小球个数:{value:[t,1,1e3,10],onFinishChange(h){t=h,o.setBallsNum(h)}},开始(){let h=o.start();h&&(e.value=h)},暂停:{value:[function(){e.value()}],disable:!e.value},重置(){let h=o.reset();h&&(e.value=h)},查看源码(){s("check-source")}});G(e,h=>{i("暂停").enable(!!h)});const u=B();let o;function a(){gn({showClose:!0,message:"所有小球都停止运动了",type:"success",grouping:!0})}return P(()=>{let h=u.value;Object.assign(h,{width:innerWidth,height:innerHeight}),o=Bt({num:t,canvas:h,onAllStopped:a});const g=V(window,"resize",()=>{o.setSize({width:innerWidth,height:innerHeight})},{immediate:!0});o.render(),A(()=>{g(),e.value&&e.value()})}),(h,g)=>(E(),M("canvas",{ref_key:"canvasRef",ref:u},null,512))}}),It="/demo/assets/imgs/display-DOU4TeMC.png",jt={codes:[{name:"index.vue",code:Ct,lang:"js"},{name:"falling-balls.ts",code:Rt,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:kt,display:It,title:"下落的小球",descriptions:""},Et=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1769,7 +1828,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,jt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100,e=20,a=20,o=17,r=.01;$({小球个数:{value:[t,1,1e3,10],onFinishChange(d){t=d,g.setBallNum(d)}},小球半径上限:{value:[e,4,100,1],onFinishChange(d){e=d,g.updateBalls(p=>{p.r=k(4,d)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(d){a=d,g.updateBalls(p=>{p.vx=k(1,d)})}},小球y方向移动速度上限:{value:[o,1,15,.5],onFinishChange(d){o=d,g.updateBalls(p=>{p.vy=k(1,d)})}},小球摩擦力因子:{value:[r,0,3,.1],onFinishChange(d){r=d,g.updateBalls(p=>{p.friction=k(0,d)})}},开始(){i&&i(),i=g.start()},查看源码(){s("check-source")}});let i;const c=C();let g;return D(()=>{let d=c.value,p,u;Object.assign(d,{width:p=innerWidth,height:u=innerHeight}),g=wn({canvas:d,ballsNum:t,createBallFac:()=>{let f={x:k(10,p-10),y:k(10,u-10),r:k(1,e),vx:k(1,a),vy:k(1,o),styleOptions:{fillStyle:V()},friction:k(0,r)};return new U(f)},onBallUpdate(f){f.vx>=.01&&(f.vx-=f.friction,f.x+=f.vx),f.vy>=.01&&(f.vy-=f.friction,f.y+=f.vy),f.x>p+f.r&&(f.x=-f.r),f.y>u+f.r&&(f.y=-f.r)}});const m=H(window,"resize",()=>{g.setSize({width:p=innerWidth,height:u=innerHeight})},{immediate:!0});P(()=>{m(),i&&i()})}),(d,p)=>(j(),F("canvas",{ref_key:"canvasRef",ref:c},null,512))}}),Et="/demo/assets/imgs/display-BaZn1eIe.png",Ft={codes:[{name:"index.vue",code:kt,lang:"js"},{name:"wander-balls.ts",code:_n,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:jt,display:Et,title:"运动减速",descriptions:""},Ot=`<template>
+`,Ft=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100,e=20,i=20,u=17,o=.01;D({小球个数:{value:[t,1,1e3,10],onFinishChange(r){t=r,g.setBallNum(r)}},小球半径上限:{value:[e,4,100,1],onFinishChange(r){e=r,g.updateBalls(m=>{m.r=j(4,r)})}},小球x方向移动速度上限:{value:[i,1,15,.5],onFinishChange(r){i=r,g.updateBalls(m=>{m.vx=j(1,r)})}},小球y方向移动速度上限:{value:[u,1,15,.5],onFinishChange(r){u=r,g.updateBalls(m=>{m.vy=j(1,r)})}},小球摩擦力因子:{value:[o,0,3,.1],onFinishChange(r){o=r,g.updateBalls(m=>{m.friction=j(0,r)})}},开始(){a&&a(),a=g.start()},查看源码(){s("check-source")}});let a;const h=B();let g;return P(()=>{let r=h.value,m,d;Object.assign(r,{width:m=innerWidth,height:d=innerHeight}),g=Sn({canvas:r,ballsNum:t,createBallFac:()=>{let f={x:j(10,m-10),y:j(10,d-10),r:j(1,e),vx:j(1,i),vy:j(1,u),styleOptions:{fillStyle:K()},friction:j(0,o)};return new U(f)},onBallUpdate(f){f.vx>=.01&&(f.vx-=f.friction,f.x+=f.vx),f.vy>=.01&&(f.vy-=f.friction,f.y+=f.vy),f.x>m+f.r&&(f.x=-f.r),f.y>d+f.r&&(f.y=-f.r)}});const c=V(window,"resize",()=>{g.setSize({width:m=innerWidth,height:d=innerHeight})},{immediate:!0});A(()=>{c(),a&&a()})}),(r,m)=>(E(),M("canvas",{ref_key:"canvasRef",ref:h},null,512))}}),Mt="/demo/assets/imgs/display-BaZn1eIe.png",Ot={codes:[{name:"index.vue",code:Et,lang:"js"},{name:"wander-balls.ts",code:wn,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:Ft,display:Mt,title:"运动减速",descriptions:""},Tt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1863,7 +1922,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Tt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=innerWidth,e=innerHeight,a,o=C(.01),r=C(.01),i=C(1),c=an(new Bn.Noise(Math.random())),g=C("simplex2"),d=()=>{let u=a.getImageData(0,0,t,e);for(let m=0;m<t;m++)for(let f=0;f<e;f++){let x=~~Math.min(255,Math.abs(c.value[g.value](m*o.value,f*r.value))*i.value*256);u.data[(f*t+m)*4+0]=x,u.data[(f*t+m)*4+1]=x,u.data[(f*t+m)*4+2]=x,u.data[(f*t+m)*4+3]=255}a.putImageData(u,0,0)};$({噪声生成算法:{value:[g.value,["simplex2","perlin2"]],onFinishChange(u){g.value=u}},x方向缩放因子:{value:[o.value,.001,.5,.001],onFinishChange(u){o.value=u}},y方向缩放因子:{value:[r.value,.001,.5,.001],onFinishChange(u){r.value=u}},值放缩因子:{value:[i.value,.01,255,.1],onFinishChange(u){i.value=u}},重新生成随机种子(){c.value=new Bn.Noise(Math.random())},查看源码(){s("check-source")}});const p=C();return D(()=>{const u=p.value;u.width=t,u.height=e,a=u.getContext("2d",{willReadFrequently:!0});const m=H(window,"resize",ie(()=>{t=~~(innerWidth/1),e=~~(innerHeight/1),u.width=t,u.height=e,d()},100));let f=se(d);P(()=>{m(),f()})}),(u,m)=>(j(),F("canvas",{ref_key:"canvasRef",ref:p},null,512))}}),Mt="/demo/assets/imgs/display-CsCBxHWH.png",zt={codes:[{name:"index.vue",code:Ot,lang:"js"}],component:Tt,display:Mt,title:"随机噪声",descriptions:""},$t=`<template>
+`,zt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=innerWidth,e=innerHeight,i,u=B(.01),o=B(.01),a=B(1),h=sn(new kn.Noise(Math.random())),g=B("simplex2"),r=()=>{let d=i.getImageData(0,0,t,e);for(let c=0;c<t;c++)for(let f=0;f<e;f++){let x=~~Math.min(255,Math.abs(h.value[g.value](c*u.value,f*o.value))*a.value*256);d.data[(f*t+c)*4+0]=x,d.data[(f*t+c)*4+1]=x,d.data[(f*t+c)*4+2]=x,d.data[(f*t+c)*4+3]=255}i.putImageData(d,0,0)};D({噪声生成算法:{value:[g.value,["simplex2","perlin2"]],onFinishChange(d){g.value=d}},x方向缩放因子:{value:[u.value,.001,.5,.001],onFinishChange(d){u.value=d}},y方向缩放因子:{value:[o.value,.001,.5,.001],onFinishChange(d){o.value=d}},值放缩因子:{value:[a.value,.01,255,.1],onFinishChange(d){a.value=d}},重新生成随机种子(){h.value=new kn.Noise(Math.random())},查看源码(){s("check-source")}});const m=B();return P(()=>{const d=m.value;d.width=t,d.height=e,i=d.getContext("2d",{willReadFrequently:!0});const c=V(window,"resize",le(()=>{t=~~(innerWidth/1),e=~~(innerHeight/1),d.width=t,d.height=e,r()},100));let f=re(r);A(()=>{c(),f()})}),(d,c)=>(E(),M("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),$t="/demo/assets/imgs/display-CsCBxHWH.png",Nt={codes:[{name:"index.vue",code:Tt,lang:"js"}],component:zt,display:$t,title:"随机噪声",descriptions:""},Dt=`<template>
   <canvas ref="canvasRef"></canvas>
   <el-input class="input" v-model="input" placeholder="请输入内容" size="large" @keyup.enter="onEnter"></el-input>
 </template>
@@ -2034,7 +2093,7 @@ onMounted(() => {
   box-shadow: 0 0 10px 5px #409EFF;
 }
 </style>
-`;class Nt{constructor(n){_(this,"x",0);_(this,"y",0);_(this,"tx",0);_(this,"ty",0);_(this,"color","pink");_(this,"name","");_(this,"fx",.01);_(this,"fy",.01);_(this,"onDone");_(this,"r",0);_(this,"size",0);_(this,"done",!1);Object.assign(this,n)}update(){var t;let{tx:n,ty:s}=this;if(!this.done)return this.x=J(this.x,n,this.fx),this.y=J(this.y,s,this.fy),fn(this.x,this.tx)&&fn(this.y,this.ty)&&(this.done=!0,(t=this.onDone)==null||t.call(this)),this}render(n){let{color:s,x:t,y:e,size:a,r:o}=this;n.save(),Object.assign(n,{fillStyle:s}),n.beginPath(),a>0?n.fillRect(t,e,a,a):o>0?n.arc(t,e,o,0,Math.PI*2):n.arc(t,e,2,0,Math.PI*2),n.fill(),n.restore()}}class Dt{constructor(n){_(this,"canvas");_(this,"ctx");_(this,"fontSize",200);_(this,"fontFamily","微软雅黑");_(this,"color","pink");_(this,"gap",3);_(this,"alphaThreshold",30);_(this,"w",0);_(this,"h",0);let{canvas:s,ctx:t,fontSize:e,fontFamily:a,color:o,gap:r,alphaThreshold:i}=n;this.canvas=s,this.ctx=t??s.getContext("2d"),e&&(this.fontSize=e),a&&(this.fontFamily=a),o&&(this.color=o),r!=null&&(this.gap=r),i!=null&&(this.alphaThreshold=i),this.w=s.width,this.h=s.height}setSize(n){this.w=n.width,this.h=n.height}_measureText(n){let{ctx:s,fontSize:t,fontFamily:e,color:a,w:o,h:r}=this;s.save(),Object.assign(s,{font:`${t}px ${e}`,fillStyle:a,textBaseline:"bottom"});let i=s.measureText(n),{width:c,actualBoundingBoxAscent:g,actualBoundingBoxDescent:d}=i,p=~~(Math.abs(g)+Math.abs(d));c=~~c,s.fillText(n,0,p);let u=s.getImageData(0,0,c,p).data;return s.clearRect(0,0,o,r),s.restore(),{data:u,width:c,height:p}}getParticles(n){let{data:s,width:t,height:e}=this._measureText(n),{gap:a,alphaThreshold:o,w:r,h:i}=this,c=[],g=[];for(let d=0;d<t;d+=a)for(let p=0;p<e;p+=a){let u=p*t+d,m=s[u*4+0],f=s[u*4+1],x=s[u*4+2],b=s[u*4+3];if(b<=o)continue;let{signal:v,resolve:w}=le();c.push(v);let y=re({x:d,y:p},ce({x:t/2,y:e/2},{x:r/2,y:i/2}));g.push({tx:y.x,ty:y.y,color:oe(m,f,x,b),onDone:w})}return{particles:g,done:Promise.all(c)}}}const Pt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=C(),e=C("");let a,o=[],r=3,i="#f00",c=30,g=100,d=1,p=.1,u=.1,m=innerWidth,f=innerHeight,x=bn(()=>new Nt({r:d,x:k(0,m),y:k(0,f),fx:.1,fy:.1})),b="hello world";function v(y,S){let E=a.getParticles(y);return o=x(E.particles.length).map(O=>(O.done=!1,S&&(O.x=k(0,m),O.y=k(0,f)),O)),o.forEach((O,h)=>Object.assign(O,E.particles[h])),E.done}function w(){e.value&&(b=e.value,v(b,!0))}return D(()=>{let y=t.value;const S=y.getContext("2d",{willReadFrequently:!0});Object.assign(y,{width:m,height:f}),a=new Dt({canvas:y,ctx:S,gap:r,alphaThreshold:c,color:i}),$({调整文字颜色:{value:[i],isColor:!0,onFinishChange(h){a.color=h,v(b,!0)}},采样alpha过滤阈值:{value:[c,0,100,1],onFinishChange(h){a.alphaThreshold=h,v(b,!0)}},采样间隔调整:{value:[r,1,20,1],onFinishChange(h){a.gap=h,v(b,!0)}},点大小调整:{value:[d,1,20,1],onFinishChange(h){d=h,x.update(R=>R.r=h),v(b,!0)}},x方向缓动因子调整:{value:[p,.01,1,.01],onFinishChange(h){p=h,x.update(R=>R.fx=h),v(b,!0)}},y方向缓动因子调整:{value:[u,.01,1,.01],onFinishChange(h){u=h,x.update(R=>R.fy=h),v(b,!0)}},字体大小调整:{value:[g,50,340,10],onFinishChange(h){g=h,a.fontSize=h,v(b,!0)}},查看源码(){s("check-source")}}),v(b);const E=Y(()=>{S.clearRect(0,0,m,f),o.forEach(h=>{h.render(S),h.update()})}),O=H(window,"resize",()=>{m=innerWidth,f=innerHeight,y.width=m,y.height=f,a.setSize({width:m,height:f})});P(()=>{O(),E()})}),(y,S)=>{const E=Mn;return j(),F(X,null,[G("canvas",{ref_key:"canvasRef",ref:t},null,512),W(E,{class:"input",modelValue:K(e),"onUpdate:modelValue":S[0]||(S[0]=O=>yn(e)?e.value=O:null),placeholder:"请输入内容",size:"large",onKeyup:Tn(w,["enter"])},null,8,["modelValue"])],64)}}}),At=q(Pt,[["__scopeId","data-v-0ead9cf7"]]),Wt=`import { iterateEaseFromTo, looseEqual } from '@thing772/utils'
+`;class Pt{constructor(n){w(this,"x",0);w(this,"y",0);w(this,"tx",0);w(this,"ty",0);w(this,"color","pink");w(this,"name","");w(this,"fx",.01);w(this,"fy",.01);w(this,"onDone");w(this,"r",0);w(this,"size",0);w(this,"done",!1);Object.assign(this,n)}update(){var t;let{tx:n,ty:s}=this;if(!this.done)return this.x=J(this.x,n,this.fx),this.y=J(this.y,s,this.fy),mn(this.x,this.tx)&&mn(this.y,this.ty)&&(this.done=!0,(t=this.onDone)==null||t.call(this)),this}render(n){let{color:s,x:t,y:e,size:i,r:u}=this;n.save(),Object.assign(n,{fillStyle:s}),n.beginPath(),i>0?n.fillRect(t,e,i,i):u>0?n.arc(t,e,u,0,Math.PI*2):n.arc(t,e,2,0,Math.PI*2),n.fill(),n.restore()}}class At{constructor(n){w(this,"canvas");w(this,"ctx");w(this,"fontSize",200);w(this,"fontFamily","微软雅黑");w(this,"color","pink");w(this,"gap",3);w(this,"alphaThreshold",30);w(this,"w",0);w(this,"h",0);let{canvas:s,ctx:t,fontSize:e,fontFamily:i,color:u,gap:o,alphaThreshold:a}=n;this.canvas=s,this.ctx=t??s.getContext("2d"),e&&(this.fontSize=e),i&&(this.fontFamily=i),u&&(this.color=u),o!=null&&(this.gap=o),a!=null&&(this.alphaThreshold=a),this.w=s.width,this.h=s.height}setSize(n){this.w=n.width,this.h=n.height}_measureText(n){let{ctx:s,fontSize:t,fontFamily:e,color:i,w:u,h:o}=this;s.save(),Object.assign(s,{font:`${t}px ${e}`,fillStyle:i,textBaseline:"bottom"});let a=s.measureText(n),{width:h,actualBoundingBoxAscent:g,actualBoundingBoxDescent:r}=a,m=~~(Math.abs(g)+Math.abs(r));h=~~h,s.fillText(n,0,m);let d=s.getImageData(0,0,h,m).data;return s.clearRect(0,0,u,o),s.restore(),{data:d,width:h,height:m}}getParticles(n){let{data:s,width:t,height:e}=this._measureText(n),{gap:i,alphaThreshold:u,w:o,h:a}=this,h=[],g=[];for(let r=0;r<t;r+=i)for(let m=0;m<e;m+=i){let d=m*t+r,c=s[d*4+0],f=s[d*4+1],x=s[d*4+2],b=s[d*4+3];if(b<=u)continue;let{signal:v,resolve:_}=oe();h.push(v);let y=ce({x:r,y:m},de({x:t/2,y:e/2},{x:o/2,y:a/2}));g.push({tx:y.x,ty:y.y,color:ue(c,f,x,b),onDone:_})}return{particles:g,done:Promise.all(h)}}}const Wt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=B(),e=B("");let i,u=[],o=3,a="#f00",h=30,g=100,r=1,m=.1,d=.1,c=innerWidth,f=innerHeight,x=_n(()=>new Pt({r,x:j(0,c),y:j(0,f),fx:.1,fy:.1})),b="hello world";function v(y,C){let F=i.getParticles(y);return u=x(F.particles.length).map(O=>(O.done=!1,C&&(O.x=j(0,c),O.y=j(0,f)),O)),u.forEach((O,I)=>Object.assign(O,F.particles[I])),F.done}function _(){e.value&&(b=e.value,v(b,!0))}return P(()=>{let y=t.value;const C=y.getContext("2d",{willReadFrequently:!0});Object.assign(y,{width:c,height:f}),i=new At({canvas:y,ctx:C,gap:o,alphaThreshold:h,color:a}),D({调整文字颜色:{value:[a],isColor:!0,onFinishChange(I){i.color=I,v(b,!0)}},采样alpha过滤阈值:{value:[h,0,100,1],onFinishChange(I){i.alphaThreshold=I,v(b,!0)}},采样间隔调整:{value:[o,1,20,1],onFinishChange(I){i.gap=I,v(b,!0)}},点大小调整:{value:[r,1,20,1],onFinishChange(I){r=I,x.update(p=>p.r=I),v(b,!0)}},x方向缓动因子调整:{value:[m,.01,1,.01],onFinishChange(I){m=I,x.update(p=>p.fx=I),v(b,!0)}},y方向缓动因子调整:{value:[d,.01,1,.01],onFinishChange(I){d=I,x.update(p=>p.fy=I),v(b,!0)}},字体大小调整:{value:[g,50,340,10],onFinishChange(I){g=I,i.fontSize=I,v(b,!0)}},查看源码(){s("check-source")}}),v(b);const F=Q(()=>{C.clearRect(0,0,c,f),u.forEach(I=>{I.render(C),I.update()})}),O=V(window,"resize",()=>{c=innerWidth,f=innerHeight,y.width=c,y.height=f,i.setSize({width:c,height:f})});A(()=>{O(),F()})}),(y,C)=>{const F=$n;return E(),M(Y,null,[H("canvas",{ref_key:"canvasRef",ref:t},null,512),L(F,{class:"input",modelValue:X(e),"onUpdate:modelValue":C[0]||(C[0]=O=>bn(e)?e.value=O:null),placeholder:"请输入内容",size:"large",onKeyup:zn(_,["enter"])},null,8,["modelValue"])],64)}}}),Lt=q(Wt,[["__scopeId","data-v-0ead9cf7"]]),Gt=`import { iterateEaseFromTo, looseEqual } from '@thing772/utils'
 
 type ParticleOptionsBase = {
   x?: number;//当前x
@@ -2096,7 +2155,7 @@ export class Particle {
     ctx.restore();
   }
 }
-`,Lt=`import { getSignal, ptOffset, getMovePt, rgb } from '@thing772/utils'
+`,Ht=`import { getSignal, ptOffset, getMovePt, rgb } from '@thing772/utils'
 import { Particle } from '@/utils/class/particle'
 
 type CreateTextParticlesOptionis = {
@@ -2208,7 +2267,7 @@ export class TextParticle {
     }
   }
 }
-`,Gt="/demo/assets/imgs/display-DOJbIvru.png",Ht={codes:[{name:"index.vue",code:$t,lang:"js"},{name:"textParticle.ts",code:Lt,lang:"ts"},{name:"particle.ts",code:Wt,lang:"ts"}],component:At,display:Gt,title:"文字粒子化",descriptions:""},qt=`<template>
+`,Vt="/demo/assets/imgs/display-DOJbIvru.png",qt={codes:[{name:"index.vue",code:Dt,lang:"js"},{name:"textParticle.ts",code:Ht,lang:"ts"},{name:"particle.ts",code:Gt,lang:"ts"}],component:Lt,display:Vt,title:"文字粒子化",descriptions:""},Kt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -2312,7 +2371,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Vt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100,e=20,a=10,o=7;$({小球个数:{value:[t,1,1e3,10],onFinishChange(g){t=g,c.setBallNum(g)}},小球半径上限:{value:[e,4,100,1],onFinishChange(g){e=g,c.updateBalls(d=>{d.r=k(4,g)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(g){a=g,c.updateBalls(d=>{d.vx=k(1,g)})}},小球y方向移动速度上限:{value:[o,1,15,.5],onFinishChange(g){o=g,c.updateBalls(d=>{d.vy=k(1,g)})}},开始(){r&&r(),r=c.start()},查看源码(){s("check-source")}});let r;const i=C();let c;return D(()=>{let g=i.value,d=innerWidth,p=innerHeight;Object.assign(g,{width:d,height:p}),c=wn({canvas:g,ballsNum:t,createBallFac:()=>new U({x:k(10,d-10),y:k(10,p-10),r:k(1,e),vx:k(1,a),vy:k(1,o),styleOptions:{fillStyle:V()}})});const u=H(window,"resize",()=>{d=innerWidth,p=innerHeight,c.setSize({width:d,height:p})},{immediate:!0});c.render(),P(()=>{u(),r&&r()})}),(g,d)=>(j(),F("canvas",{ref_key:"canvasRef",ref:i},null,512))}}),Kt="/demo/assets/imgs/display-BpUGJlnU.png",Ut={codes:[{name:"index.vue",code:qt,lang:"js"},{name:"wander-balls.ts",code:_n,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:Vt,display:Kt,title:"矩形区域内飘荡的小球",descriptions:""},Xt=`<template>
+`,Xt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=100,e=20,i=10,u=7;D({小球个数:{value:[t,1,1e3,10],onFinishChange(g){t=g,h.setBallNum(g)}},小球半径上限:{value:[e,4,100,1],onFinishChange(g){e=g,h.updateBalls(r=>{r.r=j(4,g)})}},小球x方向移动速度上限:{value:[i,1,15,.5],onFinishChange(g){i=g,h.updateBalls(r=>{r.vx=j(1,g)})}},小球y方向移动速度上限:{value:[u,1,15,.5],onFinishChange(g){u=g,h.updateBalls(r=>{r.vy=j(1,g)})}},开始(){o&&o(),o=h.start()},查看源码(){s("check-source")}});let o;const a=B();let h;return P(()=>{let g=a.value,r=innerWidth,m=innerHeight;Object.assign(g,{width:r,height:m}),h=Sn({canvas:g,ballsNum:t,createBallFac:()=>new U({x:j(10,r-10),y:j(10,m-10),r:j(1,e),vx:j(1,i),vy:j(1,u),styleOptions:{fillStyle:K()}})});const d=V(window,"resize",()=>{r=innerWidth,m=innerHeight,h.setSize({width:r,height:m})},{immediate:!0});h.render(),A(()=>{d(),o&&o()})}),(g,r)=>(E(),M("canvas",{ref_key:"canvasRef",ref:a},null,512))}}),Ut="/demo/assets/imgs/display-BpUGJlnU.png",Yt={codes:[{name:"index.vue",code:Kt,lang:"js"},{name:"wander-balls.ts",code:wn,lang:"ts"},{name:"ball.ts",code:nn,lang:"ts"}],component:Xt,display:Ut,title:"矩形区域内飘荡的小球",descriptions:""},Qt=`<template>
   <div class="container">
     <div class="el1">
       财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人，
@@ -2389,7 +2448,7 @@ const el2Class = computed(() => ([
   }
 }
 </style>
-`,Yt={class:"container"},Qt=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,{obj:t}=$({模糊自身:{value:[!1],onChange(r){e.value=r}},模糊背景:{value:[!1],onChange(r){a.value=r}},查看源码(){s("check-source")}}),e=C(t.模糊自身),a=C(t.模糊背景),o=xn(()=>["el2",{"blur-self":e.value,"blur-backdrop":a.value}]);return(r,i)=>(j(),F("div",Yt,[i[0]||(i[0]=G("div",{class:"el1"}," 财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人， 较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻） ",-1)),G("div",{class:ln(K(o))}," 财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。 ",2)]))}}),Zt=q(Qt,[["__scopeId","data-v-bce03b61"]]),Jt="/demo/assets/imgs/display-C7z4HTpE.png",na={codes:[{name:"index.vue",code:Xt,lang:"js"}],component:Zt,display:Jt,title:"css模糊效果",descriptions:""},ea=`<template>
+`,Zt={class:"container"},Jt=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,{obj:t}=D({模糊自身:{value:[!1],onChange(o){e.value=o}},模糊背景:{value:[!1],onChange(o){i.value=o}},查看源码(){s("check-source")}}),e=B(t.模糊自身),i=B(t.模糊背景),u=yn(()=>["el2",{"blur-self":e.value,"blur-backdrop":i.value}]);return(o,a)=>(E(),M("div",Zt,[a[0]||(a[0]=H("div",{class:"el1"}," 财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人， 较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻） ",-1)),H("div",{class:rn(X(u))}," 财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。 ",2)]))}}),na=q(Jt,[["__scopeId","data-v-bce03b61"]]),ea="/demo/assets/imgs/display-C7z4HTpE.png",ta={codes:[{name:"index.vue",code:Qt,lang:"js"}],component:na,display:ea,title:"css模糊效果",descriptions:""},aa=`<template>
   <div :class="ctClass">
     测试文本
     <div class="circle">
@@ -2466,7 +2525,7 @@ const ctClass = computed(() => ([
   background-color: pink;
 }
 </style>
-`,ta=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let{obj:t}=$({"添加box-shadow":{value:[!1],onChange(i){e.value=i}},添加圆角:{value:[!1],onChange(i){a.value=i}},"添加filter:drop-shadow":{value:[!1],onChange(i){o.value=i}},查看源码(){s("check-source")}});const e=C(t["添加box-shadow"]),a=C(t.添加圆角),o=C(t["添加filter:drop-shadow"]),r=xn(()=>["container",{"has-shadow-box":e.value,"round-border":a.value,filter:o.value}]);return(i,c)=>(j(),F("div",{class:ln(K(r))},c[0]||(c[0]=[dn(" 测试文本 "),G("div",{class:"circle"}," 测试文本2 ",-1)]),2))}}),aa=q(ta,[["__scopeId","data-v-8a62668d"]]),ia="/demo/assets/imgs/display-CvX0ByRG.png",sa={codes:[{name:"index.vue",code:ea,lang:"js"}],component:aa,display:ia,title:"css box阴影效果",descriptions:""},la=`<template>
+`,ia=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let{obj:t}=D({"添加box-shadow":{value:[!1],onChange(a){e.value=a}},添加圆角:{value:[!1],onChange(a){i.value=a}},"添加filter:drop-shadow":{value:[!1],onChange(a){u.value=a}},查看源码(){s("check-source")}});const e=B(t["添加box-shadow"]),i=B(t.添加圆角),u=B(t["添加filter:drop-shadow"]),o=yn(()=>["container",{"has-shadow-box":e.value,"round-border":i.value,filter:u.value}]);return(a,h)=>(E(),M("div",{class:rn(X(o))},h[0]||(h[0]=[hn(" 测试文本 "),H("div",{class:"circle"}," 测试文本2 ",-1)]),2))}}),sa=q(ia,[["__scopeId","data-v-8a62668d"]]),la="/demo/assets/imgs/display-CvX0ByRG.png",ra={codes:[{name:"index.vue",code:aa,lang:"js"}],component:sa,display:la,title:"css box阴影效果",descriptions:""},oa=`<template>
   <div class="box">
     <div ref="node"></div>
   </div>
@@ -2664,7 +2723,7 @@ onMounted(() => {
   padding: 20px;
 }
 </style>
-`;function ra(l){const{data:n=[],getX:s,getY:t,width:e=200,height:a=200,margin:o=[],color:r={},sortY:i=0,xAxis:c={},yAxis:g={},yLegend:d={},hideXTicks:p}=l,[u=60,m=0,f=30,x=30]=o;let b,v;const w=ue("svg").attr("width",e).attr("height",a).attr("viewBox",[0,0,e,a]).style("background-color",r.bg||""),y=w.append("g"),S=w.append("g").attr("transform",`translate(0,${a-f})`),E=w.append("g").attr("transform",`translate(${x},0)`),O=h=>{const R=I=>{if(b=fe().range([x,e-m]),cn(l.xScale))for(let[B,N]of Object.entries(l.xScale))b[B](N);else b.padding(.2);i>0?b.domain(me(I,([B])=>(i==1?1:-1)*t(B),s)):b.domain(I.map(s)),v=pe().domain([0,ge(I,t)]).range([a-f,u])},T=I=>{I.attr("x",0).attr("y",0).attr("width",b.bandwidth()).attr("height",B=>v(0)-v(t(B))).attr("fill",r.bar||"#409eff")},M=I=>{I.text(B=>B.value).attr("text-anchor","middle").attr("x",b.bandwidth()/2).attr("y",-4)};R(h),y.selectAll("g").data(h).join(I=>I.append("g").attr("transform",B=>`translate(${b(s(B))},${v(t(B))})`).call(B=>{T(B.append("rect")),M(B.append("text"))}),I=>(T(I.select("rect")),M(I.select("text")),I)).attr("transform",I=>`translate(${b(s(I))},${v(t(I))})`),S.call(I=>{let B=de(b);B.tickSizeOuter(0);for(const[N,Q]of Object.entries(c))B[N](Q);B(I)}).call(I=>{p&&I.selectAll(".tick").remove()}),E.call(I=>{let B=he(v);for(const[N,Q]of Object.entries(g))B[N](Q);B(I)}).call(I=>I.select(".domain").remove()).call(I=>{if(d.text){let B=I.append("text").attr("text-anchor","middle").attr("x",0).attr("y",20);for(const[N,Q]of Object.entries(d))N=="text"?B[N](Q):B.attr(N,Q)}})};return O(n),{svg:w.node(),update:O}}function*oa(l,n){rn(n)||(n=gn),n=n;for(let s=1;s<l.length;s++)for(let t=0;t<l.length-s;t++)n(l[t])>n(l[t+1])&&(sn(l,t,t+1),yield[...l])}function*ca(l,n){rn(n)||(n=gn),n=n,l=[...l];for(let s=0;s<l.length-1;s++){let t=0;for(let e=0;e<l.length-s;e++)n(l[e])>n(l[t])&&(t=e);sn(l,t,l.length-s-1),yield[...l]}}function*ua(l,n){rn(n)||(n=gn),l=[...l],n=n;for(let s=0;s<l.length-1;s++)if(n(l[s])>n(l[s+1])){sn(l,s,s+1),yield[...l];let t=s;for(;t>0&&!(n(l[t])>=n(l[t-1]));)sn(l,t,t-1),yield[...l],t--}}function*da(l,n){rn(n)||(n=gn);function*s(t,e){if(n=n,t==e)return;let a=Math.floor((t+e)/2);yield*s(t,a),yield*s(a+1,e);const o=r=>l=[...l.slice(0,t),...r,...l.slice(e+1)];if(!(n(l[a])<=n(l[a+1]))){if(n(l[e])<=n(l[t])){yield o([...l.slice(a+1,e+1),...l.slice(t,a+1)]);return}for(let r=1;a+r<=e;r++){let i=a+r;for(;i>t&&!(n(l[i])>=n(l[i-1]));)sn(l,i,i-1),i--,yield[...l]}}}yield*s(0,l.length-1)}const ha={class:"box"},fa=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=C(),e=[{label:"冒泡排序",value:oa},{label:"选择排序",value:ca},{label:"插入排序",value:ua},{label:"归并排序",value:da}],a=e[0],o=C(a.value);let r,i=innerWidth-100,c=innerHeight-100,g=!1,d=20,p=an([]),u=an();function m(){p.value=Ve(d).map((w,y)=>({id:y,value:w})),g=!1,u.value=o.value(p.value,w=>w.value)}L(o,()=>{u.value=o.value(p.value,w=>w.value)});function f(){let{value:w,done:y}=u.value.next();if(g=y,y){pn({showClose:!0,message:"已经排序完毕",type:"success",grouping:!0});return}else p.value=w}let x=C(0);function b(){x.value==0&&((!u.value||g)&&m(),x.value=setInterval(()=>{if(g){clearInterval(x.value),x.value=0;return}f()},v))}L(()=>p.value,w=>{w.length>0?(r||(r=ra({width:i,height:c,getX:y=>y.id,getY:y=>y.value}),t.value.appendChild(r.svg)),r.update(w)):r&&(t.value.removeChild(r.svg),r=null)});let v=50;return D(()=>{m();let{helpers:{getAllControllers:w}}=$({选择算法:{value:[a.label,e.map(S=>S.label)],onChange(S){let E=e.find(O=>O.label==S);o.value=E.value}},随机数个数:{value:[d,10,100,1],onFinishChange(S){d=S}},自动开始时间间隔:{value:[v,16,100,5],onFinishChange(S){v=S}},生成随机数:{value:[function(){m()}],disable:x.value!=0},排序下一步:{value:[function(){f()}],disable:!u.value||x.value!=0},自动开始(){b()},查看源码(){s("check-source")}}),y=L(x,S=>{w().forEach(E=>{E.property!="查看源码"&&E.disable(S>0)})});P(()=>{y(),clearInterval(x.value)})}),(w,y)=>(j(),F("div",ha,[G("div",{ref_key:"node",ref:t},null,512)]))}}),ma=q(fa,[["__scopeId","data-v-698136a6"]]),pa=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`;function ca(l){const{data:n=[],getX:s,getY:t,width:e=200,height:i=200,margin:u=[],color:o={},sortY:a=0,xAxis:h={},yAxis:g={},yLegend:r={},hideXTicks:m}=l,[d=60,c=0,f=30,x=30]=u;let b,v;const _=he("svg").attr("width",e).attr("height",i).attr("viewBox",[0,0,e,i]).style("background-color",o.bg||""),y=_.append("g"),C=_.append("g").attr("transform",`translate(0,${i-f})`),F=_.append("g").attr("transform",`translate(${x},0)`),O=I=>{const p=k=>{if(b=pe().range([x,e-c]),un(l.xScale))for(let[R,z]of Object.entries(l.xScale))b[R](z);else b.padding(.2);a>0?b.domain(ge(k,([R])=>(a==1?1:-1)*t(R),s)):b.domain(k.map(s)),v=ve().domain([0,xe(k,t)]).range([i-f,d])},S=k=>{k.attr("x",0).attr("y",0).attr("width",b.bandwidth()).attr("height",R=>v(0)-v(t(R))).attr("fill",o.bar||"#409eff")},T=k=>{k.text(R=>R.value).attr("text-anchor","middle").attr("x",b.bandwidth()/2).attr("y",-4)};p(I),y.selectAll("g").data(I).join(k=>k.append("g").attr("transform",R=>`translate(${b(s(R))},${v(t(R))})`).call(R=>{S(R.append("rect")),T(R.append("text"))}),k=>(S(k.select("rect")),T(k.select("text")),k)).attr("transform",k=>`translate(${b(s(k))},${v(t(k))})`),C.call(k=>{let R=fe(b);R.tickSizeOuter(0);for(const[z,N]of Object.entries(h))R[z](N);R(k)}).call(k=>{m&&k.selectAll(".tick").remove()}),F.call(k=>{let R=me(v);for(const[z,N]of Object.entries(g))R[z](N);R(k)}).call(k=>k.select(".domain").remove()).call(k=>{if(r.text){let R=k.append("text").attr("text-anchor","middle").attr("x",0).attr("y",20);for(const[z,N]of Object.entries(r))z=="text"?R[z](N):R.attr(z,N)}})};return O(n),{svg:_.node(),update:O}}function*ua(l,n){on(n)||(n=vn),n=n;for(let s=1;s<l.length;s++)for(let t=0;t<l.length-s;t++)n(l[t])>n(l[t+1])&&(ln(l,t,t+1),yield[...l])}function*da(l,n){on(n)||(n=vn),n=n,l=[...l];for(let s=0;s<l.length-1;s++){let t=0;for(let e=0;e<l.length-s;e++)n(l[e])>n(l[t])&&(t=e);ln(l,t,l.length-s-1),yield[...l]}}function*ha(l,n){on(n)||(n=vn),l=[...l],n=n;for(let s=0;s<l.length-1;s++)if(n(l[s])>n(l[s+1])){ln(l,s,s+1),yield[...l];let t=s;for(;t>0&&!(n(l[t])>=n(l[t-1]));)ln(l,t,t-1),yield[...l],t--}}function*fa(l,n){on(n)||(n=vn);function*s(t,e){if(n=n,t==e)return;let i=Math.floor((t+e)/2);yield*s(t,i),yield*s(i+1,e);const u=o=>l=[...l.slice(0,t),...o,...l.slice(e+1)];if(!(n(l[i])<=n(l[i+1]))){if(n(l[e])<=n(l[t])){yield u([...l.slice(i+1,e+1),...l.slice(t,i+1)]);return}for(let o=1;i+o<=e;o++){let a=i+o;for(;a>t&&!(n(l[a])>=n(l[a-1]));)ln(l,a,a-1),a--,yield[...l]}}}yield*s(0,l.length-1)}const ma={class:"box"},pa=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=B(),e=[{label:"冒泡排序",value:ua},{label:"选择排序",value:da},{label:"插入排序",value:ha},{label:"归并排序",value:fa}],i=e[0],u=B(i.value);let o,a=innerWidth-100,h=innerHeight-100,g=!1,r=20,m=sn([]),d=sn();function c(){m.value=Xe(r).map((_,y)=>({id:y,value:_})),g=!1,d.value=u.value(m.value,_=>_.value)}G(u,()=>{d.value=u.value(m.value,_=>_.value)});function f(){let{value:_,done:y}=d.value.next();if(g=y,y){gn({showClose:!0,message:"已经排序完毕",type:"success",grouping:!0});return}else m.value=_}let x=B(0);function b(){x.value==0&&((!d.value||g)&&c(),x.value=setInterval(()=>{if(g){clearInterval(x.value),x.value=0;return}f()},v))}G(()=>m.value,_=>{_.length>0?(o||(o=ca({width:a,height:h,getX:y=>y.id,getY:y=>y.value}),t.value.appendChild(o.svg)),o.update(_)):o&&(t.value.removeChild(o.svg),o=null)});let v=50;return P(()=>{c();let{helpers:{getAllControllers:_}}=D({选择算法:{value:[i.label,e.map(C=>C.label)],onChange(C){let F=e.find(O=>O.label==C);u.value=F.value}},随机数个数:{value:[r,10,100,1],onFinishChange(C){r=C}},自动开始时间间隔:{value:[v,16,100,5],onFinishChange(C){v=C}},生成随机数:{value:[function(){c()}],disable:x.value!=0},排序下一步:{value:[function(){f()}],disable:!d.value||x.value!=0},自动开始(){b()},查看源码(){s("check-source")}}),y=G(x,C=>{_().forEach(F=>{F.property!="查看源码"&&F.disable(C>0)})});A(()=>{y(),clearInterval(x.value)})}),(_,y)=>(E(),M("div",ma,[H("div",{ref_key:"node",ref:t},null,512)]))}}),ga=q(pa,[["__scopeId","data-v-698136a6"]]),va=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 /**
  * 根据传入数组，经过冒泡排序每个步骤后,
@@ -2684,7 +2743,7 @@ export default function* bubbleSort<D>(arr: D[], selector?: (item: D) => any) {
     }
   }
 }
-`,ga=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,xa=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 /**
  * 根据传入数组，经过选择排序每个步骤后,
@@ -2707,7 +2766,7 @@ export default function* selectionSort<D>(arr: D[], selector?: (item: D) => any)
     yield [...arr]
   }
 }
-`,va=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,ya=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 
 /**
@@ -2738,7 +2797,7 @@ export default function* insertSort<D>(arr: D[], selector?: (item: D) => any) {
     }
   }
 }
-`,xa=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,ba=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 
 // function mergeSort<D>(arr: D[], selector?: (item: D) => any) {
@@ -2867,7 +2926,7 @@ export default function* mergeSort<D>(arr: D[], selector?: (item: D) => any) {
   }
   yield* split(0, arr.length - 1)
 }
-`,ya="/demo/assets/imgs/display-B3luB7Uf.png",ba={codes:[{name:"index.vue",code:la,lang:"js"},{name:"bubble.ts",code:pa,lang:"ts"},{name:"selection.ts",code:ga,lang:"ts"},{name:"insertion.ts",code:va,lang:"ts"},{name:"merge.ts",code:xa,lang:"ts"}],component:ma,display:ya,title:"排序算法可视化",descriptions:""},_a=`<template>
+`,_a="/demo/assets/imgs/display-B3luB7Uf.png",wa={codes:[{name:"index.vue",code:oa,lang:"js"},{name:"bubble.ts",code:va,lang:"ts"},{name:"selection.ts",code:xa,lang:"ts"},{name:"insertion.ts",code:ya,lang:"ts"},{name:"merge.ts",code:ba,lang:"ts"}],component:ga,display:_a,title:"排序算法可视化",descriptions:""},Sa=`<template>
   <div class="box">
     <el-card class="demo-card" shadow="always">
       <div style="display:flex;">
@@ -2995,7 +3054,7 @@ useGui({
   }
 }
 </style>
-`,wa=`import { easeOutCubic } from './ease'
+`,Ca=`import { easeOutCubic } from './ease'
 import { isDef } from '@/utils/utils'
 
 enum State {
@@ -3142,7 +3201,7 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
     draw
   }
 }
-`;function Ra(l){return 1-Math.pow(1-l,3)}var en=(l=>(l[l.NORMAL=0]="NORMAL",l[l.REVERSE=1]="REVERSE",l))(en||{});function Sa(l,n){let{startIndex:s=0,speed:t=1,onDone:e,onProcessing:a}=n,o=s,r,i;const c=m=>{cn(m)&&(i=Math.ceil(800/m))},g=()=>{r&&(cancelAnimationFrame(r),r=0)};c(t);function d(m){g();let{direction:f,speed:x,startIndex:b}=m,v;c(x),cn(b)&&(o=b);const w=y=>{v||(v=y),y-v>=i&&(f==0?o=(o+1)%l.length:o=o-1>=0?o-1:l.length-1,a(o),v=y),r=requestAnimationFrame(w)};r||(r=requestAnimationFrame(w))}function p(){g()}function u(m){g();let{loopTimes:f=5,targetIndex:x=l.length-1,direction:b,speed:v,startIndex:w}=m||{};f=Math.max(Math.ceil(Number(f)),1),x=Math.max(0,Math.min(Number(x),l.length-1)),c(v),cn(w)&&(o=w);let y=o,S,E=x-y;b==0?S=y+f*l.length+(E>=0?E:l.length+E):S=y-f*l.length+(E<=0?E:-l.length+E);let O=Math.abs(S-y)*i,h;const R=T=>{h||(h=T);let M=Math.min(1,(T-h)/O),B=(Math.ceil(Ra(M)*(S-y))+y)%l.length;if(B<0&&(B+=l.length),o!=B&&(o=B,a(o)),M==1){e(o),r=0;return}r=requestAnimationFrame(R)};r=requestAnimationFrame(R)}return{wander:d,stop:p,draw:u}}const Ca={class:"box"},Ba={style:{display:"flex"}},Ia=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=C(1),e=[...Array(10)],a={targetIndex:2,loopTimes:2,direction:en.NORMAL,speed:5},{wander:o,stop:r,draw:i}=Sa(e,{speed:a.speed,startIndex:t.value,onProcessing:u=>{t.value=u},onDone(u){pn({showClose:!0,message:"已经抽奖完毕",type:"success",grouping:!0}),t.value=u}});function c(){o({...a})}function g(){i({...a})}P(()=>{r(),d&&clearTimeout(d)});let d;function p(){c(),d=setTimeout(()=>{a.targetIndex=$n(e),g(),d=0},2500)}return $({设定巡航速度:{value:[a.speed,1,10,1],onFinishChange(u){a.speed=u}},设定最终选中项索引:{value:[a.targetIndex,0,e.length-1,1],onFinishChange(u){a.targetIndex=u}},轮转次数:{value:[a.loopTimes,2,20,1],onFinishChange(u){a.loopTimes=u}},轮转方向:{value:[a.direction==en.NORMAL?"正向":"负向",["正向","负向"]],onChange(u){a.direction=u=="正向"?en.NORMAL:en.REVERSE}},开始抽奖:g,开始巡航:c,停止:r,模拟接口返回预制数据:p,查看源码(){s("check-source")}}),(u,m)=>{const f=zn;return j(),F("div",Ca,[W(f,{class:"demo-card",shadow:"always"},{default:A(()=>[G("div",Ba,[(j(),F(X,null,tn(e,(x,b)=>G("div",{class:ln(["block",K(t)==b?"selected":""])},un(b),3)),64))])]),_:1})])}}}),ka=q(Ia,[["__scopeId","data-v-2fa66777"]]),ja="/demo/assets/imgs/display-DiF1Sfat.png",Ea={codes:[{name:"index.vue",code:_a,lang:"js"},{name:"draw-price.ts",code:wa,lang:"ts"}],component:ka,display:ja,title:"抽奖",descriptions:""},Fa=`<template>
+`;function Ra(l){return 1-Math.pow(1-l,3)}var tn=(l=>(l[l.NORMAL=0]="NORMAL",l[l.REVERSE=1]="REVERSE",l))(tn||{});function Ba(l,n){let{startIndex:s=0,speed:t=1,onDone:e,onProcessing:i}=n,u=s,o,a;const h=c=>{un(c)&&(a=Math.ceil(800/c))},g=()=>{o&&(cancelAnimationFrame(o),o=0)};h(t);function r(c){g();let{direction:f,speed:x,startIndex:b}=c,v;h(x),un(b)&&(u=b);const _=y=>{v||(v=y),y-v>=a&&(f==0?u=(u+1)%l.length:u=u-1>=0?u-1:l.length-1,i(u),v=y),o=requestAnimationFrame(_)};o||(o=requestAnimationFrame(_))}function m(){g()}function d(c){g();let{loopTimes:f=5,targetIndex:x=l.length-1,direction:b,speed:v,startIndex:_}=c||{};f=Math.max(Math.ceil(Number(f)),1),x=Math.max(0,Math.min(Number(x),l.length-1)),h(v),un(_)&&(u=_);let y=u,C,F=x-y;b==0?C=y+f*l.length+(F>=0?F:l.length+F):C=y-f*l.length+(F<=0?F:-l.length+F);let O=Math.abs(C-y)*a,I;const p=S=>{I||(I=S);let T=Math.min(1,(S-I)/O),R=(Math.ceil(Ra(T)*(C-y))+y)%l.length;if(R<0&&(R+=l.length),u!=R&&(u=R,i(u)),T==1){e(u),o=0;return}o=requestAnimationFrame(p)};o=requestAnimationFrame(p)}return{wander:r,stop:m,draw:d}}const ka={class:"box"},Ia={style:{display:"flex"}},ja=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n,t=B(1),e=[...Array(10)],i={targetIndex:2,loopTimes:2,direction:tn.NORMAL,speed:5},{wander:u,stop:o,draw:a}=Ba(e,{speed:i.speed,startIndex:t.value,onProcessing:d=>{t.value=d},onDone(d){gn({showClose:!0,message:"已经抽奖完毕",type:"success",grouping:!0}),t.value=d}});function h(){u({...i})}function g(){a({...i})}A(()=>{o(),r&&clearTimeout(r)});let r;function m(){h(),r=setTimeout(()=>{i.targetIndex=Dn(e),g(),r=0},2500)}return D({设定巡航速度:{value:[i.speed,1,10,1],onFinishChange(d){i.speed=d}},设定最终选中项索引:{value:[i.targetIndex,0,e.length-1,1],onFinishChange(d){i.targetIndex=d}},轮转次数:{value:[i.loopTimes,2,20,1],onFinishChange(d){i.loopTimes=d}},轮转方向:{value:[i.direction==tn.NORMAL?"正向":"负向",["正向","负向"]],onChange(d){i.direction=d=="正向"?tn.NORMAL:tn.REVERSE}},开始抽奖:g,开始巡航:h,停止:o,模拟接口返回预制数据:m,查看源码(){s("check-source")}}),(d,c)=>{const f=Nn;return E(),M("div",ka,[L(f,{class:"demo-card",shadow:"always"},{default:W(()=>[H("div",Ia,[(E(),M(Y,null,an(e,(x,b)=>H("div",{class:rn(["block",X(t)==b?"selected":""])},dn(b),3)),64))])]),_:1})])}}}),Ea=q(ja,[["__scopeId","data-v-2fa66777"]]),Fa="/demo/assets/imgs/display-DiF1Sfat.png",Ma={codes:[{name:"index.vue",code:Sa,lang:"js"},{name:"draw-price.ts",code:Ca,lang:"ts"}],component:Ea,display:Fa,title:"抽奖",descriptions:""},Oa=`<template>
   <div class="container">
     <div class="hive-row" :class="index % 2 == 1 ? 'odd' : ''" v-for="(sub, index) in imgs" @mouseenter="enter"
       @mouseleave="leave">
@@ -3264,7 +3323,7 @@ $rotate: rotateY(0deg);
   }
 }
 </style>
-`,Oa="/demo/assets/imgs/018194d9aac11f975e17b274fe4a78af1463731957-BlWzWTpc.png",Ta="/demo/assets/imgs/10251358673700483-Bf69morh.jpg",Ma="/demo/assets/imgs/10251358673922612-wa-5hia3.jpg",za="/demo/assets/imgs/10251381214893821-DZ0tyfKl.jpg",$a="/demo/assets/imgs/10251381215028477-DT0oxPDL.jpg",Na="/demo/assets/imgs/10251381215091916-34MSuKPK.jpg",Da="/demo/assets/imgs/10251381215152314-ZOViud5b.jpg",Pa="/demo/assets/imgs/10251381215208971-BnTSlzDn.jpg",Aa="/demo/assets/imgs/10251381215487222-CyoYfFWR.jpg",Wa="/demo/assets/imgs/10251381215991717-jivRh7vw.jpg",La="/demo/assets/imgs/10251381216212847-C6d5iI8I.jpg",Ga="/demo/assets/imgs/3a5950fc2408a7f8136de8704e1819c21463732075-DT6cAkAt.png",Ha="/demo/assets/imgs/48d780d33eaf46a5646376b814b8efa71463731556-CGACL27Z.png",qa="/demo/assets/imgs/554e21161de34506e9cb1ecbcd85716d1463732343-LZH7KjnQ.png",Va="/demo/assets/imgs/884f9b653e317cc514890954b2e35be81463731323-DvATjqjX.png",Ka="/demo/assets/imgs/8a116da0668edebd82af16ecf7e75ace1590566316-Cl-PTpZA.jpg",Ua="/demo/assets/imgs/928d6ec50975da022bda97a1ab8f04c81463731839-d_LHiOEG.png",Xa="/demo/assets/imgs/a748932756b48bd46a8fd17df4579dea1463732104-DlsyWN-A.png",Ya="/demo/assets/imgs/b5978ead603dcdc66704e721960debe31590565987-4RsIwXgW.jpg",Qa="/demo/assets/imgs/c06f07de280d4edebf801eef4b142c721463731804-DD1ps6p3.png",Za="/demo/assets/imgs/ceb8c078cf6b410d7def183870fe584d1590566557-9BfKn2sf.jpg",Ja="/demo/assets/imgs/ea5871bc33e131b497b9bb273890e8ae1463731875-WWF6WmyZ.png",ni="/demo/assets/imgs/f29af13446f1feed47dcfd299ccaa23c1463732001-DrhlCMaO.png",ei="/demo/assets/imgs/fef4eadd191c3461054ca60cde8576db1590566398-Bn18syhQ.jpg",ti={class:"container"},ai=["src"],ii=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=[...Object.values([Oa,Ta,Ma,za,$a,Na,Da,Pa,Aa,Wa,La,Ga,Ha,qa,Va,Ka,Ua,Xa,Ya,Qa,Za,Ja,ni,ei])];t=C(Ke(t,Math.ceil(t.length/5))),$({查看源码(){s("check-source")}});function a(r){r.target.classList.add("level-up")}function o(r){r.target.classList.remove("level-up")}return(r,i)=>(j(),F("div",ti,[(j(!0),F(X,null,tn(K(t),(c,g)=>(j(),F("div",{class:ln(["hive-row",g%2==1?"odd":""]),onMouseenter:a,onMouseleave:o},[(j(!0),F(X,null,tn(c,d=>(j(),F("img",{class:"hive-item",src:d,alt:""},null,8,ai))),256))],34))),256))]))}}),si=q(ii,[["__scopeId","data-v-93867a89"]]),li="/demo/assets/imgs/display-BVEemRNY.png",ri={codes:[{name:"index.vue",code:Fa,lang:"js"}],component:si,display:li,title:"蜂巢图片",descriptions:""},oi=`<template>
+`,Ta="/demo/assets/imgs/018194d9aac11f975e17b274fe4a78af1463731957-BlWzWTpc.png",za="/demo/assets/imgs/10251358673700483-Bf69morh.jpg",$a="/demo/assets/imgs/10251358673922612-wa-5hia3.jpg",Na="/demo/assets/imgs/10251381214893821-DZ0tyfKl.jpg",Da="/demo/assets/imgs/10251381215028477-DT0oxPDL.jpg",Pa="/demo/assets/imgs/10251381215091916-34MSuKPK.jpg",Aa="/demo/assets/imgs/10251381215152314-ZOViud5b.jpg",Wa="/demo/assets/imgs/10251381215208971-BnTSlzDn.jpg",La="/demo/assets/imgs/10251381215487222-CyoYfFWR.jpg",Ga="/demo/assets/imgs/10251381215991717-jivRh7vw.jpg",Ha="/demo/assets/imgs/10251381216212847-C6d5iI8I.jpg",Va="/demo/assets/imgs/3a5950fc2408a7f8136de8704e1819c21463732075-DT6cAkAt.png",qa="/demo/assets/imgs/48d780d33eaf46a5646376b814b8efa71463731556-CGACL27Z.png",Ka="/demo/assets/imgs/554e21161de34506e9cb1ecbcd85716d1463732343-LZH7KjnQ.png",Xa="/demo/assets/imgs/884f9b653e317cc514890954b2e35be81463731323-DvATjqjX.png",Ua="/demo/assets/imgs/8a116da0668edebd82af16ecf7e75ace1590566316-Cl-PTpZA.jpg",Ya="/demo/assets/imgs/928d6ec50975da022bda97a1ab8f04c81463731839-d_LHiOEG.png",Qa="/demo/assets/imgs/a748932756b48bd46a8fd17df4579dea1463732104-DlsyWN-A.png",Za="/demo/assets/imgs/b5978ead603dcdc66704e721960debe31590565987-4RsIwXgW.jpg",Ja="/demo/assets/imgs/c06f07de280d4edebf801eef4b142c721463731804-DD1ps6p3.png",ni="/demo/assets/imgs/ceb8c078cf6b410d7def183870fe584d1590566557-9BfKn2sf.jpg",ei="/demo/assets/imgs/ea5871bc33e131b497b9bb273890e8ae1463731875-WWF6WmyZ.png",ti="/demo/assets/imgs/f29af13446f1feed47dcfd299ccaa23c1463732001-DrhlCMaO.png",ai="/demo/assets/imgs/fef4eadd191c3461054ca60cde8576db1590566398-Bn18syhQ.jpg",ii={class:"container"},si=["src"],li=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=n;let t=[...Object.values([Ta,za,$a,Na,Da,Pa,Aa,Wa,La,Ga,Ha,Va,qa,Ka,Xa,Ua,Ya,Qa,Za,Ja,ni,ei,ti,ai])];t=B(Ue(t,Math.ceil(t.length/5))),D({查看源码(){s("check-source")}});function i(o){o.target.classList.add("level-up")}function u(o){o.target.classList.remove("level-up")}return(o,a)=>(E(),M("div",ii,[(E(!0),M(Y,null,an(X(t),(h,g)=>(E(),M("div",{class:rn(["hive-row",g%2==1?"odd":""]),onMouseenter:i,onMouseleave:u},[(E(!0),M(Y,null,an(h,r=>(E(),M("img",{class:"hive-item",src:r,alt:""},null,8,si))),256))],34))),256))]))}}),ri=q(li,[["__scopeId","data-v-93867a89"]]),oi="/demo/assets/imgs/display-BVEemRNY.png",ci={codes:[{name:"index.vue",code:Oa,lang:"js"}],component:ri,display:oi,title:"蜂巢图片",descriptions:""},ui=`<template>
   <div class="box">
     <canvas ref="canvas"></canvas>
   </div>
@@ -3323,7 +3382,7 @@ canvas {
   display: block;
 }
 </style>
-`,ci=`import { isFunc } from '@/utils/utils'
+`,di=`import { isFunc } from '@/utils/utils'
 
 type SceneOptions = {
   width: number;
@@ -3427,7 +3486,7 @@ export class Scene {
     }
   }
 }
-`,ui=`import type { SceneInstance, SceneObj } from "./scene"
+`,hi=`import type { SceneInstance, SceneObj } from "./scene"
 import { randArr, randomInt } from "@/utils/utils"
 
 const textPool = [...Array(26)].map((item, index) => {
@@ -3576,4 +3635,4 @@ export class TextRain {
     this.scene.stop()
   }
 }
-`;class di{constructor(n){_(this,"canvas");_(this,"ctx");_(this,"width",0);_(this,"height",0);_(this,"background");_(this,"_t0",0);_(this,"_t1",0);_(this,"_dt",0);_(this,"_objects",[]);_(this,"_raf",0);let{width:s,height:t,canvas:e,background:a}=n;this.canvas=e,this.ctx=e.getContext("2d"),this.background=a??"#000",this.setSize(s,t)}setSize(n,s){this.canvas.width=n,this.canvas.height=s,this.width=n,this.height=s}_render(){let{width:n,height:s,ctx:t,background:e}=this;t.fillStyle=e,t.fillRect(0,0,n,s);for(let a of[...this._objects])a.render(this._dt)}_updateTime(n){this._t0==0&&(this._t0=n),this._dt=n-this._t0}run(n){const s=t=>{this._updateTime(t),rn(n)&&n(this._dt),this._render(),this._raf=requestAnimationFrame(s)};this._raf=requestAnimationFrame(s)}addObj(...n){return n.forEach(s=>{this._objects.find(t=>t==s)||(this._objects.push(s),s.scene=this)}),this}removeObj(n){let s=this._objects.findIndex(t=>t==n);return s!=-1&&(this._objects.splice(s,1),n.scene==this&&(n.scene=null)),this}stop(){this._raf&&(cancelAnimationFrame(this._raf),this._t0=0,this._t1=0,this._dt=0)}}const hi=[...Array(26)].map((l,n)=>["a","A"].map(s=>String.fromCharCode(s.charCodeAt(0)+n))).flat();function fi(){return[...Array(Z(8)+2)].map(()=>Nn(hi)).join("")}class mi{constructor(n){_(this,"_x");_(this,"_y");_(this,"_text");_(this,"_opacity");_(this,"_onDismiss");_(this,"scene");_(this,"_opacityDecay");_(this,"_rawOptions");_(this,"_yStep");_(this,"_font","20px serif");_(this,"_fillStyle","red");let{x:s,y:t,text:e,opacity:a,opacityDecay:o,onDismiss:r,yStep:i}=n;this._x=s,this._y=t,this._text=e,this._opacity=a,this._onDismiss=r,this._opacityDecay=o??.01,this._rawOptions={...n},this._yStep=i??4}setFont(n,s){return this._font=n,this._fillStyle=s,this}render(n){let{_text:s,_x:t,_y:e,_opacityDecay:a,_yStep:o,_fillStyle:r,_font:i}=this,{ctx:c,height:g}=this.scene,d={font:c.font,fillStyle:c.fillStyle,globalAlpha:c.globalAlpha};this._opacity-=typeof a=="number"?a:a(n),this._opacity<0&&(this._opacity=0),c.font=i,c.fillStyle=r,c.globalAlpha=this._opacity;let p=0,u=e+(typeof o=="number"?o:o(n));for(let m of s){let f=c.measureText(m);const{actualBoundingBoxAscent:x,actualBoundingBoxDescent:b}=f;let v=b+x;c.fillText(m,t,u-p),p+=v+10}this._y=u,Object.assign(c,d),(this._opacity==0||u-p>g)&&this._onDismiss(this)}}class pi{constructor(n){_(this,"scene");_(this,"num",0);_(this,"maxNum",100);_(this,"colors",["brown","red","green","yellow","chocolate","pink","burlywood","chartreuse","cyan"]);let{scene:s,maxNum:t}=n;this.scene=s,t&&(this.maxNum=t)}addText(){if(this.num<this.maxNum){this.num++;let{width:n,height:s}=this.scene,t=new mi({text:fi(),x:Z(n),y:Z(s),yStep:Z(10)+2,opacity:+Math.min(1,Math.random()+.2).toPrecision(2),opacityDecay:.01,onDismiss:e=>{this.scene.removeObj(e),this.num--}}).setFont(`${Z(15)+14}px serif`,Nn(this.colors));this.scene.addObj(t)}}start(){this.scene.run(n=>{this.addText()})}stop(){this.scene.stop()}}function gi(l,n,s){l.addEventListener("resize",n),P(()=>{l.removeEventListener("resize",n)})}const vi={class:"box"},xi=z({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=C(),t=n;return D(()=>{let e=new di({width:innerWidth,height:innerHeight,canvas:s.value}),{obj:a}=$({文字串数量:{value:[10,10,200,10],onChange(r){o.maxNum=r}},查看代码:function(){t("check-source")}}),o=new pi({scene:e,maxNum:a.文字串数量});o.start(),gi(window,()=>{e.setSize(innerWidth,innerHeight)}),P(()=>{o.stop()})}),(e,a)=>(j(),F("div",vi,[G("canvas",{ref_key:"canvas",ref:s},null,512)]))}}),yi=q(xi,[["__scopeId","data-v-4010e3a7"]]),bi="/demo/assets/imgs/display-DwV-CRAI.png",_i={codes:[{name:"index.vue",code:oi,lang:"js"},{name:"scene.ts",code:ci,lang:"ts"},{name:"textRain.ts",code:ui,lang:"ts"}],component:yi,display:bi,title:"文字雨",descriptions:""};let on;function Dn(){return on||(on=Object.assign({"./demo/canvas/audio-wave/config.ts":He,"./demo/canvas/bfs/config.ts":Ze,"./demo/canvas/chasing/config.ts":tt,"./demo/canvas/connect-balls/config.ts":lt,"./demo/canvas/coord/config.ts":dt,"./demo/canvas/dfs/config.ts":vt,"./demo/canvas/eyeballs/config.ts":_t,"./demo/canvas/faliling-balls/config.ts":It,"./demo/canvas/friction/config.ts":Ft,"./demo/canvas/noise/config.ts":zt,"./demo/canvas/text-particle/config.ts":Ht,"./demo/canvas/wander-balls/config.ts":Ut,"./demo/css/blur/config.ts":na,"./demo/css/shadow/config.ts":sa,"./demo/d3/sort/config.ts":ba,"./demo/draw-price/config.ts":Ea,"./demo/hive/config.ts":ri,"./demo/text-rain/config.ts":_i}),on)}let Pn=[];function wi(){const l=Dn();for(let n in l){let{codes:s,component:t,title:e}=l[n],a=function(){return In(ze,{codes:s},({checkSource:i})=>In(t,{onCheckSource:()=>{i()}}))};a.displayName=`Demo(${n})`;let o=n.replace(/.*\/demo\//,"").replace("/config.ts","").split("/").join("-");l[n].routeName=o,Pn.push({path:o,name:o,component:a,meta:{title:e}})}}wi();const Ri={path:"/demo",children:Pn},Si={class:"common-layout"},Ci=z({__name:"index",setup(l){let n=Object.values(Dn());return(s,t)=>{const e=be,a=_e,o=zn,r=ye,i=xe,c=ve,g=we;return j(),F("div",Si,[W(g,{class:"container"},{default:A(()=>[W(c,{class:"main"},{default:A(()=>[W(i,{class:"row",gutter:20},{default:A(()=>[(j(!0),F(X,null,tn(K(n),d=>(j(),vn(r,{key:d.routeName,span:4},{default:A(()=>[W(o,{class:"demo-card","body-style":{padding:"0px"},shadow:"always",onClick:p=>s.$router.push({name:d.routeName})},{footer:A(()=>[W(a,{tag:"p"},{default:A(()=>[dn(un(d.title),1)]),_:2},1024),W(a,{tag:"p","line-clamp":2},{default:A(()=>[dn(un(d.descriptions||"暂无描述"),1)]),_:2},1024)]),default:A(()=>[W(e,{class:"image",src:d.display,fit:"cover"},null,8,["src"])]),_:2},1032,["onClick"])]),_:2},1024))),128))]),_:1})]),_:1})]),_:1})])}}}),Bi=q(Ci,[["__scopeId","data-v-fe2c6a64"]]),An=Re({history:Se("/demo/"),routes:[{path:"/",component:Bi},Ri]});An.beforeEach((l,n,s)=>{document.title=l.meta.title??"my demos",s()});const Rn=Ce(je);Rn.use(Be());Rn.use(An);Rn.mount("#app");
+`;class fi{constructor(n){w(this,"canvas");w(this,"ctx");w(this,"width",0);w(this,"height",0);w(this,"background");w(this,"_t0",0);w(this,"_t1",0);w(this,"_dt",0);w(this,"_objects",[]);w(this,"_raf",0);let{width:s,height:t,canvas:e,background:i}=n;this.canvas=e,this.ctx=e.getContext("2d"),this.background=i??"#000",this.setSize(s,t)}setSize(n,s){this.canvas.width=n,this.canvas.height=s,this.width=n,this.height=s}_render(){let{width:n,height:s,ctx:t,background:e}=this;t.fillStyle=e,t.fillRect(0,0,n,s);for(let i of[...this._objects])i.render(this._dt)}_updateTime(n){this._t0==0&&(this._t0=n),this._dt=n-this._t0}run(n){const s=t=>{this._updateTime(t),on(n)&&n(this._dt),this._render(),this._raf=requestAnimationFrame(s)};this._raf=requestAnimationFrame(s)}addObj(...n){return n.forEach(s=>{this._objects.find(t=>t==s)||(this._objects.push(s),s.scene=this)}),this}removeObj(n){let s=this._objects.findIndex(t=>t==n);return s!=-1&&(this._objects.splice(s,1),n.scene==this&&(n.scene=null)),this}stop(){this._raf&&(cancelAnimationFrame(this._raf),this._t0=0,this._t1=0,this._dt=0)}}const mi=[...Array(26)].map((l,n)=>["a","A"].map(s=>String.fromCharCode(s.charCodeAt(0)+n))).flat();function pi(){return[...Array(Z(8)+2)].map(()=>Pn(mi)).join("")}class gi{constructor(n){w(this,"_x");w(this,"_y");w(this,"_text");w(this,"_opacity");w(this,"_onDismiss");w(this,"scene");w(this,"_opacityDecay");w(this,"_rawOptions");w(this,"_yStep");w(this,"_font","20px serif");w(this,"_fillStyle","red");let{x:s,y:t,text:e,opacity:i,opacityDecay:u,onDismiss:o,yStep:a}=n;this._x=s,this._y=t,this._text=e,this._opacity=i,this._onDismiss=o,this._opacityDecay=u??.01,this._rawOptions={...n},this._yStep=a??4}setFont(n,s){return this._font=n,this._fillStyle=s,this}render(n){let{_text:s,_x:t,_y:e,_opacityDecay:i,_yStep:u,_fillStyle:o,_font:a}=this,{ctx:h,height:g}=this.scene,r={font:h.font,fillStyle:h.fillStyle,globalAlpha:h.globalAlpha};this._opacity-=typeof i=="number"?i:i(n),this._opacity<0&&(this._opacity=0),h.font=a,h.fillStyle=o,h.globalAlpha=this._opacity;let m=0,d=e+(typeof u=="number"?u:u(n));for(let c of s){let f=h.measureText(c);const{actualBoundingBoxAscent:x,actualBoundingBoxDescent:b}=f;let v=b+x;h.fillText(c,t,d-m),m+=v+10}this._y=d,Object.assign(h,r),(this._opacity==0||d-m>g)&&this._onDismiss(this)}}class vi{constructor(n){w(this,"scene");w(this,"num",0);w(this,"maxNum",100);w(this,"colors",["brown","red","green","yellow","chocolate","pink","burlywood","chartreuse","cyan"]);let{scene:s,maxNum:t}=n;this.scene=s,t&&(this.maxNum=t)}addText(){if(this.num<this.maxNum){this.num++;let{width:n,height:s}=this.scene,t=new gi({text:pi(),x:Z(n),y:Z(s),yStep:Z(10)+2,opacity:+Math.min(1,Math.random()+.2).toPrecision(2),opacityDecay:.01,onDismiss:e=>{this.scene.removeObj(e),this.num--}}).setFont(`${Z(15)+14}px serif`,Pn(this.colors));this.scene.addObj(t)}}start(){this.scene.run(n=>{this.addText()})}stop(){this.scene.stop()}}function xi(l,n,s){l.addEventListener("resize",n),A(()=>{l.removeEventListener("resize",n)})}const yi={class:"box"},bi=$({__name:"index",emits:["check-source"],setup(l,{emit:n}){const s=B(),t=n;return P(()=>{let e=new fi({width:innerWidth,height:innerHeight,canvas:s.value}),{obj:i}=D({文字串数量:{value:[10,10,200,10],onChange(o){u.maxNum=o}},查看代码:function(){t("check-source")}}),u=new vi({scene:e,maxNum:i.文字串数量});u.start(),xi(window,()=>{e.setSize(innerWidth,innerHeight)}),A(()=>{u.stop()})}),(e,i)=>(E(),M("div",yi,[H("canvas",{ref_key:"canvas",ref:s},null,512)]))}}),_i=q(bi,[["__scopeId","data-v-4010e3a7"]]),wi="/demo/assets/imgs/display-DwV-CRAI.png",Si={codes:[{name:"index.vue",code:ui,lang:"js"},{name:"scene.ts",code:di,lang:"ts"},{name:"textRain.ts",code:hi,lang:"ts"}],component:_i,display:wi,title:"文字雨",descriptions:""};let cn;function An(){return cn||(cn=Object.assign({"./demo/canvas/audio-wave/config.ts":qe,"./demo/canvas/bfs/config.ts":nt,"./demo/canvas/chasing/config.ts":it,"./demo/canvas/connect-balls/config.ts":ot,"./demo/canvas/coord/config.ts":ft,"./demo/canvas/dfs/config.ts":yt,"./demo/canvas/eyeballs/config.ts":St,"./demo/canvas/faliling-balls/config.ts":jt,"./demo/canvas/friction/config.ts":Ot,"./demo/canvas/noise/config.ts":Nt,"./demo/canvas/text-particle/config.ts":qt,"./demo/canvas/wander-balls/config.ts":Yt,"./demo/css/blur/config.ts":ta,"./demo/css/shadow/config.ts":ra,"./demo/d3/sort/config.ts":wa,"./demo/draw-price/config.ts":Ma,"./demo/hive/config.ts":ci,"./demo/text-rain/config.ts":Si}),cn)}let Wn=[];function Ci(){const l=An();for(let n in l){let{codes:s,component:t,title:e}=l[n],i=function(){return In(Ne,{codes:s},({checkSource:a})=>In(t,{onCheckSource:()=>{a()}}))};i.displayName=`Demo(${n})`;let u=n.replace(/.*\/demo\//,"").replace("/config.ts","").split("/").join("-");l[n].routeName=u,Wn.push({path:u,name:u,component:i,meta:{title:e}})}}Ci();const Ri={path:"/demo",children:Wn},Bi={class:"common-layout"},ki=$({__name:"index",setup(l){let n=Object.values(An());return(s,t)=>{const e=we,i=Se,u=Nn,o=_e,a=be,h=ye,g=Ce;return E(),M("div",Bi,[L(g,{class:"container"},{default:W(()=>[L(h,{class:"main"},{default:W(()=>[L(a,{class:"row",gutter:20},{default:W(()=>[(E(!0),M(Y,null,an(X(n),r=>(E(),xn(o,{key:r.routeName,span:4},{default:W(()=>[L(u,{class:"demo-card","body-style":{padding:"0px"},shadow:"always",onClick:m=>s.$router.push({name:r.routeName})},{footer:W(()=>[L(i,{tag:"p"},{default:W(()=>[hn(dn(r.title),1)]),_:2},1024),L(i,{tag:"p","line-clamp":2},{default:W(()=>[hn(dn(r.descriptions||"暂无描述"),1)]),_:2},1024)]),default:W(()=>[L(e,{class:"image",src:r.display,fit:"cover"},null,8,["src"])]),_:2},1032,["onClick"])]),_:2},1024))),128))]),_:1})]),_:1})]),_:1})])}}}),Ii=q(ki,[["__scopeId","data-v-fe2c6a64"]]),Ln=Re({history:Be("/demo/"),routes:[{path:"/",component:Ii},Ri]});Ln.beforeEach((l,n,s)=>{document.title=l.meta.title??"my demos",s()});const Cn=ke(Fe);Cn.use(Ie());Cn.use(Ln);Cn.mount("#app");
