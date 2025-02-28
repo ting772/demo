@@ -32,3 +32,12 @@ export function reusableArray<T>(createFn: () => T) {
 
   return get
 }
+
+/**
+ * 将n1对齐到n2的整数倍
+ * @param n1 被对齐的数
+ * @param n2 用来对齐的数
+ */
+export function alignBy(n1: number, n2: number) {
+  return ~~(n1 / n2) * n2
+}
