@@ -6,6 +6,7 @@ import useGui from '@/hooks/useLilGui'
 import { alignBy } from '@/utils/utils'
 import { setupGrid, setElement } from '@thing772/utils'
 import { dfsGenerator, type Index, dfs } from './dfs'
+import useTimer from '@/hooks/useTimer'
 
 const emit = defineEmits<{
   (e: 'check-source'): void
@@ -113,14 +114,7 @@ watch([start, end], () => {
   it = dfsGenerator(start, end, xMax, yMax)
 })
 
-let timer = ref(0)
-
-watch(timer, (newV, oldV) => {
-  if (newV == 0 && oldV > 0) {
-    clearInterval(oldV)
-  }
-}, { flush: 'sync' })
-
+let timer = useTimer()
 const itv = shallowRef()
 
 function drawNode(v: any) {
@@ -242,9 +236,5 @@ onMounted(() => {
     Object.assign(end, { x: ~~(xMax! / 2), y: ~~(yMax! / 2) })
   })
   it = dfsGenerator(start, end, xMax, yMax)
-
-  onBeforeUnmount(() => {
-    timer.value = 0
-  })
 })
 </script>
