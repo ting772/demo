@@ -41,3 +41,18 @@ export function reusableArray<T>(createFn: () => T) {
 export function alignBy(n1: number, n2: number) {
   return ~~(n1 / n2) * n2
 }
+
+/**
+ * 从给定点pos，沿着direction向量指定的方向，移动length
+ * @param pos
+ * @param direction
+ * @param length
+ */
+export function movePtWithDirection(pos: { x: number; y: number; }, direction: { dx: number; dy: number }, length: number) {
+  let { dx, dy } = direction
+  let len = Math.sqrt(dx ** 2 + dy ** 2)
+  return {
+    x: pos.x + (dx * length / len),
+    y: pos.y + (dy * length / len)
+  }
+}
