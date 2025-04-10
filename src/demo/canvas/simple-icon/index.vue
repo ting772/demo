@@ -4,10 +4,6 @@
 </template>
 <script setup lang="ts">
 import useGui from '@/hooks/useLilGui'
-import { alignBy } from '@/utils/utils'
-import { setupGrid, setElement, rafLoop } from '@thing772/utils'
-import { bfsGenerator, type Index, bfs } from './bfs'
-import useTimer from '@/hooks/useTimer'
 
 const emit = defineEmits<{
   (e: 'check-source'): void
@@ -17,7 +13,7 @@ let bg = '#cbc262', color = '#fff', fontSize = 26
 let radius = 10
 let w = 64, h = 64
 const canvasRef = ref()
-let canvas, ctx
+let canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D
 let text = ref('')
 
 function onEnter() {
@@ -43,14 +39,14 @@ useGui({
   },
   设置文字大小: {
     value: [fontSize, 14, 30, 1],
-    onChange(n: string) {
+    onChange(n: number) {
       fontSize = n
       draw()
     }
   },
   设置尺寸: {
     value: [w, 32, 64, 1],
-    onChange(n: string) {
+    onChange(n: number) {
       w = n
       h = n
       canvas.width = w
@@ -60,7 +56,7 @@ useGui({
   },
   设置圆角: {
     value: [radius, 0, 100, 1],
-    onChange(n: string) {
+    onChange(n: number) {
       radius = n
       draw()
     }
@@ -73,7 +69,7 @@ useGui({
   }
 })
 
-function download(canvas) {
+function download(canvas: HTMLCanvasElement) {
   let url = canvas.toDataURL()
   let a = document.createElement('a')
   a.download = 'icon.png'
@@ -123,7 +119,7 @@ onMounted(() => {
   canvas = canvasRef.value
   canvas.width = w
   canvas.height = h
-  ctx = canvas.getContext('2d')
+  ctx = canvas.getContext('2d')!
   draw()
 })
 
