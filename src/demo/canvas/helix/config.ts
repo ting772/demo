@@ -12,6 +12,6 @@ export default {
   ],
   component,
   display,
-  title: "射线效果",
+  title: "螺旋线",
   descriptions: ""
 }

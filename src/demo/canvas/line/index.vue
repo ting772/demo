@@ -132,11 +132,6 @@ onMounted(() => {
     lengthArgs: [1, 20, false]
   }, 100)
 
-  let group4 = generateRoundPointLines({ x: w / 2, y: h / 2 }, Math.min(w, h) / 2 - 300, {
-    step1Args: [0.1, 2, false],
-    lengthArgs: [1, 20, false]
-  }, 100)
-
   let lines = group1.concat(group2, group2, group3)
 
   const stopAni = rafLoop(() => {
