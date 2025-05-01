@@ -5,7 +5,7 @@
  * @returns
  */
 export default function () {
-  let timer = ref(0)
+  const timer = ref(0)
 
   watch(timer, (newV, oldV) => {
     if (newV == 0 && oldV > 0) {

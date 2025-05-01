@@ -12,7 +12,7 @@ const emit = defineEmits<{
   (e: 'check-source'): void
 }>()
 
-let { obj } = useGui({
+const { obj } = useGui({
   "添加box-shadow": {
     value: [false],
     onChange(v: boolean) { boxShadowFlag.value = v }

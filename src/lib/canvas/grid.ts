@@ -31,7 +31,7 @@ export class Grid {
   background: string = '#000';
 
   constructor(options: GridOptions) {
-    let {
+    const {
       canvas,
       width,
       height,
@@ -39,10 +39,10 @@ export class Grid {
       background
     } = options
 
-    let nx = Math.floor(width / gridSize)
-    let ny = Math.floor(height / gridSize)
-    let w = nx * gridSize
-    let h = ny * gridSize
+    const nx = Math.floor(width / gridSize)
+    const ny = Math.floor(height / gridSize)
+    const w = nx * gridSize
+    const h = ny * gridSize
     canvas.width = w
     canvas.height = h
 
@@ -73,15 +73,15 @@ export class Grid {
       color = '#fff',
       size = this.gridSize,
     } = options
-    let { ctx } = this
-    let prevStyle = ctx.fillStyle
+    const { ctx } = this
+    const prevStyle = ctx.fillStyle
     ctx.fillStyle = color
     ctx.fillRect(this.posX2X(x), this.posY2Y(y), size * (w ?? 1), size * (h ?? 1))
     ctx.fillStyle = prevStyle
   }
 
   fresh() {
-    let { ctx, canvas } = this
+    const { ctx, canvas } = this
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.fillStyle = this.background
     ctx.fillRect(0, 0, canvas.width, canvas.height)

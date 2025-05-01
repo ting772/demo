@@ -14,7 +14,7 @@ type BallsWanderInRectOptions<T extends Ball> = {
 }
 
 export function ballsWanderInRect<T extends Ball>(options: BallsWanderInRectOptions<T>) {
-  let { canvas, ballsNum, createBallFac, onBallUpdate, speedDecay, preRender, postRender } = options
+  const { canvas, ballsNum, createBallFac, onBallUpdate, speedDecay, preRender, postRender } = options
   let w = canvas.width, h = canvas.height
   const ctx = canvas.getContext('2d')!
   let balls = [] as T[]
@@ -43,7 +43,7 @@ export function ballsWanderInRect<T extends Ball>(options: BallsWanderInRectOpti
 
   function render() {
     ctx.clearRect(0, 0, w, h)
-    for (let ball of balls) {
+    for (const ball of balls) {
       //如果定义运动方式
 
       if (isFunc(onBallUpdate)) {

@@ -62,7 +62,7 @@ let stopAni: ReturnType<typeof handle.start>
 const canvasRef = ref()
 let handle: ReturnType<typeof ballsWanderInRect>
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   let w = innerWidth
   let h = innerHeight
 
@@ -98,7 +98,7 @@ onMounted(() => {
 
   onUnmounted(() => {
     uninstall()
-    stopAni && stopAni()
+    if (stopAni) stopAni()
   })
 })
 </script>

@@ -73,7 +73,7 @@ const canvasRef = ref()
 let handle: ReturnType<typeof ballsWanderInRect<BallWithFriction>>
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   let w: number, h: number
   Object.assign(canvas, {
     width: w = innerWidth,
@@ -84,7 +84,7 @@ onMounted(() => {
     canvas,
     ballsNum,
     createBallFac: () => {
-      let options = {
+      const options = {
         x: randomBetween(10, w - 10),
         y: randomBetween(10, h - 10),
         r: randomBetween(1, r),
@@ -125,7 +125,7 @@ onMounted(() => {
 
   onUnmounted(() => {
     uninstall()
-    stopAni && stopAni()
+    if (stopAni) stopAni()
   })
 })
 </script>

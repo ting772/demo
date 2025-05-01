@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { getDemoConfig } from '@/loadDemo'
-let configs = Object.values(getDemoConfig())
+const configs = Object.values(getDemoConfig())
 </script>
 
 <style lang="scss" scoped>

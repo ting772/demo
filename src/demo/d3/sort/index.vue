@@ -49,14 +49,14 @@ interface Obj {
 }
 
 //排序算法生成器
-type Generator = (arr: Obj[], selector: (obj: Obj) => number) => { next: Function }
+type Generator = (arr: Obj[], selector: (obj: Obj) => number) => { next: any }
 
-let width = innerWidth - 100, height = innerHeight - 100
+const width = innerWidth - 100, height = innerHeight - 100
 let sortDone = false
 let count = 20
 
-let arr = shallowRef<Obj[]>([]);//待排序数组
-let it = shallowRef<ReturnType<Generator>>()//算法步骤迭代器
+const arr = shallowRef<Obj[]>([]);//待排序数组
+const it = shallowRef<ReturnType<Generator>>()//算法步骤迭代器
 
 function getNumbers() {
   //生成30个，0-1000的正整数
@@ -75,7 +75,7 @@ watch(algorithm, () => {
 
 //下一步迭代
 function next() {
-  let { value, done } = it.value!.next()
+  const { value, done } = it.value!.next()
   sortDone = done
   if (done) {
     ElMessage({
@@ -90,7 +90,7 @@ function next() {
   }
 }
 
-let timer = ref(0)
+const timer = ref(0)
 
 //生成随机整数数组并开始迭代
 function autoStart() {
@@ -136,11 +136,11 @@ let interval = 50
 
 onMounted(() => {
   getNumbers()
-  let { helpers: { getAllControllers } } = useGui({
+  const { helpers: { getAllControllers } } = useGui({
     选择算法: {
       value: [initItem.label, algorithms.map(item => item.label)],
       onChange(name: string) {
-        let item = algorithms.find(item => item.label == name)
+        const item = algorithms.find(item => item.label == name)
         algorithm.value = item!.value
       }
     },
@@ -177,7 +177,7 @@ onMounted(() => {
     }
   })
 
-  let unwatch = watch(timer, (n) => {
+  const unwatch = watch(timer, (n) => {
     getAllControllers()!.forEach((ctl) => {
       if (ctl.property != '查看源码')
         ctl.disable(n > 0)

@@ -16,13 +16,13 @@ const emit = defineEmits<{
 }>()
 
 onMounted(() => {
-  let scene = new Scene({
+  const scene = new Scene({
     width: innerWidth,
     height: innerHeight,
     canvas: canvas.value
   })
 
-  let { obj } = useGui({
+  const { obj } = useGui({
     文字串数量: {
       value: [10, 10, 200, 10],
       onChange(v: number) {
@@ -34,7 +34,7 @@ onMounted(() => {
     }
   })
 
-  let rain = new TextRain({ scene, maxNum: obj['文字串数量'] })
+  const rain = new TextRain({ scene, maxNum: obj['文字串数量'] })
   rain.start()
 
   useResize(window, () => {

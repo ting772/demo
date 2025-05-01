@@ -50,7 +50,7 @@ export class Ball {
 
   render(ctx: CanvasRenderingContext2D) {
     ctx.save();
-    let { x, y, r, styleOptions } = this;
+    const { x, y, r, styleOptions } = this;
     Object.assign(ctx, styleOptions);
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);

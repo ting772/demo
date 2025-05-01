@@ -13,7 +13,8 @@ const emit = defineEmits<{
 }>()
 
 type ExtendParticle = Particle & { originPos: { x: number; y: number; } }
-let nRow = 20, nCol = 30, r = 10, gridSize = 20, w = 0, h = 0
+let nRow = 20, nCol = 30, r = 10, w = 0, h = 0
+const gridSize = 20
 let gapX = 25, gapY = 25, ballColor = '#53e953'
 let particles: ExtendParticle[] = [], ctx: CanvasRenderingContext2D
 let scopeR = 50
@@ -23,9 +24,9 @@ function createParticles() {
 
   for (let y = 0; y < nRow; y++) {
     for (let x = 0; x < nCol; x++) {
-      let posX = -1 * (nCol - 1 - x) * gapY + w / 2 + (nCol - 1) * gapY / 2
-      let posY = -1 * (nRow - 1 - y) * gapX + h / 2 + (nRow - 1) * gapX / 2
-      let p = new Particle({
+      const posX = -1 * (nCol - 1 - x) * gapY + w / 2 + (nCol - 1) * gapY / 2
+      const posY = -1 * (nRow - 1 - y) * gapX + h / 2 + (nRow - 1) * gapX / 2
+      const p = new Particle({
         x: posX,
         y: posY,
         tx: posX,
@@ -121,11 +122,11 @@ const updateView = () => {
 let pt: { x: number; y: number }
 const calc = () => {
   if (pt) {
-    for (let particle of particles) {
-      let { originPos } = particle
+    for (const particle of particles) {
+      const { originPos } = particle
       if (isPointInCycle(pt, scopeR, originPos)) {
-        let ri = scopeR - distance(pt, originPos)
-        let targetPos = movePtWithDirection(originPos, ptOffset(pt, originPos), ri * (ri / scopeR))
+        const ri = scopeR - distance(pt, originPos)
+        const targetPos = movePtWithDirection(originPos, ptOffset(pt, originPos), ri * (ri / scopeR))
         Object.assign(particle, {
           tx: targetPos.x,
           ty: targetPos.y,
@@ -143,7 +144,7 @@ const calc = () => {
 }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   ctx = canvas.getContext('2d')
   const uninstallResize = registEvent(window, 'resize', throttle(() => {
     updateView()
@@ -151,7 +152,7 @@ onMounted(() => {
   }, 100), { immediate: true })
 
   const uninstallMove = registEvent(canvas, 'mousemove', (e: unknown) => {
-    let { offsetX, offsetY } = e as MouseEvent
+    const { offsetX, offsetY } = e as MouseEvent
     if (!pt) pt = { x: offsetX, y: offsetY }
     else {
       pt.x = offsetX
@@ -165,7 +166,7 @@ onMounted(() => {
 
   const stopAni = rafLoop(() => {
     ctx.clearRect(0, 0, w, h)
-    for (let particle of particles) {
+    for (const particle of particles) {
       particle.update()
       particle.render(ctx)
     }

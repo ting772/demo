@@ -58,7 +58,7 @@ export default function* mergeSort<D>(arr: D[], selector?: (item: D) => any) {
       return
     }
 
-    let mid = Math.floor((startIndex + endIndex) / 2)
+    const mid = Math.floor((startIndex + endIndex) / 2)
     yield* split(startIndex, mid) //排序好startIndex到mid区间
     yield* split(mid + 1, endIndex)//排序好mid+1到endIndex区间
 

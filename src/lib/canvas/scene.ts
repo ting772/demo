@@ -37,7 +37,7 @@ export class Scene {
   }
 
   constructor(options: SceneOptions) {
-    let { width, height, canvas, background } = options
+    const { width, height, canvas, background } = options
     this.canvas = canvas
     this.ctx = canvas.getContext('2d')!
     this.background = background ?? '#000'
@@ -45,14 +45,14 @@ export class Scene {
   }
 
   _render() {
-    let { width, height, ctx, background } = this
+    const { width, height, ctx, background } = this
     ctx.fillStyle = background
     ctx.fillRect(0, 0, width, height)
     // let label = `${this._objects.length}个物体待渲染`
     // console.time(label)
 
     //内部可能有剔除溢出物体的操作，for of循环+splice会导致删除时闪烁
-    for (let obj of [...this._objects]) {
+    for (const obj of [...this._objects]) {
       obj.render(this._dt)
     }
     // console.timeEnd(label)
@@ -85,7 +85,7 @@ export class Scene {
   }
 
   removeObj(obj: SceneObj) {
-    let index = this._objects.findIndex(item => item == obj)
+    const index = this._objects.findIndex(item => item == obj)
     if (index != -1) {
       this._objects.splice(index, 1)
       if (obj.scene == this) { obj.scene = null }

@@ -66,7 +66,7 @@ let handle: ReturnType<typeof ballsWanderInRect>
 let pt: { x: number; y: number }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   let w = innerWidth
   let h = innerHeight
 
@@ -100,9 +100,9 @@ onMounted(() => {
       }
       for (let i = 0; i < balls.length; i++) {
         for (let j = i + 1; j < balls.length; j++) {
-          let pt1 = balls[i],
+          const pt1 = balls[i],
             pt2 = balls[j];
-          let d = distance(pt1, pt2);
+          const d = distance(pt1, pt2);
           if (d < threshold) {
             connect!(pt1, pt2);
           }
@@ -131,7 +131,8 @@ onMounted(() => {
   onUnmounted(() => {
     uninstallResize()
     uninstallMove()
-    stopAni && stopAni()
+    if (stopAni)
+      stopAni()
   })
 })
 </script>

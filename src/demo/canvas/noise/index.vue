@@ -13,18 +13,18 @@ const emit = defineEmits<{
 
 let w = innerWidth, h = innerHeight
 let ctx: CanvasRenderingContext2D
-let scaleX = ref(0.01), scaleY = ref(0.01), scaleV = ref(1)
-let noise = shallowRef(new Noise(Math.random()))
+const scaleX = ref(0.01), scaleY = ref(0.01), scaleV = ref(1)
+const noise = shallowRef(new Noise(Math.random()))
 
 
-let algorithm = ref<NoiseType>('simplex2')
+const algorithm = ref<NoiseType>('simplex2')
 
-let renderNoise = () => {
-  let image = ctx.getImageData(0, 0, w, h)
+const renderNoise = () => {
+  const image = ctx.getImageData(0, 0, w, h)
 
   for (let x = 0; x < w; x++) {
     for (let y = 0; y < h; y++) {
-      let v = ~~Math.min(255, (Math.abs(noise.value[algorithm.value](x * scaleX.value, y * scaleY.value)) * scaleV.value * 256))
+      const v = ~~Math.min(255, (Math.abs(noise.value[algorithm.value](x * scaleX.value, y * scaleY.value)) * scaleV.value * 256))
       image.data[(y * w + x) * 4 + 0] = v
       image.data[(y * w + x) * 4 + 1] = v
       image.data[(y * w + x) * 4 + 2] = v
@@ -84,7 +84,7 @@ onMounted(() => {
     renderNoise()
   }, 100))
 
-  let stopWatch = watchEffect(renderNoise)
+  const stopWatch = watchEffect(renderNoise)
 
   onUnmounted(() => {
     unistall()

@@ -10,11 +10,11 @@ type IndexWithParent = Index & { parent?: IndexWithParent }
  * @returns
  */
 export function* bfsGenerator(start: Index, end: Index, xMax: number, yMax: number) {
-  let queue = [{ ...start }]
-  let visited = [] as Index[]
-  let dest = { ...end }
-  let temp = {} as { [key: string]: boolean }
-  let current: any
+  const queue = [{ ...start }]
+  const visited = [] as Index[]
+  const dest = { ...end }
+  const temp = {} as { [key: string]: boolean }
+  let current: Index | undefined
 
   const getNode = (x: number, y: number) => {
     if (x > xMax || y > yMax || x < 0 || y < 0) {
@@ -44,10 +44,10 @@ export function* bfsGenerator(start: Index, end: Index, xMax: number, yMax: numb
       }
     }
 
-    let up = getNode(current.x, current.y - 1)
-    let right = getNode(current.x + 1, current.y)
-    let down = getNode(current.x, current.y + 1)
-    let left = getNode(current.x - 1, current.y)
+    const up = getNode(current.x, current.y - 1)
+    const right = getNode(current.x + 1, current.y)
+    const down = getNode(current.x, current.y + 1)
+    const left = getNode(current.x - 1, current.y)
 
     //过滤无效周围节点
     let available = [up, right, down, left].filter(Boolean) as IndexWithParent[]
@@ -80,11 +80,11 @@ export function* bfsGenerator(start: Index, end: Index, xMax: number, yMax: numb
  * @returns 完成时返回{current:IndexWithParent,visited:IndexWithParent[],pending:IndexWithParent[]},通过current迭代获得完整bfs路径
  */
 export function bfs(start: Index, end: Index, xMax: number, yMax: number) {
-  let queue = [{ ...start }]
-  let visited = [] as Index[]
-  let dest = { ...end }
-  let temp = {} as { [key: string]: boolean }
-  let current: any
+  const queue = [{ ...start }]
+  const visited = [] as Index[]
+  const dest = { ...end }
+  const temp = {} as { [key: string]: boolean }
+  let current: Index | undefined
 
   const getNode = (x: number, y: number) => {
     if (x > xMax || y > yMax || x < 0 || y < 0) {
@@ -114,10 +114,10 @@ export function bfs(start: Index, end: Index, xMax: number, yMax: number) {
       }
     }
 
-    let up = getNode(current.x, current.y - 1)
-    let right = getNode(current.x + 1, current.y)
-    let down = getNode(current.x, current.y + 1)
-    let left = getNode(current.x - 1, current.y)
+    const up = getNode(current.x, current.y - 1)
+    const right = getNode(current.x + 1, current.y)
+    const down = getNode(current.x, current.y + 1)
+    const left = getNode(current.x - 1, current.y)
 
     //过滤无效周围节点
     let available = [up, right, down, left].filter(Boolean) as IndexWithParent[]

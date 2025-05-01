@@ -33,7 +33,9 @@ onMounted(() => {
   }
 
   onUnmounted(() => {
-    !!clear && clear()
+    if (clear) {
+      clear()
+    }
   })
 })
 </script>

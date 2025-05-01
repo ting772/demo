@@ -1,12 +1,6 @@
 import { easeOutCubic } from './ease'
 import { isDef } from '@/utils/utils'
 
-enum State {
-  IDLE,
-  WANDERING,
-  DRAWING
-}
-
 export enum DIRECTION {
   NORMAL,
   REVERSE
@@ -24,7 +18,7 @@ export type Speed = number
  * 抽奖函数
  */
 export function drawPrice(arr: any[], options: DrawPriceOptions) {
-  let {
+  const {
     startIndex = 0,
     speed = 1,
     onDone,
@@ -55,7 +49,8 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
   //巡游
   function wander(options: WanderOptions) {
     clearRaf()
-    let { direction, speed, startIndex } = options, last: number
+    let last: number
+    const { direction, speed, startIndex } = options
     updateDt(speed)
     if (isDef(startIndex)) { current = startIndex! }
 
@@ -63,7 +58,7 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
       if (!last) {
         last = time
       }
-      let diff = time - last
+      const diff = time - last
       if (diff >= dt) {
         if (direction == DIRECTION.NORMAL) {
           current = (current + 1) % arr.length
@@ -91,6 +86,8 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
     let {
       loopTimes = 5,
       targetIndex = arr.length - 1,
+    } = options || {}
+    const {
       direction,
       speed,
       startIndex
@@ -102,21 +99,22 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
 
     if (isDef(startIndex)) { current = startIndex! }
 
-    let from = current, to
-    let diff = targetIndex - from
+    const from = current
+    let to
+    const diff = targetIndex - from
     if (direction == DIRECTION.NORMAL) {
       to = from + loopTimes * arr.length + (diff >= 0 ? diff : arr.length + diff)
     } else {
       to = from - loopTimes * arr.length + (diff <= 0 ? diff : (-arr.length + diff))
     }
-    let duration = Math.abs(to - from) * dt
+    const duration = Math.abs(to - from) * dt
     let startTime: number
     const loop = (time: number) => {
       if (!startTime) {
         startTime = time
       }
-      let rate = Math.min(1, (time - startTime) / duration)
-      let v = Math.ceil(easeOutCubic(rate) * (to - from)) + from
+      const rate = Math.min(1, (time - startTime) / duration)
+      const v = Math.ceil(easeOutCubic(rate) * (to - from)) + from
       let i = v % arr.length
 
       //i<0表示反方向运动

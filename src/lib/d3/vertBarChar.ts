@@ -92,7 +92,7 @@ export function vertBarChart<D = object>(options: vertBarChartOptions<D>) {
         .range([marginLeft, width - marginRight])
 
       if (isDef(options.xScale)) {
-        for (let [key, value] of Object.entries(options.xScale!)) {
+        for (const [key, value] of Object.entries(options.xScale!)) {
           xScale[key](value)
         }
       } else {
@@ -156,7 +156,7 @@ export function vertBarChart<D = object>(options: vertBarChartOptions<D>) {
     //x轴
     xAxisGroup
       .call(g => {
-        let axis = d3.axisBottom(xScale) as any
+        const axis = d3.axisBottom(xScale) as any
         axis.tickSizeOuter(0)
         for (const [key, value] of Object.entries(xAxis)) {
           axis[key](value)
@@ -172,7 +172,7 @@ export function vertBarChart<D = object>(options: vertBarChartOptions<D>) {
     //y轴
     yAxisGroup
       .call(g => {
-        let axis = d3.axisLeft(yScale) as any
+        const axis = d3.axisLeft(yScale) as any
         for (const [key, value] of Object.entries(yAxis)) {
           axis[key](value)
         }
@@ -182,7 +182,7 @@ export function vertBarChart<D = object>(options: vertBarChartOptions<D>) {
       .call(g => {
         //y轴方向此标题
         if (yLegend.text) {
-          let text = g.append('text')
+          const text = g.append('text')
             .attr("text-anchor", "middle")
             .attr('x', 0)
             .attr('y', 20)

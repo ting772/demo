@@ -18,12 +18,12 @@ export function load<T>(key: string): T | undefined
 export function load<T>(key: string, defaultValue: T): T
 export function load<T>(key: string, defaultValue: T, options: LoadOptions): T
 export function load<T>(key: string, defaultValue?: T, options?: LoadOptions) {
-  let {
+  const {
     storage = localStorage,
     silent = true
   } = options || {}
 
-  let raw = storage.getItem(key)
+  const raw = storage.getItem(key)
   let parsed: T | undefined = undefined
   if (raw) {
     try {
@@ -37,7 +37,7 @@ export function load<T>(key: string, defaultValue?: T, options?: LoadOptions) {
 }
 
 export function persist(key: string, data: any, options?: PersisOptions) {
-  let {
+  const {
     storage = localStorage,
     silent = true
   } = options || {}
@@ -61,7 +61,7 @@ export default function usePersist<T>(key: string, defaultValue?: T, storage?: S
   function reload(defaultValue: T) {
     data.value = load(key, defaultValue, { storage })
   }
-  let data = ref(load(key, defaultValue, { storage }))
+  const data = ref(load(key, defaultValue, { storage }))
   return {
     data,
     persist: (data: T) => persist(key, data, { storage }),

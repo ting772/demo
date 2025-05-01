@@ -9,7 +9,7 @@ type fallingBallsOptions = {
 }
 
 export function fallingBalls(options: fallingBallsOptions) {
-  let { canvas, num, onAllStopped } = options
+  const { canvas, num, onAllStopped } = options
   const ctx = canvas.getContext("2d")!;
   let w = canvas.width;
   let h = canvas.height;
@@ -42,7 +42,7 @@ export function fallingBalls(options: fallingBallsOptions) {
   }
 
   function reset() {
-    for (let ball of balls) {
+    for (const ball of balls) {
       ball.reset().set(getOptions())
     }
     allDone = false
@@ -66,7 +66,7 @@ export function fallingBalls(options: fallingBallsOptions) {
   function render() {
     if (balls.length == 0) return
     ctx.clearRect(0, 0, w, h)
-    for (let ball of balls) {
+    for (const ball of balls) {
       ball.update()
       if (ball.y + ball.r > h) {
         ball.y = h - ball.r;
@@ -93,7 +93,7 @@ export function fallingBalls(options: fallingBallsOptions) {
     if (allDone) {
       reset()
     }
-    let pause = rafLoop(render)
+    const pause = rafLoop(render)
     return () => {
       if (running) {
         running = false

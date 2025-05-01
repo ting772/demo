@@ -22,7 +22,7 @@ const { helpers: { getControllerByKey } } = useGui({
     }
   },
   开始() {
-    let pause = handle.start()
+    const pause = handle.start()
     if (pause)
       pauseRef.value = pause
   },
@@ -33,7 +33,7 @@ const { helpers: { getControllerByKey } } = useGui({
     disable: !pauseRef.value
   },
   重置() {
-    let pause = handle.reset()
+    const pause = handle.reset()
     if (pause)
       pauseRef.value = pause
   },
@@ -59,7 +59,7 @@ function onAllStopped() {
 }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   Object.assign(canvas, {
     width: innerWidth,
     height: innerHeight

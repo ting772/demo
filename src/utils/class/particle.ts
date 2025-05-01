@@ -31,7 +31,7 @@ export class Particle {
   }
 
   update() {
-    let { tx, ty } = this;
+    const { tx, ty } = this;
     if (this.done) return;
     this.x = iterateEaseFromTo(this.x, tx, this.fx);
     this.y = iterateEaseFromTo(this.y, ty, this.fy);
@@ -43,7 +43,7 @@ export class Particle {
   }
 
   render(ctx: CanvasRenderingContext2D) {
-    let { color, x, y, size, r } = this;
+    const { color, x, y, size, r } = this;
     ctx.save();
     Object.assign(ctx, {
       fillStyle: color,

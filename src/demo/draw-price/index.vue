@@ -2,7 +2,9 @@
   <div class="box">
     <el-card class="demo-card" shadow="always">
       <div style="display:flex;">
-        <div :class="['block', selectedIndex == index ? 'selected' : '']" v-for="(,index) in arr">{{ index }}</div>
+        <div :class="['block', selectedIndex == index ? 'selected' : '']" v-for="(item, index) in arr" :key="index">{{
+          index
+          }}</div>
       </div>
     </el-card>
   </div>

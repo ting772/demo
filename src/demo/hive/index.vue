@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="hive-row" :class="index % 2 == 1 ? 'odd' : ''" v-for="(sub, index) in imgs" @mouseenter="enter"
-      @mouseleave="leave">
-      <img class="hive-item" :src="src" alt="" v-for="src in sub">
+      @mouseleave="leave" :key="index">
+      <img class="hive-item" :src="src" alt="" v-for="src in sub" :key="src">
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ let imgs = [
     }))
 ] as any
 
-let row = 5
+const row = 5
 imgs = ref(arrayChunk(imgs, Math.ceil(imgs.length / row)))
 
 useGui({

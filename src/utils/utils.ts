@@ -15,7 +15,7 @@ export function reusableArray<T>(createFn: () => T) {
   let arr = [] as T[]
 
   function get(count: number) {
-    let diff = count - arr.length
+    const diff = count - arr.length
     if (diff > 0) {
       arr.push(...loopNGetResult(createFn, diff))
     } else if (diff < 0) {
@@ -49,10 +49,14 @@ export function alignBy(n1: number, n2: number) {
  * @param length
  */
 export function movePtWithDirection(pos: { x: number; y: number; }, direction: { dx: number; dy: number }, length: number) {
-  let { dx, dy } = direction
-  let len = Math.sqrt(dx ** 2 + dy ** 2)
+  const { dx, dy } = direction
+  const len = Math.sqrt(dx ** 2 + dy ** 2)
   return {
     x: pos.x + (dx * length / len),
     y: pos.y + (dy * length / len)
   }
+}
+
+export function outBounds(value: number, min: number, max: number) {
+  return value < min || value > max
 }

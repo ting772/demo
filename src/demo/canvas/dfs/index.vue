@@ -24,7 +24,7 @@ const start = reactive({ x: 20, y: 10 })
 const end = reactive({ x: 0, y: 0 })
 
 const updateView = (initiate?: () => void) => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   w = alignBy(innerWidth, gridSize.value)
   h = alignBy(innerHeight, gridSize.value)
   canvas.width = w
@@ -34,9 +34,9 @@ const updateView = (initiate?: () => void) => {
 
   initiate?.()
 
-  let getControllerByKey = guiHandler.helpers.getControllerByKey
+  const getControllerByKey = guiHandler.helpers.getControllerByKey
 
-  let options = {
+  const options = {
     '设置起始点X': {
       max: xMax,
       setValue: start.x
@@ -55,10 +55,10 @@ const updateView = (initiate?: () => void) => {
     }
   } as any
 
-  for (let key in options) {
-    let ctl = getControllerByKey(key)
-    let v = options[key]
-    for (let attr in v) {
+  for (const key in options) {
+    const ctl = getControllerByKey(key)
+    const v = options[key]
+    for (const attr in v) {
       ctl[attr](v[attr])
     }
   }
@@ -92,7 +92,7 @@ const fillEndPoint = (x: number, y: number) => {
 }
 
 const reDraw = (draw?: () => void) => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   ctx.clearRect(0, 0, w, h)
   setupGrid({
     width: w,
@@ -114,11 +114,11 @@ watch([start, end], () => {
   it = dfsGenerator(start, end, xMax, yMax)
 })
 
-let timer = useTimer()
+const timer = useTimer()
 const itv = shallowRef()
 
 function drawNode(v: any) {
-  let {
+  const {
     current,
     pending,
     visited
@@ -146,7 +146,7 @@ function drawPath(current: any) {
 }
 
 watch(itv, (v) => {
-  let {
+  const {
     value, done
   } = v
   if (done && !value) return
@@ -212,7 +212,7 @@ const setupGui = () => {
     dfs巡路() {
       console.time('dfs寻路耗时')
       timer.value = 0
-      let v = dfs(start, end, xMax, yMax)
+      const v = dfs(start, end, xMax, yMax)
       if (!v) {
         throw Error("没有找到终点")
       }
@@ -228,7 +228,7 @@ const setupGui = () => {
 }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   ctx = canvas.getContext('2d')!
   setupGui()
   updateView(() => {

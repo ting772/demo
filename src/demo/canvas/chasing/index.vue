@@ -19,9 +19,9 @@ useGui({
 const canvasRef = ref()
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   let w: number, h: number, pt: { x: number; y: number }
-  let ctx = canvas.getContext('2d')!
+  const ctx = canvas.getContext('2d')!
 
   const uninstallResize = registEvent(window, 'resize', () => {
     Object.assign(canvas, {
@@ -36,7 +36,7 @@ onMounted(() => {
     } as any
   )
 
-  let ball = new Ball({
+  const ball = new Ball({
     r: 100,
     x: w! / 2,
     y: h! / 2,
@@ -57,7 +57,7 @@ onMounted(() => {
   onUnmounted(() => {
     uninstallResize()
     uninstallMove()
-    stopAnim
+    stopAnim()
   })
 })
 </script>

@@ -20,7 +20,7 @@ export function arrayChunk(arr: unknown[], chunkSize: number) {
  * @param index2 索引
  */
 export function swapArrayItem(arr: unknown[], index1: number, index2: number) {
-  let temp = arr[index1]
+  const temp = arr[index1]
   arr[index1] = arr[index2]
   arr[index2] = temp
 }

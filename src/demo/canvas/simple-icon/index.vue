@@ -14,7 +14,7 @@ let radius = 10
 let w = 64, h = 64
 const canvasRef = ref()
 let canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D
-let text = ref('')
+const text = ref('')
 
 function onEnter() {
   draw()
@@ -70,8 +70,8 @@ useGui({
 })
 
 function download(canvas: HTMLCanvasElement) {
-  let url = canvas.toDataURL()
-  let a = document.createElement('a')
+  const url = canvas.toDataURL()
+  const a = document.createElement('a')
   a.download = 'icon.png'
   document.body.appendChild(a)
   a.href = url

@@ -39,7 +39,7 @@ export class TextObj implements SceneObj {
   _fillStyle: string = 'red'
 
   constructor(options: TextOption) {
-    let { x, y, text, opacity, opacityDecay, onDismiss, yStep } = options
+    const { x, y, text, opacity, opacityDecay, onDismiss, yStep } = options
     this._x = x
     this._y = y
     this._text = text
@@ -57,10 +57,10 @@ export class TextObj implements SceneObj {
   }
 
   render(delta: number) {
-    let { _text, _x, _y, _opacityDecay, _yStep, _fillStyle, _font } = this
-    let { ctx, height } = this.scene!
+    const { _text, _x, _y, _opacityDecay, _yStep, _fillStyle, _font } = this
+    const { ctx, height } = this.scene!
 
-    let old = {
+    const old = {
       font: ctx.font,
       fillStyle: ctx.fillStyle,
       globalAlpha: ctx.globalAlpha
@@ -77,13 +77,13 @@ export class TextObj implements SceneObj {
     ctx.globalAlpha = this._opacity
 
     let offset = 0
-    let y = _y + (typeof _yStep == 'number' ? _yStep : _yStep!(delta))
+    const y = _y + (typeof _yStep == 'number' ? _yStep : _yStep!(delta))
 
-    for (let w of _text) {
-      let metrix = ctx.measureText(w)
+    for (const w of _text) {
+      const metrix = ctx.measureText(w)
       const { actualBoundingBoxAscent, actualBoundingBoxDescent } = metrix
       //canvas字高度
-      let height = actualBoundingBoxDescent + actualBoundingBoxAscent
+      const height = actualBoundingBoxDescent + actualBoundingBoxAscent
       ctx.fillText(w, _x, y - offset)
       offset += height + 10
     }
@@ -109,7 +109,7 @@ export class TextRain {
   colors = ['brown', 'red', 'green', 'yellow', "chocolate", 'pink', 'burlywood', 'chartreuse', 'cyan']
 
   constructor(options: TextRainOptions) {
-    let { scene, maxNum } = options
+    const { scene, maxNum } = options
     this.scene = scene
     if (maxNum)
       this.maxNum = maxNum
@@ -118,8 +118,8 @@ export class TextRain {
   addText() {
     if (this.num < this.maxNum) {
       this.num++
-      let { width, height } = this.scene
-      let str = new TextObj({
+      const { width, height } = this.scene
+      const str = new TextObj({
         text: getText(),
         x: randomInt(width),
         y: randomInt(height),
@@ -138,7 +138,7 @@ export class TextRain {
   }
 
   start() {
-    this.scene.run((delta: number) => {
+    this.scene.run(() => {
       this.addText()
     })
   }

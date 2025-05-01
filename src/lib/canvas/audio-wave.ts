@@ -9,7 +9,7 @@ import { rafLoop } from '@thing772/utils'
  */
 export function visualize(audioSource: HTMLMediaElement, canvas: HTMLCanvasElement) {
   const audioContext = new AudioContext();
-  let source = audioContext.createMediaElementSource(audioSource);
+  const source = audioContext.createMediaElementSource(audioSource);
 
   const analyser = audioContext.createAnalyser();
   source.connect(analyser);
@@ -33,7 +33,7 @@ export function visualize(audioSource: HTMLMediaElement, canvas: HTMLCanvasEleme
     const sliceW = w / bufferLength;
 
     for (let i = 0; i < bufferLength; i += 4) {
-      let sliceH = (dataArray[i] / 255) * h;
+      const sliceH = (dataArray[i] / 255) * h;
       ctx.fillRect(sliceW * i, h - sliceH, sliceW, sliceH);
     }
     ctx.fill();

@@ -21,7 +21,7 @@ let particles = [] as Particle[]
 
 let gap = 3, color = '#f00', alphaThreshold = 30, fontSize = 100
 let r = 1, fx = 0.1, fy = 0.1, w = innerWidth, h = innerHeight
-let getParticles = reusableArray(() => new Particle({
+const getParticles = reusableArray(() => new Particle({
   r,
   x: randomBetween(0, w),
   y: randomBetween(0, h),
@@ -33,7 +33,7 @@ let text = "hello world"
 //画粒子文字
 function resolveText(text: string, setPos?: boolean) {
   //获取文字粒子的位置信息
-  let config = textParticles.getParticles(text)
+  const config = textParticles.getParticles(text)
 
   //复用已有的粒子，调整粒子信息
   particles = getParticles(config.particles.length).map(particle => {
@@ -56,7 +56,7 @@ function onEnter() {
 }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   const ctx = canvas.getContext('2d', { willReadFrequently: true })!
 
   Object.assign(canvas, {

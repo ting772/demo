@@ -14,7 +14,7 @@ export function randArr<K = unknown>(arr: K[]) {
  * @returns number[]
  */
 export function generateRandomIntArray(count: number, max: number = 1000) {
-  let ret = [] as number[]
+  const ret = [] as number[]
   for (let i = 0; i < count; i++) {
     ret.push(randomInt(max))
   }

@@ -3,19 +3,20 @@ import { h } from 'vue'
 import CodeDemo from '@/components/codeDemo.vue'
 import { getDemoConfig } from '@/loadDemo'
 
-let routes = [] as RouteRecordRaw[]
+const routes = [] as RouteRecordRaw[]
 
 function autoLoad() {
   const config = getDemoConfig()
 
-  for (let path in config) {
-    let { codes, component, title } = config[path]
-    let c = function demo() {
+  for (const path in config) {
+    const { codes, component, title } = config[path]
+    const c = function demo() {
       return h(
         CodeDemo,
-        //@ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-expect-error
         { codes },
-        ({ checkSource }: { checkSource: Function }) => {
+        ({ checkSource }: { checkSource: () => void }) => {
           return h(
             component!,
             {
@@ -28,7 +29,7 @@ function autoLoad() {
       )
     } as any
     c.displayName = `Demo(${path})`
-    let routePath = path.replace(/.*\/demo\//, '').replace('/config\.ts', '').split('/').join('-')
+    const routePath = path.replace(/.*\/demo\//, '').replace('/config\.ts', '').split('/').join('-')
     config[path].routeName = routePath
     routes.push({
       /**

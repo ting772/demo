@@ -13,7 +13,7 @@ const emit = defineEmits<{
 
 const canvasRef = ref()
 let w = innerWidth, h = innerHeight, coord: ReturnType<typeof setupCoord>
-let defaultFn = (x: number, t: number) => Math.sin(5 * x + 0.001 * t) + Math.cos(10 * x + 0.005 * t)
+const defaultFn = (x: number, t: number) => Math.sin(5 * x + 0.001 * t) + Math.cos(10 * x + 0.005 * t)
 let fnStr = ref(''), fn: typeof defaultFn | undefined = defaultFn
 let rate = 300, lineWidth = 1, strokeStyle = randomRgb()
 
@@ -33,7 +33,7 @@ function onEnter() {
 }
 
 onMounted(() => {
-  let canvas = canvasRef.value
+  const canvas = canvasRef.value
   const ctx = canvas.getContext('2d')!
 
   useGui({
