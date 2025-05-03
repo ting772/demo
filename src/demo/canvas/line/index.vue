@@ -4,7 +4,7 @@
 <script setup lang="ts">
 import useGui from '@/hooks/useLilGui'
 import { registEvent, rafLoop, setElement, drawLine, randomBetween, ptOffset, loopNGetResult, randomHexColor, angleToPos } from '@thing772/utils'
-import { throttle } from 'lodash-es'
+import { debounce } from 'lodash-es'
 import { movePtWithDirection, outBounds } from '@/utils/utils'
 import type { Pos } from '@thing772/utils/dist/typings/main';
 
@@ -94,18 +94,21 @@ function generateRoundPointLines(center: Pos, r: number, args: { lengthArgs: [nu
 
 const canvasRef = ref()
 
+function setCanvasSize() {
+  w = window.innerWidth
+  h = window.innerHeight
+  Object.assign(canvasRef.value, {
+    width: w,
+    height: h
+  })
+}
+
 onMounted(() => {
   const canvas = canvasRef.value
   ctx = canvas.getContext('2d')
+  const uninstallResize = registEvent(window, 'resize', debounce(setCanvasSize, 100))
 
-  const uninstallResize = registEvent(window, 'resize', throttle(() => {
-    w = window.innerWidth
-    h = window.innerHeight
-    Object.assign(canvas, {
-      width: w,
-      height: h
-    })
-  }, 100), { immediate: true })
+  setCanvasSize()
 
   setElement(canvas, { 'background-color': '#0d0d0d' })
 
