@@ -1,4 +1,4 @@
-var te=Object.defineProperty;var se=(r,e,o)=>e in r?te(r,e,{enumerable:!0,configurable:!0,writable:!0,value:o}):r[e]=o;var C=(r,e,o)=>se(r,typeof e!="symbol"?e+"":e,o);import{r as ae,c as Rn,o as O,d as P,a as k,b as Sn,e as A,P as ie,f as F,g as H,t as pn,n as cn,u as X,h as G,i as oe,w as V,E as re,F as K,j as on,k as le,l as ce,m as mn,p as xn,q as ue,s as U,v as de,x as he,y as N,z as W,A as _n,B as q,C as fe,D as gn,G as rn,H as un,I as Hn,J as Y,K as J,L as Mn,M as pe,N as S,O as yn,Q as Vn,R as zn,S as kn,T as Bn,U as bn,V as vn,W as En,X as me,Y as In,Z as ge,_ as ve,$ as jn,a0 as Cn,a1 as qn,a2 as $n,a3 as xe,a4 as ye,a5 as be,a6 as we,a7 as _e,a8 as Ce,a9 as Re,aa as Se,ab as ke,ac as Be,ad as Ee,ae as Xn,af as Dn,ag as Ie,ah as je,ai as Te,aj as Oe,ak as Fe,al as Pe,am as Me,an as ze,ao as $e,ap as De}from"./vendor-jPCfGOvj.js";(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))t(n);new MutationObserver(n=>{for(const a of n)if(a.type==="childList")for(const l of a.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&t(l)}).observe(document,{childList:!0,subtree:!0});function o(n){const a={};return n.integrity&&(a.integrity=n.integrity),n.referrerPolicy&&(a.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?a.credentials="include":n.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function t(n){if(n.ep)return;n.ep=!0;const a=o(n);fetch(n.href,a)}})();const L=(r,e)=>{const o=r.__vccOpts||r;for(const[t,n]of e)o[t]=n;return o},Ae={};function Ne(r,e){const o=ae("RouterView");return O(),Rn(o)}const We=L(Ae,[["render",Ne]]),Le={class:"pre"},Ge=P({__name:"hilight",props:{code:{},lang:{}},setup(r){const e=r,o=k(),t=Sn(()=>e.lang?`lang-${e.lang}`:"auto");return A(()=>{ie.highlightElement(o.value)}),(n,a)=>(O(),F("pre",Le,[H("code",{class:cn(X(t)),ref_key:"codeRef",ref:o},pn(n.code),3)]))}}),He={class:"container"},Ve={class:"dialog-footer"},qe=P({__name:"codeDemo",props:{codes:{}},setup(r){const e=k(!1);function o(){e.value=!0}return(t,n)=>{const a=le,l=re,c=ce,s=ue;return O(),F(K,null,[H("div",He,[oe(t.$slots,"default",{checkSource:o},void 0,!0)]),G(s,{modelValue:X(e),"onUpdate:modelValue":n[1]||(n[1]=h=>xn(e)?e.value=h:null),title:"",width:"50vw",top:"50px"},{footer:V(()=>[H("span",Ve,[G(c,{type:"primary",onClick:n[0]||(n[0]=h=>e.value=!1)},{default:V(()=>n[2]||(n[2]=[mn("关闭")])),_:1})])]),default:V(()=>[G(l,{type:"border-card"},{default:V(()=>[(O(!0),F(K,null,on(t.codes,h=>(O(),Rn(a,{label:h.name,key:h.name,lazy:""},{default:V(()=>[G(Ge,{code:h.code,lang:h.lang},null,8,["code","lang"])]),_:2},1032,["label"]))),128))]),_:1})]),_:1},8,["modelValue"])],64)}}}),Xe=L(qe,[["__scopeId","data-v-65455990"]]),Ye=`<template>
+var ae=Object.defineProperty;var ie=(l,e,i)=>e in l?ae(l,e,{enumerable:!0,configurable:!0,writable:!0,value:i}):l[e]=i;var C=(l,e,i)=>ie(l,typeof e!="symbol"?e+"":e,i);import{r as oe,c as kn,o as O,d as P,a as S,b as Bn,e as A,P as re,f as T,g as V,t as vn,n as hn,u as Y,h as G,i as le,w as q,E as ce,F as U,j as cn,k as ue,l as de,m as xn,p as bn,q as he,s as X,v as fe,x as pe,y as W,z as N,A as Sn,B as H,C as me,D as yn,G as un,H as nn,I as qn,J as K,K as tn,L as fn,M as Z,N as k,O as ge,Q as En,R as sn,S as zn,T as ve,U as wn,V as $n,W as jn,X as Fn,Y as _n,Z as xe,_ as ye,$ as In,a0 as be,a1 as we,a2 as Xn,a3 as Dn,a4 as _e,a5 as Rn,a6 as An,a7 as Nn,a8 as Ce,a9 as Re,aa as Se,ab as ke,ac as Be,ad as Ee,ae as je,af as Fe,ag as Ie,ah as Oe,ai as Me,aj as Yn,ak as Wn,al as Te,am as Pe,an as ze,ao as $e,ap as De,aq as Ae,ar as Ne,as as We,at as Le,au as He}from"./vendor-B-EgUSSZ.js";(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))t(n);new MutationObserver(n=>{for(const s of n)if(s.type==="childList")for(const r of s.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&t(r)}).observe(document,{childList:!0,subtree:!0});function i(n){const s={};return n.integrity&&(s.integrity=n.integrity),n.referrerPolicy&&(s.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?s.credentials="include":n.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function t(n){if(n.ep)return;n.ep=!0;const s=i(n);fetch(n.href,s)}})();const L=(l,e)=>{const i=l.__vccOpts||l;for(const[t,n]of e)i[t]=n;return i},Ge={};function Ve(l,e){const i=oe("RouterView");return O(),kn(i)}const qe=L(Ge,[["render",Ve]]),Xe={class:"pre"},Ye=P({__name:"hilight",props:{code:{},lang:{}},setup(l){const e=l,i=S(),t=Bn(()=>e.lang?`lang-${e.lang}`:"auto");return A(()=>{re.highlightElement(i.value)}),(n,s)=>(O(),T("pre",Xe,[V("code",{class:hn(Y(t)),ref_key:"codeRef",ref:i},vn(n.code),3)]))}}),Ke={class:"container"},Ue={class:"dialog-footer"},Qe=P({__name:"codeDemo",props:{codes:{}},setup(l){const e=S(!1);function i(){e.value=!0}return(t,n)=>{const s=ue,r=ce,u=de,a=he;return O(),T(U,null,[V("div",Ke,[le(t.$slots,"default",{checkSource:i},void 0,!0)]),G(a,{modelValue:Y(e),"onUpdate:modelValue":n[1]||(n[1]=h=>bn(e)?e.value=h:null),title:"",width:"50vw",top:"50px"},{footer:q(()=>[V("span",Ue,[G(u,{type:"primary",onClick:n[0]||(n[0]=h=>e.value=!1)},{default:q(()=>n[2]||(n[2]=[xn("关闭")])),_:1})])]),default:q(()=>[G(r,{type:"border-card"},{default:q(()=>[(O(!0),T(U,null,cn(t.codes,h=>(O(),kn(s,{label:h.name,key:h.name,lazy:""},{default:q(()=>[G(Ye,{code:h.code,lang:h.lang},null,8,["code","lang"])]),_:2},1032,["label"]))),128))]),_:1})]),_:1},8,["modelValue"])],64)}}}),Ze=L(Qe,[["__scopeId","data-v-65455990"]]),Je=`<template>
   <audio ref="audioRef" :src="src" id="audio" controls></audio>
   <canvas ref="canvasRef"></canvas>
 </template>
@@ -48,7 +48,7 @@ audio {
   transform: translate(-50%);
 }
 </style>
-`,Ke=`import { rafLoop } from '@thing772/utils'
+`,nt=`import { rafLoop } from '@thing772/utils'
 
 /**
  * 画音频波形
@@ -107,7 +107,7 @@ export function visualize(audioSource: HTMLMediaElement, canvas: HTMLCanvasEleme
     start
   }
 }
-`;function Ue(r,e){const o=new AudioContext,t=o.createMediaElementSource(r),n=o.createAnalyser();t.connect(n),n.connect(o.destination),n.fftSize=512;const a=n.frequencyBinCount,l=new Uint8Array(a),c=e.getContext("2d");let s=e.width,h=e.height;function f(){n.getByteTimeDomainData(l),c.save(),Object.assign(c,{fillStyle:"red"});const d=s/a;for(let u=0;u<a;u+=4){const p=l[u]/255*h;c.fillRect(d*u,h-p,d,p)}c.fill(),c.restore()}function i(d,u){s=e.width=d,h=e.height=u}function m(){return U(()=>{c.clearRect(0,0,s,h),f()})}return{setSize:i,start:m}}const Qe="/demo/assets/media/%E5%8C%96%E5%87%A1-DF7X08YA.ogg";function z(r){if(!r.title){const o=de().meta.title;o&&(r.title=o)}const e=he(r);return N(()=>{e.gui.destroy()}),e}const Ze=["src"],Je=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;z({查看源码(){o("check-source")}});const t=k(),n=k();return A(()=>{let a;n.value.onplay=()=>{const{start:l,setSize:c}=Ue(n.value,t.value);a=W(window,"resize",()=>{c(innerWidth,innerHeight)},{immediate:!0}),l()},N(()=>{a&&a()})}),(a,l)=>(O(),F(K,null,[H("audio",{ref_key:"audioRef",ref:n,src:X(Qe),id:"audio",controls:""},null,8,Ze),H("canvas",{ref_key:"canvasRef",ref:t},null,512)],64))}}),nt=L(Je,[["__scopeId","data-v-91a379c6"]]),et="/demo/assets/imgs/display-_9yby0tz.png",tt={codes:[{name:"index.vue",code:Ye,lang:"js"},{name:"audio-wave",code:Ke,lang:"ts"}],component:nt,display:et,title:"音频波形",descriptions:""},st=`<template>
+`;function et(l,e){const i=new AudioContext,t=i.createMediaElementSource(l),n=i.createAnalyser();t.connect(n),n.connect(i.destination),n.fftSize=512;const s=n.frequencyBinCount,r=new Uint8Array(s),u=e.getContext("2d");let a=e.width,h=e.height;function p(){n.getByteTimeDomainData(r),u.save(),Object.assign(u,{fillStyle:"red"});const d=a/s;for(let c=0;c<s;c+=4){const f=r[c]/255*h;u.fillRect(d*c,h-f,d,f)}u.fill(),u.restore()}function o(d,c){a=e.width=d,h=e.height=c}function v(){return X(()=>{u.clearRect(0,0,a,h),p()})}return{setSize:o,start:v}}const tt="/demo/assets/media/%E5%8C%96%E5%87%A1-DF7X08YA.ogg";function z(l){if(!l.title){const i=fe().meta.title;i&&(l.title=i)}const e=pe(l);return W(()=>{e.gui.destroy()}),e}const st=["src"],at=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;z({查看源码(){i("check-source")}});const t=S(),n=S();return A(()=>{let s;n.value.onplay=()=>{const{start:r,setSize:u}=et(n.value,t.value);s=N(window,"resize",()=>{u(innerWidth,innerHeight)},{immediate:!0}),r()},W(()=>{s&&s()})}),(s,r)=>(O(),T(U,null,[V("audio",{ref_key:"audioRef",ref:n,src:Y(tt),id:"audio",controls:""},null,8,st),V("canvas",{ref_key:"canvasRef",ref:t},null,512)],64))}}),it=L(at,[["__scopeId","data-v-91a379c6"]]),ot="/demo/assets/imgs/display-_9yby0tz.png",rt={codes:[{name:"index.vue",code:Je,lang:"js"},{name:"audio-wave",code:nt,lang:"ts"}],component:it,display:ot,title:"音频波形",descriptions:""},lt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -347,7 +347,7 @@ onMounted(() => {
   it = bfsGenerator(start, end, xMax, yMax)
 })
 <\/script>
-`;function Yn(r){return Math.floor(Math.random()*r.length)}function Kn(r){return r[Yn(r)]}function at(r,e=1e3){const o=[];for(let t=0;t<r;t++)o.push(Z(e));return o}function Z(r=1e3){return Math.ceil(Math.random()*r)}function it(r,e){return r.reduce((o,t,n)=>(n%e==0&&o.push(r.slice(n,n+e)),o),[])}function ln(r,e,o){const t=r[e];r[e]=r[o],r[o]=t}function fn(r){return r!=null}function dn(r){return typeof r=="function"}function wn(r){return r}function Tn(r){let e=[];function o(t){const n=t-e.length;return n>0?e.push(..._n(r,n)):n<0&&(e=e.slice(0,n)),e}return o.update=function(t){e.forEach(n=>t(n))},o}function nn(r,e){return~~(r/e)*e}function sn(r,e,o){const{dx:t,dy:n}=e,a=Math.sqrt(t**2+n**2);return{x:r.x+t*o/a,y:r.y+n*o/a}}function An(r,e,o){return r<e||r>o}function ot(r,e){if(!OffscreenCanvas){console.warn("不支持OffscreenCanvas");return}const t=new OffscreenCanvas(101,1).getContext("2d"),n=t.createLinearGradient(0,0,100,0);n.addColorStop(0,r),n.addColorStop(1,e),t.fillStyle=n,t.fillRect(0,0,101,1);let a=t.getImageData(0,0,101,1).data;function l(c,s){return{r:c[s*4+0],g:c[s*4+1],b:c[s*4+2],a:c[s*4+3]}}return c=>{let s=Math.max(0,Math.min(100,~~(c*100)));return l(a,s)}}function rt(r,e,o){r.save(),typeof o=="object"&&Object.assign(r,o);let t=typeof o=="function"?o:void 0,[n,...a]=e;if(r.beginPath(),r.moveTo(n.x,n.y),t){let l=0,c=a.length;for(let s of a){if(Object.assign(r,t(l,c)),r.lineTo(s.x,s.y),r.stroke(),l++,l>=c)break;r.beginPath(),r.moveTo(s.x,s.y)}}else{for(let l of a)r.lineTo(l.x,l.y);r.stroke()}r.restore()}function*Nn(r,e,o,t){const n=[{...r}],a=[],l={...e},c={};let s;const h=(i,m)=>{if(!(i>o||m>t||i<0||m<0))return{x:i,y:m}},f=i=>`${i.x}-${i.y}`;for(;n.length>0;){if(s&&(c[f(s)]=!0,a.push({...s})),s=n.shift(),delete c[f(s)],s.x==l.x&&s.y==l.y)return{current:s,visited:[...a],pending:[...n]};const i=h(s.x,s.y-1),m=h(s.x+1,s.y),d=h(s.x,s.y+1),u=h(s.x-1,s.y);let p=[i,m,d,u].filter(Boolean);p=p.filter(y=>!c[f(y)]),p.length!=0&&(p.forEach(y=>{y.parent=s,c[f(y)]=!0}),n.push(...p),yield{current:s,visited:[...a],pending:[...n]})}}function lt(r,e,o,t){const n=[{...r}],a=[],l={...e},c={};let s;const h=(i,m)=>{if(!(i>o||m>t||i<0||m<0))return{x:i,y:m}},f=i=>`${i.x}-${i.y}`;for(;n.length>0;){if(s&&(c[f(s)]=!0,a.push({...s})),s=n.shift(),delete c[f(s)],s.x==l.x&&s.y==l.y)return{current:s,visited:[...a],pending:[...n]};const i=h(s.x,s.y-1),m=h(s.x+1,s.y),d=h(s.x,s.y+1),u=h(s.x-1,s.y);let p=[i,m,d,u].filter(Boolean);p=p.filter(y=>!c[f(y)]),p.length!=0&&(p.forEach(y=>{y.parent=s,c[f(y)]=!0}),n.push(...p))}}function Un(){const r=k(0);return q(r,(e,o)=>{e==0&&o>0&&clearInterval(o)},{flush:"sync"}),fe(()=>{r.value=0}),r}const ct=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t,n,a,l,c,s,h;const f=k("#c5afbb"),i=k(30),m=k(),d=gn({x:20,y:10}),u=gn({x:0,y:0}),p=x=>{const R=m.value;a=nn(innerWidth,i.value),l=nn(innerHeight,i.value),R.width=a,R.height=l,t=a/i.value-1,n=l/i.value-1,x==null||x();const M=h.helpers.getControllerByKey,T={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:n,setValue:d.y},设置终点X:{max:t,setValue:u.x},设置终点Y:{max:n,setValue:u.y}};for(const I in T){const $=M(I),D=T[I];for(const tn in D)$[tn](D[tn])}};q([m,f],([x,R])=>{un(x,{"background-color":R})}),q(i,()=>{v.value=0,p(),w()});const y=(x,R,M)=>{s.save(),Object.assign(s,M),s.fillRect(x*i.value,R*i.value,i.value,i.value),s.restore()},b=(x,R)=>{y(x,R,{fillStyle:"red"})},g=(x,R)=>{y(x,R,{fillStyle:"green"})},w=x=>{const R=m.value;s.clearRect(0,0,a,l),Hn({width:a,height:l,gridSize:i.value,canvas:R,ctx:s,lineWidth:1,gridLineColor:"#fff"}),typeof x=="function"&&x(),b(d.x,d.y),g(u.x,u.y)};q([d,u],()=>{w(),v.value=0,c=Nn(d,u,t,n)});const v=Un(),_=rn();function B(x){const{current:R,pending:M,visited:T}=x;w(()=>{y(R.x,R.y,{fillStyle:"gold"}),M.forEach(I=>{const{x:$,y:D}=I;y($,D,{fillStyle:"pink"})}),T.forEach(I=>{const{x:$,y:D}=I;y($,D,{fillStyle:"black"})})})}function j(x){for(;x;)y(x.x,x.y,{fillStyle:"blue"}),x=x.parent;b(d.x,d.y),g(u.x,u.y)}q(_,x=>{const{value:R,done:M}=x;M&&!R||(B(R),M&&j(R.current))});const E=()=>{h=z({设置背景色:{value:[f.value],isColor:!0,onFinishChange(x){f.value=x}},网格大小设置:{value:[i.value,5,50,1],onFinishChange(x){i.value=x}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(x){d.x=x}},设置起始点Y:{value:[d.y,0,n,1],onFinishChange(x){d.y=x}},设置终点X:{value:[u.x,0,t,1],onFinishChange(x){u.x=x}},设置终点Y:{value:[u.y,0,n,1],onFinishChange(x){u.y=x}},自动bfs迭代(){c&&(v.value=0,v.value=setInterval(()=>{const x=c.next();_.value=x,x.done&&(v.value=0)},100))},bfs巡路(){console.time("bfs寻路耗时"),v.value=0;const x=lt(d,u,t,n);if(!x)throw Error("没有找到终点");console.timeEnd("bfs寻路耗时"),w(()=>{j(x.current)})},查看源码(){o("check-source")}})};return A(()=>{s=m.value.getContext("2d"),E(),p(()=>{Object.assign(u,{x:~~(t/2),y:~~(n/2)})}),c=Nn(d,u,t,n)}),(x,R)=>(O(),F("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),ut="/demo/assets/imgs/display-BFxeQr0P.png",dt=`export type Index = { x: number; y: number }
+`;function Kn(l){return Math.floor(Math.random()*l.length)}function Un(l){return l[Kn(l)]}function ct(l,e=1e3){const i=[];for(let t=0;t<l;t++)i.push(en(e));return i}function en(l=1e3){return Math.ceil(Math.random()*l)}function ut(l,e){return l.reduce((i,t,n)=>(n%e==0&&i.push(l.slice(n,n+e)),i),[])}function dn(l,e,i){const t=l[e];l[e]=l[i],l[i]=t}function gn(l){return l!=null}function pn(l){return typeof l=="function"}function Cn(l){return l}function On(l){let e=[];function i(t){const n=t-e.length;return n>0?e.push(...Sn(l,n)):n<0&&(e=e.slice(0,n)),e}return i.update=function(t){e.forEach(n=>t(n))},i}function an(l,e){return~~(l/e)*e}function rn(l,e,i){const{dx:t,dy:n}=e,s=Math.sqrt(t**2+n**2);return{x:l.x+t*i/s,y:l.y+n*i/s}}function Ln(l,e,i){return l<e||l>i}function*Hn(l,e,i,t){const n=[{...l}],s=[],r={...e},u={};let a;const h=(o,v)=>{if(!(o>i||v>t||o<0||v<0))return{x:o,y:v}},p=o=>`${o.x}-${o.y}`;for(;n.length>0;){if(a&&(u[p(a)]=!0,s.push({...a})),a=n.shift(),delete u[p(a)],a.x==r.x&&a.y==r.y)return{current:a,visited:[...s],pending:[...n]};const o=h(a.x,a.y-1),v=h(a.x+1,a.y),d=h(a.x,a.y+1),c=h(a.x-1,a.y);let f=[o,v,d,c].filter(Boolean);f=f.filter(x=>!u[p(x)]),f.length!=0&&(f.forEach(x=>{x.parent=a,u[p(x)]=!0}),n.push(...f),yield{current:a,visited:[...s],pending:[...n]})}}function dt(l,e,i,t){const n=[{...l}],s=[],r={...e},u={};let a;const h=(o,v)=>{if(!(o>i||v>t||o<0||v<0))return{x:o,y:v}},p=o=>`${o.x}-${o.y}`;for(;n.length>0;){if(a&&(u[p(a)]=!0,s.push({...a})),a=n.shift(),delete u[p(a)],a.x==r.x&&a.y==r.y)return{current:a,visited:[...s],pending:[...n]};const o=h(a.x,a.y-1),v=h(a.x+1,a.y),d=h(a.x,a.y+1),c=h(a.x-1,a.y);let f=[o,v,d,c].filter(Boolean);f=f.filter(x=>!u[p(x)]),f.length!=0&&(f.forEach(x=>{x.parent=a,u[p(x)]=!0}),n.push(...f))}}function Qn(){const l=S(0);return H(l,(e,i)=>{e==0&&i>0&&clearInterval(i)},{flush:"sync"}),me(()=>{l.value=0}),l}const ht=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n,s,r,u,a,h;const p=S("#c5afbb"),o=S(30),v=S(),d=yn({x:20,y:10}),c=yn({x:0,y:0}),f=b=>{const R=v.value;s=an(innerWidth,o.value),r=an(innerHeight,o.value),R.width=s,R.height=r,t=s/o.value-1,n=r/o.value-1,b==null||b();const M=h.helpers.getControllerByKey,F={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:n,setValue:d.y},设置终点X:{max:t,setValue:c.x},设置终点Y:{max:n,setValue:c.y}};for(const j in F){const $=M(j),D=F[j];for(const J in D)$[J](D[J])}};H([v,p],([b,R])=>{nn(b,{"background-color":R})}),H(o,()=>{y.value=0,f(),w()});const x=(b,R,M)=>{a.save(),Object.assign(a,M),a.fillRect(b*o.value,R*o.value,o.value,o.value),a.restore()},g=(b,R)=>{x(b,R,{fillStyle:"red"})},m=(b,R)=>{x(b,R,{fillStyle:"green"})},w=b=>{const R=v.value;a.clearRect(0,0,s,r),qn({width:s,height:r,gridSize:o.value,canvas:R,ctx:a,lineWidth:1,gridLineColor:"#fff"}),typeof b=="function"&&b(),g(d.x,d.y),m(c.x,c.y)};H([d,c],()=>{w(),y.value=0,u=Hn(d,c,t,n)});const y=Qn(),_=un();function B(b){const{current:R,pending:M,visited:F}=b;w(()=>{x(R.x,R.y,{fillStyle:"gold"}),M.forEach(j=>{const{x:$,y:D}=j;x($,D,{fillStyle:"pink"})}),F.forEach(j=>{const{x:$,y:D}=j;x($,D,{fillStyle:"black"})})})}function I(b){for(;b;)x(b.x,b.y,{fillStyle:"blue"}),b=b.parent;g(d.x,d.y),m(c.x,c.y)}H(_,b=>{const{value:R,done:M}=b;M&&!R||(B(R),M&&I(R.current))});const E=()=>{h=z({设置背景色:{value:[p.value],isColor:!0,onFinishChange(b){p.value=b}},网格大小设置:{value:[o.value,5,50,1],onFinishChange(b){o.value=b}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(b){d.x=b}},设置起始点Y:{value:[d.y,0,n,1],onFinishChange(b){d.y=b}},设置终点X:{value:[c.x,0,t,1],onFinishChange(b){c.x=b}},设置终点Y:{value:[c.y,0,n,1],onFinishChange(b){c.y=b}},自动bfs迭代(){u&&(y.value=0,y.value=setInterval(()=>{const b=u.next();_.value=b,b.done&&(y.value=0)},100))},bfs巡路(){console.time("bfs寻路耗时"),y.value=0;const b=dt(d,c,t,n);if(!b)throw Error("没有找到终点");console.timeEnd("bfs寻路耗时"),w(()=>{I(b.current)})},查看源码(){i("check-source")}})};return A(()=>{a=v.value.getContext("2d"),E(),f(()=>{Object.assign(c,{x:~~(t/2),y:~~(n/2)})}),u=Hn(d,c,t,n)}),(b,R)=>(O(),T("canvas",{ref_key:"canvasRef",ref:v},null,512))}}),ft="/demo/assets/imgs/display-BFxeQr0P.png",pt=`export type Index = { x: number; y: number }
 type IndexWithParent = Index & { parent?: IndexWithParent }
 
 /**
@@ -483,7 +483,7 @@ export function bfs(start: Index, end: Index, xMax: number, yMax: number) {
     queue.push(...available)
   }
 }
-`,ht={codes:[{name:"index.vue",code:st,lang:"js"},{name:"bfs.ts",code:dt,lang:"ts"}],component:ct,display:ut,title:"canvas网格——广度优先搜索",descriptions:""},ft=`<template>
+`,mt={codes:[{name:"index.vue",code:lt,lang:"js"},{name:"bfs.ts",code:pt,lang:"ts"}],component:ht,display:ft,title:"canvas网格——广度优先搜索",descriptions:""},gt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -546,7 +546,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,en=`type BallOptions = {
+`,on=`type BallOptions = {
   x?: number;
   y?: number;
   r: number;
@@ -607,7 +607,251 @@ export class Ball {
     ctx.restore();
   }
 }
-`;class Q{constructor(e){C(this,"x",0);C(this,"y",0);C(this,"r",0);C(this,"vx",0);C(this,"vy",0);C(this,"ax",0);C(this,"ay",0);C(this,"styleOptions",{});e&&this.set(e)}reset(e){return Object.assign(this,{x:0,y:0,r:0,vx:0,vy:0,ax:0,ay:0,...e?{styleOptions:{}}:null})}set(e){return Object.assign(this,e)}update(){return this.vy+=this.ay,this.y+=this.vy,this.vx+=this.ax,this.x+=this.vx,this}render(e){e.save();const{x:o,y:t,r:n,styleOptions:a}=this;Object.assign(e,a),e.beginPath(),e.arc(o,t,n,0,Math.PI*2),a.fillStyle&&e.fill(),a.strokeStyle&&e.stroke(),e.restore()}}const pt=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;z({查看源码(){o("check-source")}});const t=k();return A(()=>{const n=t.value;let a,l,c;const s=n.getContext("2d"),h=W(window,"resize",()=>{Object.assign(n,{width:a=innerWidth,height:l=innerHeight})},{immediate:!0}),f=W(n,"mousemove",function(d){c={x:d.offsetX,y:d.offsetY}}),i=new Q({r:100,x:a/2,y:l/2,styleOptions:{fillStyle:Y()}}),m=U(()=>{s.clearRect(0,0,a,l),c&&(i.x=J(i.x,c.x,.05),i.y=J(i.y,c.y,.05)),i.render(s)});N(()=>{h(),f(),m()})}),(n,a)=>(O(),F("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),mt="/demo/assets/imgs/display-IdleEMXt.png",gt={codes:[{name:"index.vue",code:ft,lang:"js"},{name:"ball.ts",code:en,lang:"ts"}],component:pt,display:mt,title:"缓动追逐",descriptions:""},vt=`<template>
+`;class Q{constructor(e){C(this,"x",0);C(this,"y",0);C(this,"r",0);C(this,"vx",0);C(this,"vy",0);C(this,"ax",0);C(this,"ay",0);C(this,"styleOptions",{});e&&this.set(e)}reset(e){return Object.assign(this,{x:0,y:0,r:0,vx:0,vy:0,ax:0,ay:0,...e?{styleOptions:{}}:null})}set(e){return Object.assign(this,e)}update(){return this.vy+=this.ay,this.y+=this.vy,this.vx+=this.ax,this.x+=this.vx,this}render(e){e.save();const{x:i,y:t,r:n,styleOptions:s}=this;Object.assign(e,s),e.beginPath(),e.arc(i,t,n,0,Math.PI*2),s.fillStyle&&e.fill(),s.strokeStyle&&e.stroke(),e.restore()}}const vt=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;z({查看源码(){i("check-source")}});const t=S();return A(()=>{const n=t.value;let s,r,u;const a=n.getContext("2d"),h=N(window,"resize",()=>{Object.assign(n,{width:s=innerWidth,height:r=innerHeight})},{immediate:!0}),p=N(n,"mousemove",function(d){u={x:d.offsetX,y:d.offsetY}}),o=new Q({r:100,x:s/2,y:r/2,styleOptions:{fillStyle:K()}}),v=X(()=>{a.clearRect(0,0,s,r),u&&(o.x=tn(o.x,u.x,.05),o.y=tn(o.y,u.y,.05)),o.render(a)});W(()=>{h(),p(),v()})}),(n,s)=>(O(),T("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),xt="/demo/assets/imgs/display-IdleEMXt.png",yt={codes:[{name:"index.vue",code:gt,lang:"js"},{name:"ball.ts",code:on,lang:"ts"}],component:vt,display:xt,title:"缓动追逐",descriptions:""},bt=`<template>
+  <canvas ref="canvasRef"></canvas>
+</template>
+<script setup lang="ts">
+import useGui from '@/hooks/useLilGui'
+import { registEvent, rafLoop, setElement, drawCycle, randomHexColor, randomBetween, looseEqual, distance } from '@thing772/utils'
+import { debounce } from 'lodash-es'
+import { Comet, type CometOptions } from '@/utils/class/comet'
+
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
+
+let ctx: CanvasRenderingContext2D
+let w = window.innerWidth, h = window.innerHeight
+
+useGui({
+  查看源码() {
+    emit("check-source")
+  },
+})
+
+let stopRafLoop: (() => void) | undefined;
+
+const canvasRef = ref()
+
+function setCanvasSize() {
+  w = window.innerWidth
+  h = window.innerHeight
+  Object.assign(canvasRef.value, {
+    width: w,
+    height: h
+  })
+}
+
+onMounted(() => {
+  const canvas = canvasRef.value
+  ctx = canvas.getContext('2d')
+  const uninstallResize = registEvent(window, 'resize', debounce(setCanvasSize, 100))
+  setCanvasSize()
+
+  setElement(canvas, { 'background-color': '#0d0d0d' })
+
+  onUnmounted(() => {
+    uninstallResize()
+    if (stopRafLoop) stopRafLoop()
+  })
+
+  type Node = {
+    x: number;
+    y: number;
+    r: number;
+    opacity: number;
+    color: string;
+  }
+
+  type WidgetComet = Comet<CometOptions, Node> & { flag?: boolean; }
+  let comets = [] as WidgetComet[]
+
+  function start() {
+    if (stopRafLoop) stopRafLoop()
+    stopRafLoop = rafLoop(() => {
+      ctx.clearRect(0, 0, w, h)
+      console.debug("comets个数", comets.length)
+      if (comets.length == 0) {
+        stopRafLoop = void 0
+        return false
+      }
+      comets.forEach(comet => {
+        comet.render(ctx)
+        comet.update()
+      })
+    })
+  }
+
+  registEvent(canvas, "mouseup", (e) => {
+    const { offsetX, offsetY } = e as MouseEvent
+
+    let count = 10
+    let deg = 0
+    for (let index = 0; index < count; index++, deg += 360 / count) {
+      let v = randomBetween(5, 10)
+      let a = randomBetween(0.01, 0.1, false)
+      let r = randomBetween(v / 2, v)
+      let decayR = r / 10
+      let decayOpacity = randomBetween(0.1, 0.2, false)
+      let R = Math.min(w / 2, h / 2)
+
+      let options = {
+        x: offsetX,
+        y: offsetY,
+        vy: v * Math.cos(deg),
+        vx: v * Math.sin(deg),
+        ay: a * Math.cos(deg) + randomBetween(0.5, 1),
+        ax: a * Math.sin(deg),
+      }
+      let comet = new Comet<CometOptions, Node>(options) as WidgetComet
+      comet.children = [{
+        x: options.x,
+        y: options.y,
+        r,
+        opacity: randomBetween(0.5, 1, false),
+        color: randomHexColor()
+      }]
+
+      comet.draw = (ctx, node) => {
+        const { x, y, opacity, r, color } = node
+        drawCycle(ctx, x, y, r, {
+          fillStyle: color,
+          globalAphoa: opacity
+        })
+      }
+
+      comet.updateNode = (node) => {
+        node.r -= decayR
+        node.opacity -= decayOpacity
+        if (node.r < 0 || node.opacity < 0) return false
+      }
+
+      comet.continue = function () {
+        if (this.flag === false) return false
+        if (distance({ x: offsetX, y: offsetY }, this.children[0]) > R) {
+          return this.flag = false
+        }
+        let yFlag = looseEqual(this.vy, 0, 0.2)
+        let xFlag = looseEqual(this.vx, 0, 0.2)
+        this.flag = !(yFlag && xFlag)
+        return this.flag
+      }
+
+      comet.onAllDone = function () {
+        let index = comets.findIndex(item => item == comet)
+        if (index != -1) {
+          comets.splice(index, 1)
+        }
+      }
+      comets.push(comet)
+    }
+
+
+
+    start()
+  })
+
+  start()
+})
+
+<\/script>
+
+<style scoped>
+canvas {
+  cursor: pointer;
+}
+</style>
+`;class wt{constructor(e){C(this,"x",0);C(this,"y",0);C(this,"vx",0);C(this,"vy",0);C(this,"ax",0);C(this,"ay",0);C(this,"maxLength",100);C(this,"children",[]);Object.assign(this,e)}draw(e,i){throw Error("需要重写draw方法")}updateNode(e){throw Error("需要重写updateNode方法")}continue(){return!0}update(){let e=[];if(this.maxLength>this.children.length&&this.continue()){let i={...this.children[0]};i.x+=this.vx,i.y+=this.vy,this.vx+=this.ax,this.vy+=this.ay,e.push(i)}if(this.children.length!=0){for(let i of this.children){if(this.updateNode(i)===!1)break;e.push(i)}this.children=e,e.length==0&&this.onAllDone()}}onAllDone(){console.debug("彗星节点全部消失")}render(e){if(this.children.length!=0)for(let i of this.children)this.draw(e,i)}}const _t=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n=window.innerWidth,s=window.innerHeight;z({查看源码(){i("check-source")}});let r;const u=S();function a(){n=window.innerWidth,s=window.innerHeight,Object.assign(u.value,{width:n,height:s})}return A(()=>{const h=u.value;t=h.getContext("2d");const p=N(window,"resize",fn(a,100));a(),nn(h,{"background-color":"#0d0d0d"}),W(()=>{p(),r&&r()});let o=[];function v(){r&&r(),r=X(()=>{if(t.clearRect(0,0,n,s),console.debug("comets个数",o.length),o.length==0)return r=void 0,!1;o.forEach(d=>{d.render(t),d.update()})})}N(h,"mouseup",d=>{const{offsetX:c,offsetY:f}=d;let x=10,g=0;for(let m=0;m<x;m++,g+=360/x){let w=k(5,10),y=k(.01,.1,!1),_=k(w/2,w),B=_/10,I=k(.1,.2,!1),E=Math.min(n/2,s/2),b={x:c,y:f,vy:w*Math.cos(g),vx:w*Math.sin(g),ay:y*Math.cos(g)+k(.5,1),ax:y*Math.sin(g)},R=new wt(b);R.children=[{x:b.x,y:b.y,r:_,opacity:k(.5,1,!1),color:Z()}],R.draw=(M,F)=>{const{x:j,y:$,opacity:D,r:J,color:se}=F;ge(M,j,$,J,{fillStyle:se,globalAphoa:D})},R.updateNode=M=>{if(M.r-=B,M.opacity-=I,M.r<0||M.opacity<0)return!1},R.continue=function(){if(this.flag===!1)return!1;if(En({x:c,y:f},this.children[0])>E)return this.flag=!1;let M=sn(this.vy,0,.2),F=sn(this.vx,0,.2);return this.flag=!(M&&F),this.flag},R.onAllDone=function(){let M=o.findIndex(F=>F==R);M!=-1&&o.splice(M,1)},o.push(R)}v()}),v()}),(h,p)=>(O(),T("canvas",{ref_key:"canvasRef",ref:u},null,512))}}),Ct=L(_t,[["__scopeId","data-v-7122bfc3"]]),Rt=`export type CometOptions = {
+  x: number;
+  y: number;
+  vx?: number;
+  vy?: number;
+  ax?: number;
+  ay?: number;
+}
+
+export type Pos = { x: number; y: number; }
+
+/**
+ * 彗星对象，
+ * 需要重写draw方法
+ */
+export class Comet<T extends CometOptions = CometOptions, N extends Pos = Pos> {
+  x = 0;
+  y = 0;
+  vx = 0;
+  vy = 0;
+  ax = 0;
+  ay = 0;
+  maxLength = 100
+
+  children = [] as N[]
+
+  constructor(options: T) {
+    Object.assign(this, options)
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  draw(ctx: CanvasRenderingContext2D, node: N) {
+    throw Error("需要重写draw方法")
+  }
+
+  /**
+   * 计算更新节点属性
+   * @param node 节点
+   * @returns {false|void} 返回false，表示节点以及后续节点无需更新可以舍弃
+   */
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  updateNode(node: N): false | void {
+    throw Error('需要重写updateNode方法')
+  }
+
+  /**
+   * 计算是否还可以添加新的头节点
+   * @returns {boolean} 返回true表示可以继续增加（当子节点长度在maxLength内时），false表示不能增加了
+   */
+  continue() {
+    return true
+  }
+
+  update() {
+    let arr = [] as typeof this.children
+    if (this.maxLength > this.children.length && this.continue()) {
+      let clone = { ...this.children[0] }
+      clone.x += this.vx
+      clone.y += this.vy
+      this.vx += this.ax
+      this.vy += this.ay
+      arr.push(clone)
+    }
+
+    if (this.children.length == 0) return
+    for (let item of this.children) {
+      let ret = this.updateNode(item)
+      if (ret === false) {
+        break
+      }
+      arr.push(item)
+    }
+
+    this.children = arr
+    if (arr.length == 0) {
+      this.onAllDone()
+    }
+  }
+
+  onAllDone() {
+    console.debug("彗星节点全部消失")
+  }
+
+  render(ctx: CanvasRenderingContext2D) {
+    if (this.children.length == 0) return
+    for (let item of this.children) {
+      this.draw(ctx, item)
+    }
+  }
+}
+`,St="/demo/assets/imgs/display-pbycchxW.png",kt={codes:[{name:"index.vue",code:bt,lang:"js"},{name:"comet.ts",code:Rt,lang:"js"}],component:Ct,display:St,title:"点击烟花效果",descriptions:""},Bt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -745,7 +989,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,On=`import { rafLoop, updateBallVelocityInRect, isFunc } from '@thing772/utils'
+`,Mn=`import { rafLoop, updateBallVelocityInRect, isFunc } from '@thing772/utils'
 import { type UpdateBallVelocityInRectOptions } from '@thing772/utils'
 import { reusableArray } from '@/utils/utils'
 import { Ball } from '@/utils/class/ball';
@@ -835,7 +1079,7 @@ export function ballsWanderInRect<T extends Ball>(options: BallsWanderInRectOpti
     updateBalls,
   }
 }
-`;function Fn(r){const{canvas:e,ballsNum:o,createBallFac:t,onBallUpdate:n,speedDecay:a,preRender:l,postRender:c}=r;let s=e.width,h=e.height;const f=e.getContext("2d");let i=[];const m=Tn(t);function d(v){i=m(v),p()}function u(v){Object.assign(e,v),s=v.width,h=v.height,p()}function p(v){i.forEach(_=>{Mn(v)&&v(_),_.render(f)})}function y(){f.clearRect(0,0,s,h);for(const v of i)Mn(n)?n(v):(v.update(),pe(v,{wBox:[0,s],hBox:[0,h],speedDecay:a}));l==null||l(i,f),i.forEach(v=>v.render(f)),c==null||c(i,f)}function b(v){f.clearRect(0,0,s,h),p(v)}d(o);let g;function w(){return g&&g(),g=U(()=>{y()})}return{start:w,setBallNum:d,setSize:u,render:y,updateBalls:b}}const xt=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=80,n=1,a=3,l=3,c=100,s;z({小球个数:{value:[t,1,1e3,10],onFinishChange(d){t=d,i.setBallNum(d)}},小球半径上限:{value:[n,1,100,1],onFinishChange(d){n=d,i.updateBalls(u=>{u.r=S(1,d)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(d){a=d,i.updateBalls(u=>{u.vx=S(1,d)})}},小球y方向移动速度上限:{value:[l,1,15,.5],onFinishChange(d){l=d,i.updateBalls(u=>{u.vy=S(1,d)})}},小球连接范围阈值:{value:[c,50,300,1],onFinishChange(d){c=d}},查看源码(){o("check-source")}});let h;const f=k();let i,m;return A(()=>{const d=f.value;let u=innerWidth,p=innerHeight;Object.assign(d,{width:u,height:p}),i=Fn({canvas:d,ballsNum:t,createBallFac:()=>new Q({x:S(10,u-10),y:S(10,p-10),r:S(1,n),vx:S(1,a),vy:S(1,l),styleOptions:{fillStyle:Y()}}),preRender(g,w){s||(s=yn(w,{strokeStyle:Y(),lineWidth:1})),m&&(g=g.concat(m));for(let v=0;v<g.length;v++)for(let _=v+1;_<g.length;_++){const B=g[v],j=g[_];Vn(B,j)<c&&s(B,j)}m&&g.pop()}});const y=W(window,"resize",()=>{u=innerWidth,p=innerHeight,i.setSize({width:u,height:p})},{immediate:!0}),b=W(d,"mousemove",g=>{m={x:g.offsetX,y:g.offsetY}},{needLog:!0});h=i.start(),N(()=>{y(),b(),h&&h()})}),(d,u)=>(O(),F("canvas",{ref_key:"canvasRef",ref:f},null,512))}}),yt="/demo/assets/imgs/display-y86Fu395.png",bt={codes:[{name:"index.vue",code:vt,lang:"js"},{name:"wander-balls.ts",code:On,lang:"ts"},{name:"ball.ts",code:en,lang:"ts"}],component:xt,display:yt,title:"粒子小球连线",descriptions:""},wt=`<template>
+`;function Tn(l){const{canvas:e,ballsNum:i,createBallFac:t,onBallUpdate:n,speedDecay:s,preRender:r,postRender:u}=l;let a=e.width,h=e.height;const p=e.getContext("2d");let o=[];const v=On(t);function d(y){o=v(y),f()}function c(y){Object.assign(e,y),a=y.width,h=y.height,f()}function f(y){o.forEach(_=>{zn(y)&&y(_),_.render(p)})}function x(){p.clearRect(0,0,a,h);for(const y of o)zn(n)?n(y):(y.update(),ve(y,{wBox:[0,a],hBox:[0,h],speedDecay:s}));r==null||r(o,p),o.forEach(y=>y.render(p)),u==null||u(o,p)}function g(y){p.clearRect(0,0,a,h),f(y)}d(i);let m;function w(){return m&&m(),m=X(()=>{x()})}return{start:w,setBallNum:d,setSize:c,render:x,updateBalls:g}}const Et=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=80,n=1,s=3,r=3,u=100,a;z({小球个数:{value:[t,1,1e3,10],onFinishChange(d){t=d,o.setBallNum(d)}},小球半径上限:{value:[n,1,100,1],onFinishChange(d){n=d,o.updateBalls(c=>{c.r=k(1,d)})}},小球x方向移动速度上限:{value:[s,1,15,.5],onFinishChange(d){s=d,o.updateBalls(c=>{c.vx=k(1,d)})}},小球y方向移动速度上限:{value:[r,1,15,.5],onFinishChange(d){r=d,o.updateBalls(c=>{c.vy=k(1,d)})}},小球连接范围阈值:{value:[u,50,300,1],onFinishChange(d){u=d}},查看源码(){i("check-source")}});let h;const p=S();let o,v;return A(()=>{const d=p.value;let c=innerWidth,f=innerHeight;Object.assign(d,{width:c,height:f}),o=Tn({canvas:d,ballsNum:t,createBallFac:()=>new Q({x:k(10,c-10),y:k(10,f-10),r:k(1,n),vx:k(1,s),vy:k(1,r),styleOptions:{fillStyle:K()}}),preRender(m,w){a||(a=wn(w,{strokeStyle:K(),lineWidth:1})),v&&(m=m.concat(v));for(let y=0;y<m.length;y++)for(let _=y+1;_<m.length;_++){const B=m[y],I=m[_];En(B,I)<u&&a(B,I)}v&&m.pop()}});const x=N(window,"resize",()=>{c=innerWidth,f=innerHeight,o.setSize({width:c,height:f})},{immediate:!0}),g=N(d,"mousemove",m=>{v={x:m.offsetX,y:m.offsetY}},{needLog:!0});h=o.start(),W(()=>{x(),g(),h&&h()})}),(d,c)=>(O(),T("canvas",{ref_key:"canvasRef",ref:p},null,512))}}),jt="/demo/assets/imgs/display-y86Fu395.png",Ft={codes:[{name:"index.vue",code:Bt,lang:"js"},{name:"wander-balls.ts",code:Mn,lang:"ts"},{name:"ball.ts",code:on,lang:"ts"}],component:Et,display:jt,title:"粒子小球连线",descriptions:""},It=`<template>
   <canvas ref="canvasRef"></canvas>
   <el-input class="input" v-model="fnStr" placeholder="参数:（x:x坐标，t：时间参数），输入x和t的表达式" size="large"
     @keyup.enter="onEnter"></el-input>
@@ -960,7 +1204,7 @@ onMounted(() => {
   box-shadow: 0 0 10px 5px #409EFF;
 }
 </style>
-`,_t=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,t=k();let n=innerWidth,a=innerHeight,l;const c=(u,p)=>Math.sin(5*u+.001*p)+Math.cos(10*u+.005*p);let s=k(""),h=c,f=300,i=1,m=Y();function d(){h=new Function("x","t",`return ${s.value}`);try{h(0,0)}catch(u){bn({showClose:!0,message:u.message,type:"error",grouping:!0})}}return A(()=>{const u=t.value,p=u.getContext("2d");z({采样率设置:{value:[f,10,1e3,10],onFinishChange(g){f=g}},曲线粗细设置:{value:[i,1,10,1],onFinishChange(g){i=g}},曲线颜色设置:{value:[m],isColor:!0,onFinishChange(g){m=g}},查看源码(){o("check-source")}}),l=zn({canvas:u,ctx:p,width:n,height:a});const y=U(g=>{p.clearRect(0,0,n,a),l.setup(),l.draw(w=>{let v=0;try{v=h(w,g)}catch{}return v},{rate:f,style:{strokeStyle:m,lineWidth:i},label:{name:h.toString().replace(/ anonymous/,""),pos:{x:100,y:100}}})}),b=W(window,"resize",()=>{n=innerWidth,a=innerHeight,l=zn({canvas:u,ctx:p,width:n,height:a})});N(()=>{b(),y()})}),(u,p)=>{const y=Bn;return O(),F(K,null,[H("canvas",{ref_key:"canvasRef",ref:t},null,512),G(y,{class:"input",modelValue:X(s),"onUpdate:modelValue":p[0]||(p[0]=b=>xn(s)?s.value=b:s=b),placeholder:"参数:（x:x坐标，t：时间参数），输入x和t的表达式",size:"large",onKeyup:kn(d,["enter"])},null,8,["modelValue"])],64)}}}),Ct=L(_t,[["__scopeId","data-v-926767a5"]]),Rt="/demo/assets/imgs/display-BsbAITaj.png",St={codes:[{name:"index.vue",code:wt,lang:"js"}],component:Ct,display:Rt,title:"笛卡尔坐标系函数绘制",descriptions:""},kt=`<template>
+`,Ot=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,t=S();let n=innerWidth,s=innerHeight,r;const u=(c,f)=>Math.sin(5*c+.001*f)+Math.cos(10*c+.005*f);let a=S(""),h=u,p=300,o=1,v=K();function d(){h=new Function("x","t",`return ${a.value}`);try{h(0,0)}catch(c){_n({showClose:!0,message:c.message,type:"error",grouping:!0})}}return A(()=>{const c=t.value,f=c.getContext("2d");z({采样率设置:{value:[p,10,1e3,10],onFinishChange(m){p=m}},曲线粗细设置:{value:[o,1,10,1],onFinishChange(m){o=m}},曲线颜色设置:{value:[v],isColor:!0,onFinishChange(m){v=m}},查看源码(){i("check-source")}}),r=$n({canvas:c,ctx:f,width:n,height:s});const x=X(m=>{f.clearRect(0,0,n,s),r.setup(),r.draw(w=>{let y=0;try{y=h(w,m)}catch{}return y},{rate:p,style:{strokeStyle:v,lineWidth:o},label:{name:h.toString().replace(/ anonymous/,""),pos:{x:100,y:100}}})}),g=N(window,"resize",()=>{n=innerWidth,s=innerHeight,r=$n({canvas:c,ctx:f,width:n,height:s})});W(()=>{g(),x()})}),(c,f)=>{const x=Fn;return O(),T(U,null,[V("canvas",{ref_key:"canvasRef",ref:t},null,512),G(x,{class:"input",modelValue:Y(a),"onUpdate:modelValue":f[0]||(f[0]=g=>bn(a)?a.value=g:a=g),placeholder:"参数:（x:x坐标，t：时间参数），输入x和t的表达式",size:"large",onKeyup:jn(d,["enter"])},null,8,["modelValue"])],64)}}}),Mt=L(Ot,[["__scopeId","data-v-926767a5"]]),Tt="/demo/assets/imgs/display-BsbAITaj.png",Pt={codes:[{name:"index.vue",code:It,lang:"js"}],component:Mt,display:Tt,title:"笛卡尔坐标系函数绘制",descriptions:""},zt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1200,7 +1444,7 @@ onMounted(() => {
   it = dfsGenerator(start, end, xMax, yMax)
 })
 <\/script>
-`;function*Wn(r,e,o,t){const n=[{...r}],a=[],l={...e},c={};let s;const h=u=>{c[d(u)]=!0,a.push({...u})},f=()=>{const u=n.shift();return delete c[d(u)],u},i=u=>{u.forEach(p=>{c[d(p)]=!0}),n.unshift(...u)},m=(u,p)=>{if(!(u>o||p>t||u<0||p<0))return{x:u,y:p}},d=u=>`${u.x}-${u.y}`;for(;n.length>0;){if(s&&h(s),s=f(),s.x==l.x&&s.y==l.y)return{current:s,visited:[...a],pending:[...n]};const u=m(s.x,s.y-1),p=m(s.x+1,s.y),y=m(s.x,s.y+1),b=m(s.x-1,s.y);let g=[u,p,y,b].filter(Boolean);g=g.filter(w=>!c[d(w)]),g.forEach(w=>{w.parent=s}),g.length!=0&&(i(g),yield{current:s,visited:[...a],pending:[...n]})}}function Bt(r,e,o,t){const n=[{...r}],a=[],l={...e},c={};let s;const h=u=>{c[d(u)]=!0,a.push({...u})},f=()=>{const u=n.shift();return delete c[d(u)],u},i=u=>{u.forEach(p=>{c[d(p)]=!0}),n.unshift(...u)},m=(u,p)=>{if(!(u>o||p>t||u<0||p<0))return{x:u,y:p}},d=u=>`${u.x}-${u.y}`;for(;n.length>0;){if(s&&h(s),s=f(),s.x==l.x&&s.y==l.y)return{current:s,visited:[...a],pending:[...n]};const u=m(s.x,s.y-1),p=m(s.x+1,s.y),y=m(s.x,s.y+1),b=m(s.x-1,s.y);let g=[u,p,y,b].filter(Boolean);g=g.filter(w=>!c[d(w)]),g.forEach(w=>{w.parent=s}),g.length!=0&&i(g)}}const Et=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t,n,a,l,c,s,h;const f=k("#c5afbb"),i=k(30),m=k(),d=gn({x:20,y:10}),u=gn({x:0,y:0}),p=x=>{const R=m.value;a=nn(innerWidth,i.value),l=nn(innerHeight,i.value),R.width=a,R.height=l,t=a/i.value-1,n=l/i.value-1,x==null||x();const M=h.helpers.getControllerByKey,T={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:n,setValue:d.y},设置终点X:{max:t,setValue:u.x},设置终点Y:{max:n,setValue:u.y}};for(const I in T){const $=M(I),D=T[I];for(const tn in D)$[tn](D[tn])}};q([m,f],([x,R])=>{un(x,{"background-color":R})}),q(i,()=>{v.value=0,p(),w()});const y=(x,R,M)=>{s.save(),Object.assign(s,M),s.fillRect(x*i.value,R*i.value,i.value,i.value),s.restore()},b=(x,R)=>{y(x,R,{fillStyle:"red"})},g=(x,R)=>{y(x,R,{fillStyle:"green"})},w=x=>{const R=m.value;s.clearRect(0,0,a,l),Hn({width:a,height:l,gridSize:i.value,canvas:R,ctx:s,lineWidth:1,gridLineColor:"#fff"}),typeof x=="function"&&x(),b(d.x,d.y),g(u.x,u.y)};q([d,u],()=>{w(),v.value=0,c=Wn(d,u,t,n)});const v=Un(),_=rn();function B(x){const{current:R,pending:M,visited:T}=x;w(()=>{y(R.x,R.y,{fillStyle:"gold"}),M.forEach(I=>{const{x:$,y:D}=I;y($,D,{fillStyle:"pink"})}),T.forEach(I=>{const{x:$,y:D}=I;y($,D,{fillStyle:"black"})})})}function j(x){for(;x;)y(x.x,x.y,{fillStyle:"blue"}),x=x.parent;b(d.x,d.y),g(u.x,u.y)}q(_,x=>{const{value:R,done:M}=x;M&&!R||(B(R),M&&j(R.current))});const E=()=>{h=z({设置背景色:{value:[f.value],isColor:!0,onFinishChange(x){f.value=x}},网格大小设置:{value:[i.value,5,50,1],onFinishChange(x){i.value=x}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(x){d.x=x}},设置起始点Y:{value:[d.y,0,n,1],onFinishChange(x){d.y=x}},设置终点X:{value:[u.x,0,t,1],onFinishChange(x){u.x=x}},设置终点Y:{value:[u.y,0,n,1],onFinishChange(x){u.y=x}},自动dfs迭代(){c&&(v.value=0,v.value=setInterval(()=>{const x=c.next();_.value=x,x.done&&(v.value=0)},100))},dfs巡路(){console.time("dfs寻路耗时"),v.value=0;const x=Bt(d,u,t,n);if(!x)throw Error("没有找到终点");console.timeEnd("dfs寻路耗时"),w(()=>{j(x.current)})},查看源码(){o("check-source")}})};return A(()=>{s=m.value.getContext("2d"),E(),p(()=>{Object.assign(u,{x:~~(t/2),y:~~(n/2)})}),c=Wn(d,u,t,n)}),(x,R)=>(O(),F("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),It="/demo/assets/imgs/display-BRS54xHs.png",jt=`export type Index = { x: number; y: number }
+`;function*Gn(l,e,i,t){const n=[{...l}],s=[],r={...e},u={};let a;const h=c=>{u[d(c)]=!0,s.push({...c})},p=()=>{const c=n.shift();return delete u[d(c)],c},o=c=>{c.forEach(f=>{u[d(f)]=!0}),n.unshift(...c)},v=(c,f)=>{if(!(c>i||f>t||c<0||f<0))return{x:c,y:f}},d=c=>`${c.x}-${c.y}`;for(;n.length>0;){if(a&&h(a),a=p(),a.x==r.x&&a.y==r.y)return{current:a,visited:[...s],pending:[...n]};const c=v(a.x,a.y-1),f=v(a.x+1,a.y),x=v(a.x,a.y+1),g=v(a.x-1,a.y);let m=[c,f,x,g].filter(Boolean);m=m.filter(w=>!u[d(w)]),m.forEach(w=>{w.parent=a}),m.length!=0&&(o(m),yield{current:a,visited:[...s],pending:[...n]})}}function $t(l,e,i,t){const n=[{...l}],s=[],r={...e},u={};let a;const h=c=>{u[d(c)]=!0,s.push({...c})},p=()=>{const c=n.shift();return delete u[d(c)],c},o=c=>{c.forEach(f=>{u[d(f)]=!0}),n.unshift(...c)},v=(c,f)=>{if(!(c>i||f>t||c<0||f<0))return{x:c,y:f}},d=c=>`${c.x}-${c.y}`;for(;n.length>0;){if(a&&h(a),a=p(),a.x==r.x&&a.y==r.y)return{current:a,visited:[...s],pending:[...n]};const c=v(a.x,a.y-1),f=v(a.x+1,a.y),x=v(a.x,a.y+1),g=v(a.x-1,a.y);let m=[c,f,x,g].filter(Boolean);m=m.filter(w=>!u[d(w)]),m.forEach(w=>{w.parent=a}),m.length!=0&&o(m)}}const Dt=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n,s,r,u,a,h;const p=S("#c5afbb"),o=S(30),v=S(),d=yn({x:20,y:10}),c=yn({x:0,y:0}),f=b=>{const R=v.value;s=an(innerWidth,o.value),r=an(innerHeight,o.value),R.width=s,R.height=r,t=s/o.value-1,n=r/o.value-1,b==null||b();const M=h.helpers.getControllerByKey,F={设置起始点X:{max:t,setValue:d.x},设置起始点Y:{max:n,setValue:d.y},设置终点X:{max:t,setValue:c.x},设置终点Y:{max:n,setValue:c.y}};for(const j in F){const $=M(j),D=F[j];for(const J in D)$[J](D[J])}};H([v,p],([b,R])=>{nn(b,{"background-color":R})}),H(o,()=>{y.value=0,f(),w()});const x=(b,R,M)=>{a.save(),Object.assign(a,M),a.fillRect(b*o.value,R*o.value,o.value,o.value),a.restore()},g=(b,R)=>{x(b,R,{fillStyle:"red"})},m=(b,R)=>{x(b,R,{fillStyle:"green"})},w=b=>{const R=v.value;a.clearRect(0,0,s,r),qn({width:s,height:r,gridSize:o.value,canvas:R,ctx:a,lineWidth:1,gridLineColor:"#fff"}),typeof b=="function"&&b(),g(d.x,d.y),m(c.x,c.y)};H([d,c],()=>{w(),y.value=0,u=Gn(d,c,t,n)});const y=Qn(),_=un();function B(b){const{current:R,pending:M,visited:F}=b;w(()=>{x(R.x,R.y,{fillStyle:"gold"}),M.forEach(j=>{const{x:$,y:D}=j;x($,D,{fillStyle:"pink"})}),F.forEach(j=>{const{x:$,y:D}=j;x($,D,{fillStyle:"black"})})})}function I(b){for(;b;)x(b.x,b.y,{fillStyle:"blue"}),b=b.parent;g(d.x,d.y),m(c.x,c.y)}H(_,b=>{const{value:R,done:M}=b;M&&!R||(B(R),M&&I(R.current))});const E=()=>{h=z({设置背景色:{value:[p.value],isColor:!0,onFinishChange(b){p.value=b}},网格大小设置:{value:[o.value,5,50,1],onFinishChange(b){o.value=b}},设置起始点X:{value:[d.x,0,t,1],onFinishChange(b){d.x=b}},设置起始点Y:{value:[d.y,0,n,1],onFinishChange(b){d.y=b}},设置终点X:{value:[c.x,0,t,1],onFinishChange(b){c.x=b}},设置终点Y:{value:[c.y,0,n,1],onFinishChange(b){c.y=b}},自动dfs迭代(){u&&(y.value=0,y.value=setInterval(()=>{const b=u.next();_.value=b,b.done&&(y.value=0)},100))},dfs巡路(){console.time("dfs寻路耗时"),y.value=0;const b=$t(d,c,t,n);if(!b)throw Error("没有找到终点");console.timeEnd("dfs寻路耗时"),w(()=>{I(b.current)})},查看源码(){i("check-source")}})};return A(()=>{a=v.value.getContext("2d"),E(),f(()=>{Object.assign(c,{x:~~(t/2),y:~~(n/2)})}),u=Gn(d,c,t,n)}),(b,R)=>(O(),T("canvas",{ref_key:"canvasRef",ref:v},null,512))}}),At="/demo/assets/imgs/display-BRS54xHs.png",Nt=`export type Index = { x: number; y: number }
 type IndexWithParent = Index & { parent?: IndexWithParent }
 
 /**
@@ -1365,7 +1609,7 @@ export function dfs(start: Index, end: Index, xMax: number, yMax: number) {
     addToQueue(available)
   }
 }
-`,Tt={codes:[{name:"index.vue",code:kt,lang:"js"},{name:"dfs.ts",code:jt,lang:"ts"}],component:Et,display:It,title:"canvas网格——深度优先搜索",descriptions:""},Ot=`<template>
+`,Wt={codes:[{name:"index.vue",code:zt,lang:"js"},{name:"dfs.ts",code:Nt,lang:"ts"}],component:Dt,display:At,title:"canvas网格——深度优先搜索",descriptions:""},Lt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1552,7 +1796,7 @@ canvas {
   cursor: pointer;
 }
 </style>
-`;class Qn{constructor(e){C(this,"x",0);C(this,"y",0);C(this,"tx",0);C(this,"ty",0);C(this,"color","pink");C(this,"name","");C(this,"fx",.01);C(this,"fy",.01);C(this,"onDone");C(this,"r",0);C(this,"size",0);C(this,"done",!1);Object.assign(this,e)}update(){var t;const{tx:e,ty:o}=this;if(!this.done)return this.x=J(this.x,e,this.fx),this.y=J(this.y,o,this.fy),vn(this.x,this.tx)&&vn(this.y,this.ty)&&(this.done=!0,(t=this.onDone)==null||t.call(this)),this}render(e){const{color:o,x:t,y:n,size:a,r:l}=this;e.save(),Object.assign(e,{fillStyle:o}),e.beginPath(),a>0?e.fillRect(t,n,a,a):l>0?e.arc(t,n,l,0,Math.PI*2):e.arc(t,n,2,0,Math.PI*2),e.fill(),e.restore()}}const Ln=20,Ft=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=20,n=30,a=10,l=0,c=0,s=25,h=25,f="#53e953",i=[],m,d=50;function u(){i=[];for(let v=0;v<t;v++)for(let _=0;_<n;_++){const B=-1*(n-1-_)*h+l/2+(n-1)*h/2,j=-1*(t-1-v)*s+c/2+(t-1)*s/2,E=new Qn({x:B,y:j,tx:B,ty:j,r:a,fx:S(.01,.5,!1),fy:S(.01,.5,!1),color:f});E.originPos={x:B,y:j},i.push(E)}}function p(v){i.forEach(_=>{Object.assign(_,v)})}z({球阵列行数:{value:[t,1,50,1],onFinishChange(v){t=v,u()}},球阵列列数:{value:[n,1,50,1],onFinishChange(v){n=v,u()}},球阵列列间距:{value:[h,6,50,2],onFinishChange(v){h=v,u()}},球阵列行间距:{value:[s,6,50,2],onFinishChange(v){s=v,u()}},影响半径:{value:[d,10,500,1],onFinishChange(v){d=v,u()}},小球半径:{value:[a,4,100,1],onFinishChange(v){a=v,p({r:a}),w()}},球颜色:{value:[f],isColor:!0,onFinishChange(v){f=v,p({color:v})}},查看源码(){o("check-source")}});const y=k(),b=()=>{l=nn(innerWidth,Ln),c=nn(innerHeight,Ln),Object.assign(y.value,{width:l,height:c})};let g;const w=()=>{if(g)for(const v of i){const{originPos:_}=v;if(me(g,d,_)){const B=d-Vn(g,_),j=sn(_,In(g,_),B*(B/d));Object.assign(v,{tx:j.x,ty:j.y,done:!1})}else Object.assign(v,{tx:_.x,ty:_.y,done:!1})}};return A(()=>{const v=y.value;m=v.getContext("2d");const _=W(window,"resize",En(()=>{b(),u()},100),{immediate:!0}),B=W(v,"mousemove",E=>{const{offsetX:x,offsetY:R}=E;g?(g.x=x,g.y=R):g={x,y:R},w()});un(v,{"background-color":"#0d0d0d"}),u();const j=U(()=>{m.clearRect(0,0,l,c);for(const E of i)E.update(),E.render(m)});N(()=>{_(),j(),B()})}),(v,_)=>(O(),F("canvas",{ref_key:"canvasRef",ref:y},null,512))}}),Pt=L(Ft,[["__scopeId","data-v-04ab409b"]]),Zn=`import { iterateEaseFromTo, looseEqual } from '@thing772/utils'
+`;class Zn{constructor(e){C(this,"x",0);C(this,"y",0);C(this,"tx",0);C(this,"ty",0);C(this,"color","pink");C(this,"name","");C(this,"fx",.01);C(this,"fy",.01);C(this,"onDone");C(this,"r",0);C(this,"size",0);C(this,"done",!1);Object.assign(this,e)}update(){var t;const{tx:e,ty:i}=this;if(!this.done)return this.x=tn(this.x,e,this.fx),this.y=tn(this.y,i,this.fy),sn(this.x,this.tx)&&sn(this.y,this.ty)&&(this.done=!0,(t=this.onDone)==null||t.call(this)),this}render(e){const{color:i,x:t,y:n,size:s,r}=this;e.save(),Object.assign(e,{fillStyle:i}),e.beginPath(),s>0?e.fillRect(t,n,s,s):r>0?e.arc(t,n,r,0,Math.PI*2):e.arc(t,n,2,0,Math.PI*2),e.fill(),e.restore()}}const Vn=20,Ht=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=20,n=30,s=10,r=0,u=0,a=25,h=25,p="#53e953",o=[],v,d=50;function c(){o=[];for(let y=0;y<t;y++)for(let _=0;_<n;_++){const B=-1*(n-1-_)*h+r/2+(n-1)*h/2,I=-1*(t-1-y)*a+u/2+(t-1)*a/2,E=new Zn({x:B,y:I,tx:B,ty:I,r:s,fx:k(.01,.5,!1),fy:k(.01,.5,!1),color:p});E.originPos={x:B,y:I},o.push(E)}}function f(y){o.forEach(_=>{Object.assign(_,y)})}z({球阵列行数:{value:[t,1,50,1],onFinishChange(y){t=y,c()}},球阵列列数:{value:[n,1,50,1],onFinishChange(y){n=y,c()}},球阵列列间距:{value:[h,6,50,2],onFinishChange(y){h=y,c()}},球阵列行间距:{value:[a,6,50,2],onFinishChange(y){a=y,c()}},影响半径:{value:[d,10,500,1],onFinishChange(y){d=y,c()}},小球半径:{value:[s,4,100,1],onFinishChange(y){s=y,f({r:s}),w()}},球颜色:{value:[p],isColor:!0,onFinishChange(y){p=y,f({color:y})}},查看源码(){i("check-source")}});const x=S(),g=()=>{r=an(innerWidth,Vn),u=an(innerHeight,Vn),Object.assign(x.value,{width:r,height:u})};let m;const w=()=>{if(m)for(const y of o){const{originPos:_}=y;if(ye(m,d,_)){const B=d-En(m,_),I=rn(_,In(m,_),B*(B/d));Object.assign(y,{tx:I.x,ty:I.y,done:!1})}else Object.assign(y,{tx:_.x,ty:_.y,done:!1})}};return A(()=>{const y=x.value;v=y.getContext("2d");const _=N(window,"resize",xe(()=>{g(),c()},100),{immediate:!0}),B=N(y,"mousemove",E=>{const{offsetX:b,offsetY:R}=E;m?(m.x=b,m.y=R):m={x:b,y:R},w()});nn(y,{"background-color":"#0d0d0d"}),c();const I=X(()=>{v.clearRect(0,0,r,u);for(const E of o)E.update(),E.render(v)});W(()=>{_(),I(),B()})}),(y,_)=>(O(),T("canvas",{ref_key:"canvasRef",ref:x},null,512))}}),Gt=L(Ht,[["__scopeId","data-v-04ab409b"]]),Jn=`import { iterateEaseFromTo, looseEqual } from '@thing772/utils'
 
 type ParticleOptionsBase = {
   x?: number;//当前x
@@ -1614,7 +1858,7 @@ export class Particle {
     ctx.restore();
   }
 }
-`,Mt="/demo/assets/imgs/display-D8ZXnX54.png",zt={codes:[{name:"index.vue",code:Ot,lang:"js"},{name:"particle.ts",code:Zn,lang:"js"}],component:Pt,display:Mt,title:"鼠标滑过小球堆的效果",descriptions:""},$t=`<template>
+`,Vt="/demo/assets/imgs/display-D8ZXnX54.png",qt={codes:[{name:"index.vue",code:Lt,lang:"js"},{name:"particle.ts",code:Jn,lang:"js"}],component:Gt,display:Vt,title:"鼠标滑过小球堆的效果",descriptions:""},Xt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1729,7 +1973,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Dt=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;z({查看源码(){o("check-source")}});const t=k();return A(()=>{const n=t.value;let a,l,c;const s=n.getContext("2d"),h=W(window,"resize",()=>{Object.assign(n,{width:a=innerWidth,height:l=innerHeight})},{immediate:!0}),f=W(n,"mousemove",function(b){c={x:b.offsetX,y:b.offsetY}}),i=[new Q({r:50,x:a/2-80,y:l/2,styleOptions:{fillStyle:Y()}}),new Q({r:50,x:a/2+80,y:l/2,styleOptions:{fillStyle:Y()}})],m=i.map(b=>new Q({r:b.r/4,x:b.x,y:b.y,styleOptions:{fillStyle:Y()}})),d=new Q({r:200,x:a/2,y:l/2,styleOptions:{fillStyle:"#E6A23C"}}),u=yn(s,{strokeStyle:"#fff",lineWidth:"10",lineCap:"round"}),p=.05,y=U(()=>{s.clearRect(0,0,a,l),d.render(s),i.forEach(b=>{b.render(s)}),m.forEach((b,g)=>{if(c){const w=b.x=J(b.x,c.x,p),v=b.y=J(b.y,c.y,p),_=i[g],B={x:_.x,y:_.y,r:_.r-10};if(!ge(B,b)){b.x=w,b.y=v;const j=ve(B,c);Object.assign(b,jn(B,j,B.r-b.r))}}b.render(s)}),u({x:a/2-50,y:l/2+100},{x:a/2+50,y:l/2+100})});N(()=>{h(),f(),y()})}),(n,a)=>(O(),F("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),At="/demo/assets/imgs/display-BcjSOcDf.png",Nt={codes:[{name:"index.vue",code:$t,lang:"js"},{name:"ball.ts",code:en,lang:"ts"}],component:Dt,display:At,title:"会动的眼球",descriptions:""},Wt=`<template>
+`,Yt=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;z({查看源码(){i("check-source")}});const t=S();return A(()=>{const n=t.value;let s,r,u;const a=n.getContext("2d"),h=N(window,"resize",()=>{Object.assign(n,{width:s=innerWidth,height:r=innerHeight})},{immediate:!0}),p=N(n,"mousemove",function(g){u={x:g.offsetX,y:g.offsetY}}),o=[new Q({r:50,x:s/2-80,y:r/2,styleOptions:{fillStyle:K()}}),new Q({r:50,x:s/2+80,y:r/2,styleOptions:{fillStyle:K()}})],v=o.map(g=>new Q({r:g.r/4,x:g.x,y:g.y,styleOptions:{fillStyle:K()}})),d=new Q({r:200,x:s/2,y:r/2,styleOptions:{fillStyle:"#E6A23C"}}),c=wn(a,{strokeStyle:"#fff",lineWidth:"10",lineCap:"round"}),f=.05,x=X(()=>{a.clearRect(0,0,s,r),d.render(a),o.forEach(g=>{g.render(a)}),v.forEach((g,m)=>{if(u){const w=g.x=tn(g.x,u.x,f),y=g.y=tn(g.y,u.y,f),_=o[m],B={x:_.x,y:_.y,r:_.r-10};if(!be(B,g)){g.x=w,g.y=y;const I=we(B,u);Object.assign(g,Xn(B,I,B.r-g.r))}}g.render(a)}),c({x:s/2-50,y:r/2+100},{x:s/2+50,y:r/2+100})});W(()=>{h(),p(),x()})}),(n,s)=>(O(),T("canvas",{ref_key:"canvasRef",ref:t},null,512))}}),Kt="/demo/assets/imgs/display-BcjSOcDf.png",Ut={codes:[{name:"index.vue",code:Xt,lang:"js"},{name:"ball.ts",code:on,lang:"ts"}],component:Yt,display:Kt,title:"会动的眼球",descriptions:""},Qt=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -1817,7 +2061,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Lt=`import { Ball } from '@/utils/class/ball'
+`,Zt=`import { Ball } from '@/utils/class/ball'
 import { randomBetween, randomRgb, rafLoop, looseEqual } from '@thing772/utils'
 import { reusableArray } from '@/utils/utils'
 
@@ -1929,7 +2173,7 @@ export function fallingBalls(options: fallingBallsOptions) {
     render
   }
 }
-`;function Gt(r){const{canvas:e,num:o,onAllStopped:t}=r,n=e.getContext("2d");let a=e.width,l=e.height,c=[],s=!1,h=!1;const f=Tn(()=>new Q(i()));function i(){return{x:S(10,a-10),y:S(10,l-10),r:4,ax:0,ay:S(.1,2,!1),vx:0,vy:S(1,3),styleOptions:{fillStyle:Y()},stopped:!1}}function m(g){c=f(g)}function d(){for(const g of c)g.reset().set(i());if(h=!1,!s)return b()}function u(g){Object.assign(e,g),a=g.width,l=g.height}function p(g){return g.stopped||vn(g.vy,0,1)&&vn(g.y+g.r,l,1)}function y(){if(c.length!=0){n.clearRect(0,0,a,l);for(const g of c)if(g.update(),g.y+g.r>l&&(g.y=l-g.r,g.vy*=-.7),g.render(n),p(g)&&(g.stopped=!0,c.every(p))){s=!1,h=!0;try{t==null||t()}catch(w){console.error(w)}return!1}}}m(o);function b(){if(s)return;s=!0,h&&d();const g=U(y);return()=>{s&&(s=!1,g())}}return{start:b,reset:d,setBallsNum:m,setSize:u,render:y}}const Ht=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=100;const n=k(),{helpers:{getControllerByKey:a}}=z({小球个数:{value:[t,1,1e3,10],onFinishChange(h){t=h,c.setBallsNum(h)}},开始(){const h=c.start();h&&(n.value=h)},暂停:{value:[function(){n.value()}],disable:!n.value},重置(){const h=c.reset();h&&(n.value=h)},查看源码(){o("check-source")}});q(n,h=>{a("暂停").enable(!!h)});const l=k();let c;function s(){bn({showClose:!0,message:"所有小球都停止运动了",type:"success",grouping:!0})}return A(()=>{const h=l.value;Object.assign(h,{width:innerWidth,height:innerHeight}),c=Gt({num:t,canvas:h,onAllStopped:s});const f=W(window,"resize",()=>{c.setSize({width:innerWidth,height:innerHeight})},{immediate:!0});c.render(),N(()=>{f(),n.value&&n.value()})}),(h,f)=>(O(),F("canvas",{ref_key:"canvasRef",ref:l},null,512))}}),Vt="/demo/assets/imgs/display-DOU4TeMC.png",qt={codes:[{name:"index.vue",code:Wt,lang:"js"},{name:"falling-balls.ts",code:Lt,lang:"ts"},{name:"ball.ts",code:en,lang:"ts"}],component:Ht,display:Vt,title:"下落的小球",descriptions:""},Xt=`<template>
+`;function Jt(l){const{canvas:e,num:i,onAllStopped:t}=l,n=e.getContext("2d");let s=e.width,r=e.height,u=[],a=!1,h=!1;const p=On(()=>new Q(o()));function o(){return{x:k(10,s-10),y:k(10,r-10),r:4,ax:0,ay:k(.1,2,!1),vx:0,vy:k(1,3),styleOptions:{fillStyle:K()},stopped:!1}}function v(m){u=p(m)}function d(){for(const m of u)m.reset().set(o());if(h=!1,!a)return g()}function c(m){Object.assign(e,m),s=m.width,r=m.height}function f(m){return m.stopped||sn(m.vy,0,1)&&sn(m.y+m.r,r,1)}function x(){if(u.length!=0){n.clearRect(0,0,s,r);for(const m of u)if(m.update(),m.y+m.r>r&&(m.y=r-m.r,m.vy*=-.7),m.render(n),f(m)&&(m.stopped=!0,u.every(f))){a=!1,h=!0;try{t==null||t()}catch(w){console.error(w)}return!1}}}v(i);function g(){if(a)return;a=!0,h&&d();const m=X(x);return()=>{a&&(a=!1,m())}}return{start:g,reset:d,setBallsNum:v,setSize:c,render:x}}const ns=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=100;const n=S(),{helpers:{getControllerByKey:s}}=z({小球个数:{value:[t,1,1e3,10],onFinishChange(h){t=h,u.setBallsNum(h)}},开始(){const h=u.start();h&&(n.value=h)},暂停:{value:[function(){n.value()}],disable:!n.value},重置(){const h=u.reset();h&&(n.value=h)},查看源码(){i("check-source")}});H(n,h=>{s("暂停").enable(!!h)});const r=S();let u;function a(){_n({showClose:!0,message:"所有小球都停止运动了",type:"success",grouping:!0})}return A(()=>{const h=r.value;Object.assign(h,{width:innerWidth,height:innerHeight}),u=Jt({num:t,canvas:h,onAllStopped:a});const p=N(window,"resize",()=>{u.setSize({width:innerWidth,height:innerHeight})},{immediate:!0});u.render(),W(()=>{p(),n.value&&n.value()})}),(h,p)=>(O(),T("canvas",{ref_key:"canvasRef",ref:r},null,512))}}),es="/demo/assets/imgs/display-DOU4TeMC.png",ts={codes:[{name:"index.vue",code:Qt,lang:"js"},{name:"falling-balls.ts",code:Zt,lang:"ts"},{name:"ball.ts",code:on,lang:"ts"}],component:ns,display:es,title:"下落的小球",descriptions:""},ss=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -2060,15 +2304,13 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Yt=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=100,n=20,a=20,l=17,c=.01;z({小球个数:{value:[t,1,1e3,10],onFinishChange(i){t=i,f.setBallNum(i)}},小球半径上限:{value:[n,4,100,1],onFinishChange(i){n=i,f.updateBalls(m=>{m.r=S(4,i)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(i){a=i,f.updateBalls(m=>{m.vx=S(1,i)})}},小球y方向移动速度上限:{value:[l,1,15,.5],onFinishChange(i){l=i,f.updateBalls(m=>{m.vy=S(1,i)})}},小球摩擦力因子:{value:[c,0,3,.1],onFinishChange(i){c=i,f.updateBalls(m=>{m.friction=S(0,i)})}},开始(){s&&s(),s=f.start()},查看源码(){o("check-source")}});let s;const h=k();let f;return A(()=>{const i=h.value;let m,d;Object.assign(i,{width:m=innerWidth,height:d=innerHeight}),f=Fn({canvas:i,ballsNum:t,createBallFac:()=>{const p={x:S(10,m-10),y:S(10,d-10),r:S(1,n),vx:S(1,a),vy:S(1,l),styleOptions:{fillStyle:Y()},friction:S(0,c)};return new Q(p)},onBallUpdate(p){p.vx>=.01&&(p.vx-=p.friction,p.x+=p.vx),p.vy>=.01&&(p.vy-=p.friction,p.y+=p.vy),p.x>m+p.r&&(p.x=-p.r),p.y>d+p.r&&(p.y=-p.r)}});const u=W(window,"resize",()=>{f.setSize({width:m=innerWidth,height:d=innerHeight})},{immediate:!0});N(()=>{u(),s&&s()})}),(i,m)=>(O(),F("canvas",{ref_key:"canvasRef",ref:h},null,512))}}),Kt="/demo/assets/imgs/display-BaZn1eIe.png",Ut={codes:[{name:"index.vue",code:Xt,lang:"js"},{name:"wander-balls.ts",code:On,lang:"ts"},{name:"ball.ts",code:en,lang:"ts"}],component:Yt,display:Kt,title:"运动减速",descriptions:""},Qt=`<template>
+`,as=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=100,n=20,s=20,r=17,u=.01;z({小球个数:{value:[t,1,1e3,10],onFinishChange(o){t=o,p.setBallNum(o)}},小球半径上限:{value:[n,4,100,1],onFinishChange(o){n=o,p.updateBalls(v=>{v.r=k(4,o)})}},小球x方向移动速度上限:{value:[s,1,15,.5],onFinishChange(o){s=o,p.updateBalls(v=>{v.vx=k(1,o)})}},小球y方向移动速度上限:{value:[r,1,15,.5],onFinishChange(o){r=o,p.updateBalls(v=>{v.vy=k(1,o)})}},小球摩擦力因子:{value:[u,0,3,.1],onFinishChange(o){u=o,p.updateBalls(v=>{v.friction=k(0,o)})}},开始(){a&&a(),a=p.start()},查看源码(){i("check-source")}});let a;const h=S();let p;return A(()=>{const o=h.value;let v,d;Object.assign(o,{width:v=innerWidth,height:d=innerHeight}),p=Tn({canvas:o,ballsNum:t,createBallFac:()=>{const f={x:k(10,v-10),y:k(10,d-10),r:k(1,n),vx:k(1,s),vy:k(1,r),styleOptions:{fillStyle:K()},friction:k(0,u)};return new Q(f)},onBallUpdate(f){f.vx>=.01&&(f.vx-=f.friction,f.x+=f.vx),f.vy>=.01&&(f.vy-=f.friction,f.y+=f.vy),f.x>v+f.r&&(f.x=-f.r),f.y>d+f.r&&(f.y=-f.r)}});const c=N(window,"resize",()=>{p.setSize({width:v=innerWidth,height:d=innerHeight})},{immediate:!0});W(()=>{c(),a&&a()})}),(o,v)=>(O(),T("canvas",{ref_key:"canvasRef",ref:h},null,512))}}),is="/demo/assets/imgs/display-BaZn1eIe.png",os={codes:[{name:"index.vue",code:ss,lang:"js"},{name:"wander-balls.ts",code:Mn,lang:"ts"},{name:"ball.ts",code:on,lang:"ts"}],component:as,display:is,title:"运动减速",descriptions:""},rs=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
 import useGui from '@/hooks/useLilGui'
-import { getHelixPoints } from '@/utils/curve';
-import { drawCurve, interpolateColor } from '@/utils/utils';
-import { registEvent, rafLoop, setElement, drawLine, rgb, randomHexColor } from '@thing772/utils'
-import { throttle } from 'lodash-es'
+import { registEvent, rafLoop, setElement, randomHexColor, } from '@thing772/utils'
+import { debounce } from 'lodash-es'
 
 const emit = defineEmits<{
   (e: 'check-source'): void
@@ -2077,19 +2319,256 @@ const emit = defineEmits<{
 let ctx: CanvasRenderingContext2D
 let w = window.innerWidth, h = window.innerHeight
 
+let times = ref(2)
+let color = ref(randomHexColor())
+let blur = ref(8)
+let animation = ref(false)
 
 useGui({
   查看源码() {
     emit("check-source")
+  },
+  发光程度: {
+    value: [times.value, 1, 20, 1],
+    onFinishChange(v: number) {
+      times.value = v
+    }
+  },
+  发光颜色: {
+    isColor: true,
+    value: [color.value],
+    onFinishChange(n: string) {
+      color.value = n
+    }
+  },
+  扩散: {
+    value: [blur.value, 4, 100, 1],
+    onFinishChange(n: number) {
+      blur.value = n
+    }
+  },
+  光晕动画: {
+    value: [animation.value],
+    onFinishChange(n: boolean) {
+      animation.value = n
+    }
   }
 })
+
+watch([times, color, blur], () => {
+  if (animation.value) return
+  draw()
+})
+
+watch(animation, (newV) => {
+  if (newV) {
+    stopRafLoop = rafLoop(() => {
+      // console.log("动画中")
+      animate(50)
+    })
+  } else if (stopRafLoop) {
+    stopRafLoop()
+    stopRafLoop = undefined
+  }
+})
+
+let stopRafLoop: (() => void) | undefined;
+
+const canvasRef = ref()
+
+function setCanvasSize() {
+  w = window.innerWidth
+  h = window.innerHeight
+  Object.assign(canvasRef.value, {
+    width: w,
+    height: h
+  })
+
+  draw()
+}
+
+function glow(draw: () => void, options?: { color?: string, blur?: number, times?: number }) {
+  let { color = randomHexColor(), blur = 8, times = 2 } = options ?? {}
+  /**
+   * shadowBlur 表示阴影半径。当阴影半径增加，阴影的扩散程度扩大，阴影的强烈度下降。
+   * 而半径减小时，扩散程度也减小，强度增加。
+   * 使用多重阴影，可以使扩散和强度都保持在较理想状态
+   */
+
+  for (let i = 0; i < times; i++) {
+    ctx.shadowColor = color
+    ctx.shadowBlur = blur;
+    draw()
+  }
+  ctx.shadowColor = ""
+  ctx.shadowBlur = 0
+}
+
+function draw(options?: { blur?: number }) {
+  ctx.clearRect(0, 0, w, h)
+  ctx.fillStyle = "white"
+  ctx.textAlign = "center"
+  ctx.textBaseline = "middle"
+  ctx.font = "100px Consolas"
+  glow(() => {
+    ctx.fillText("hello world", w / 2, h / 2)
+  }, { color: color.value, times: times.value, blur: options?.blur ?? blur.value })
+}
+
+const animate = (function () {
+  let blur = 1
+  let flag = false
+  let stepBlur = 0.2
+  return (maxBlur = 20) => {
+    if (blur < maxBlur && !flag) blur += stepBlur
+    if (blur >= maxBlur && !flag) { flag = true }
+    if (blur > 0 && flag) blur -= stepBlur
+    if (blur <= 0 && flag) flag = false
+    draw({ blur })
+  }
+})()
+
+
+onMounted(() => {
+  const canvas = canvasRef.value
+  ctx = canvas.getContext('2d')
+  const uninstallResize = registEvent(window, 'resize', debounce(setCanvasSize, 100))
+  setCanvasSize()
+  draw()
+
+  setElement(canvas, { 'background-color': '#0d0d0d' })
+
+  onUnmounted(() => {
+    uninstallResize()
+    if (stopRafLoop) stopRafLoop()
+  })
+})
+
+<\/script>
+
+<style scoped>
+canvas {
+  cursor: pointer;
+}
+</style>
+`,ls=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n=window.innerWidth,s=window.innerHeight,r=S(2),u=S(Z()),a=S(8),h=S(!1);z({查看源码(){i("check-source")},发光程度:{value:[r.value,1,20,1],onFinishChange(x){r.value=x}},发光颜色:{isColor:!0,value:[u.value],onFinishChange(x){u.value=x}},扩散:{value:[a.value,4,100,1],onFinishChange(x){a.value=x}},光晕动画:{value:[h.value],onFinishChange(x){h.value=x}}}),H([r,u,a],()=>{h.value||c()}),H(h,x=>{x?p=X(()=>{f(50)}):p&&(p(),p=void 0)});let p;const o=S();function v(){n=window.innerWidth,s=window.innerHeight,Object.assign(o.value,{width:n,height:s}),c()}function d(x,g){let{color:m=Z(),blur:w=8,times:y=2}=g??{};for(let _=0;_<y;_++)t.shadowColor=m,t.shadowBlur=w,x();t.shadowColor="",t.shadowBlur=0}function c(x){t.clearRect(0,0,n,s),t.fillStyle="white",t.textAlign="center",t.textBaseline="middle",t.font="100px Consolas",d(()=>{t.fillText("hello world",n/2,s/2)},{color:u.value,times:r.value,blur:(x==null?void 0:x.blur)??a.value})}const f=function(){let x=1,g=!1,m=.2;return(w=20)=>{x<w&&!g&&(x+=m),x>=w&&!g&&(g=!0),x>0&&g&&(x-=m),x<=0&&g&&(g=!1),c({blur:x})}}();return A(()=>{const x=o.value;t=x.getContext("2d");const g=N(window,"resize",fn(v,100));v(),c(),nn(x,{"background-color":"#0d0d0d"}),W(()=>{g(),p&&p()})}),(x,g)=>(O(),T("canvas",{ref_key:"canvasRef",ref:o},null,512))}}),cs=L(ls,[["__scopeId","data-v-96628a68"]]),us="/demo/assets/imgs/display-CR96GjKV.png",ds={codes:[{name:"index.vue",code:rs,lang:"js"}],component:cs,display:us,title:"发光效果",descriptions:""},hs=`<template>
+  <canvas ref="canvasRef"></canvas>
+</template>
+<script setup lang="ts">
+import useGui from '@/hooks/useLilGui'
+import { registEvent, rafLoop, setElement, drawLine, randomHexColor, interpolateColor, getHelixPoints, helixPointsGenerator, drawHelixCurve } from '@thing772/utils'
+import { debounce } from 'lodash-es'
+
+const emit = defineEmits<{
+  (e: 'check-source'): void
+}>()
+
+let ctx: CanvasRenderingContext2D
+let w = window.innerWidth, h = window.innerHeight
+let type = ref("颜色渐变螺旋线")
+const options = ["普通螺旋线", "颜色渐变螺旋线", "逐渐生成螺旋线"] as const
+
+let times = ref(1)
+let degEnd = ref(360 * 5.6)
+let degStart = ref(0)
+
+useGui({
+  螺旋线: {
+    value: [type.value, options],
+    onChange(name: typeof options[number]) {
+      type.value = name
+    }
+  },
+  "逐渐生成动画参数": [
+    {
+      "逐渐生成动画速度倍数": {
+        value: [times.value, 1, 20, 1],
+        onFinishChange(v: number) {
+          times.value = v
+        }
+      },
+      "逐渐生成动画的起始角度": {
+        value: [degStart.value, 0, 360, 1],
+        onFinishChange(v: number) {
+          degStart.value = v
+        }
+      },
+      "逐渐生成动画的终止角度": {
+        value: [degEnd.value, 0, 360 * 10, 1],
+        onFinishChange(v: number) {
+          degEnd.value = v
+        }
+      }
+    },
+  ],
+  查看源码() {
+    emit("check-source")
+  },
+})
+
+let stopRafLoop: (() => void) | undefined;
+
+watch(type, () => {
+  draw(ctx)
+})
+
+watch([times, degStart, degEnd], () => {
+  if (type.value != '逐渐生成螺旋线') return
+  draw(ctx)
+})
+
+function draw(ctx: CanvasRenderingContext2D) {
+  console.log('开始画')
+  ctx.clearRect(0, 0, w, h)
+  if (stopRafLoop) {
+    stopRafLoop()
+    stopRafLoop = undefined
+  }
+  switch (type.value) {
+    case '普通螺旋线':
+      drawHelix(ctx)
+      break
+
+    case '颜色渐变螺旋线':
+      const interpolate = interpolateColor(randomHexColor(), randomHexColor())
+      if (interpolate) {
+        drawHelix2(ctx, interpolate)
+      } else {
+        drawHelix(ctx)
+      }
+      break
+
+    case '逐渐生成螺旋线': {
+      const interpolate = interpolateColor(randomHexColor(), randomHexColor())
+      let pts = helixPointsGenerator({ count: 1000, rStart: 100, rEnd: Math.min(w / 2, h / 2), degStart: degStart.value, degEnd: degEnd.value }, { x: w / 2, y: h / 2 })
+      let arr = [] as { x: number; y: number }[]
+
+      stopRafLoop = rafLoop(() => {
+        for (let i = 0; i < times.value; i++) {
+          const { value, done } = pts.next()
+          if (done) {
+            stopRafLoop = undefined
+            ctx.clearRect(0, 0, w, h)
+            drawHelix3(ctx, arr, interpolate)
+            return false
+          }
+          arr.push(value)
+        }
+        ctx.clearRect(0, 0, w, h)
+        drawHelix3(ctx, arr, interpolate)
+      })
+    }
+
+      break
+  }
+}
 
 /**
  * 画普通螺旋线
  * @param ctx
  */
 function drawHelix(ctx: CanvasRenderingContext2D) {
-  const line = drawLine(ctx, { strokeStyle: "pink" })
+  const line = drawLine(ctx, { strokeStyle: "pink", lineCap: 'round' })
   line(...getHelixPoints({ count: 1000, rStart: 100, rEnd: Math.min(w / 2, h / 2), degStart: 90, degEnd: 360 }, { x: w / 2, y: h / 2 }))
 }
 
@@ -2098,16 +2577,36 @@ function drawHelix(ctx: CanvasRenderingContext2D) {
  * @param ctx
  * @param interpolate - 颜色渐变插值器
  */
-function drawHelix2(ctx: CanvasRenderingContext2D, interpolate: (ratio: number) => { r: number; g: number; b: number; a: number }) {
-  let pts = getHelixPoints({ count: 500, rStart: 100, rEnd: Math.min(w / 2, h / 2), degStart: 0, degEnd: 360 * 5.5 }, { x: w / 2, y: h / 2 })
-
-  drawCurve(ctx, pts, (index: number, total: number) => {
-    let v = interpolate(index / (total - 1))
-    return {
-      strokeStyle: rgb(v.r, v.g, v.b, v.a,),
-      lineWidth: Math.max(1, 10 * (index / (total - 1)))
+function drawHelix2(ctx: CanvasRenderingContext2D, interpolate: (ratio: number) => string) {
+  let pts = getHelixPoints({ count: 1000, rStart: 100, rEnd: Math.min(w / 2, h / 2), degStart: 0, degEnd: 360 * 5.6 }, { x: w / 2, y: h / 2 })
+  drawHelixCurve(ctx, pts, {
+    onSegmentStyle: (index: number, total: number) => {
+      return {
+        strokeStyle: interpolate(index / (total - 1)),
+        lineWidth: Math.max(1, 10 * (index / (total - 1))),
+        lineCap: 'round'
+      }
     }
   })
+}
+
+function drawHelix3(ctx: CanvasRenderingContext2D, pts: any[], interpolate?: (ratio: number) => string) {
+  if (pts.length < 2) return
+  if (!interpolate) {
+    Object.assign(ctx, { strokeStyle: "pink" })
+    drawHelixCurve(ctx, pts)
+  } else {
+    drawHelixCurve(ctx, pts, {
+      onSegmentStyle: (index: number, total: number) => {
+        return {
+          strokeStyle: interpolate(index / (total - 1)),
+          lineWidth: Math.max(1, 10 * (index / (total - 1))),
+          lineCap: 'round'
+        }
+      }
+    })
+  }
+
 }
 
 const canvasRef = ref()
@@ -2116,34 +2615,23 @@ onMounted(() => {
   const canvas = canvasRef.value
   ctx = canvas.getContext('2d')
 
-  const uninstallResize = registEvent(window, 'resize', throttle(() => {
+  const uninstallResize = registEvent(window, 'resize', debounce(() => {
     w = window.innerWidth
     h = window.innerHeight
     Object.assign(canvas, {
       width: w,
       height: h
     })
+    draw(ctx)
   }, 100), { immediate: true })
 
-  const interpolate = interpolateColor(randomHexColor(), randomHexColor())
   setElement(canvas, { 'background-color': '#0d0d0d' })
-
-  if (interpolate) {
-    drawHelix2(ctx, interpolate)
-  } else {
-    drawHelix(ctx)
-  }
-
-  const stopAni = rafLoop(() => {
-    // ctx.clearRect(0, 0, w, h)
-
-  })
 
   onUnmounted(() => {
     uninstallResize()
-    stopAni()
   })
 })
+
 <\/script>
 
 <style scoped>
@@ -2151,13 +2639,13 @@ canvas {
   cursor: pointer;
 }
 </style>
-`;function Gn(r,e){let{count:o=100,degStart:t=0,degEnd:n=360,rStart:a,rEnd:l}=r,c=(l-a)/o,s=(n-t)/o,h=[],f=a,i=t;for(let m=0;m<o;m++)h.push(jn(e,i,f)),f+=c,i+=s;return h}const Zt=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t,n=window.innerWidth,a=window.innerHeight;z({查看源码(){o("check-source")}});function l(h){yn(h,{strokeStyle:"pink"})(...Gn({count:1e3,rStart:100,rEnd:Math.min(n/2,a/2),degStart:90,degEnd:360},{x:n/2,y:a/2}))}function c(h,f){let i=Gn({count:500,rStart:100,rEnd:Math.min(n/2,a/2),degStart:0,degEnd:1980},{x:n/2,y:a/2});rt(h,i,(m,d)=>{let u=f(m/(d-1));return{strokeStyle:qn(u.r,u.g,u.b,u.a),lineWidth:Math.max(1,10*(m/(d-1)))}})}const s=k();return A(()=>{const h=s.value;t=h.getContext("2d");const f=W(window,"resize",En(()=>{n=window.innerWidth,a=window.innerHeight,Object.assign(h,{width:n,height:a})},100),{immediate:!0}),i=ot(Cn(),Cn());un(h,{"background-color":"#0d0d0d"}),i?c(t,i):l(t);const m=U(()=>{});N(()=>{f(),m()})}),(h,f)=>(O(),F("canvas",{ref_key:"canvasRef",ref:s},null,512))}}),Jt=L(Zt,[["__scopeId","data-v-60f9368d"]]),ns="/demo/assets/imgs/display-BBE8hmEl.png",es={codes:[{name:"index.vue",code:Qt,lang:"js"}],component:Jt,display:ns,title:"螺旋线",descriptions:""},ts=`<template>
+`,fs=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n=window.innerWidth,s=window.innerHeight,r=S("颜色渐变螺旋线");const u=["普通螺旋线","颜色渐变螺旋线","逐渐生成螺旋线"];let a=S(1),h=S(360*5.6),p=S(0);z({螺旋线:{value:[r.value,u],onChange(g){r.value=g}},逐渐生成动画参数:[{逐渐生成动画速度倍数:{value:[a.value,1,20,1],onFinishChange(g){a.value=g}},逐渐生成动画的起始角度:{value:[p.value,0,360,1],onFinishChange(g){p.value=g}},逐渐生成动画的终止角度:{value:[h.value,0,360*10,1],onFinishChange(g){h.value=g}}}],查看源码(){i("check-source")}});let o;H(r,()=>{v(t)}),H([a,p,h],()=>{r.value=="逐渐生成螺旋线"&&v(t)});function v(g){switch(console.log("开始画"),g.clearRect(0,0,n,s),o&&(o(),o=void 0),r.value){case"普通螺旋线":d(g);break;case"颜色渐变螺旋线":const m=Dn(Z(),Z());m?c(g,m):d(g);break;case"逐渐生成螺旋线":{const w=Dn(Z(),Z());let y=_e({count:1e3,rStart:100,rEnd:Math.min(n/2,s/2),degStart:p.value,degEnd:h.value},{x:n/2,y:s/2}),_=[];o=X(()=>{for(let B=0;B<a.value;B++){const{value:I,done:E}=y.next();if(E)return o=void 0,g.clearRect(0,0,n,s),f(g,_,w),!1;_.push(I)}g.clearRect(0,0,n,s),f(g,_,w)})}break}}function d(g){wn(g,{strokeStyle:"pink",lineCap:"round"})(...An({count:1e3,rStart:100,rEnd:Math.min(n/2,s/2),degStart:90,degEnd:360},{x:n/2,y:s/2}))}function c(g,m){let w=An({count:1e3,rStart:100,rEnd:Math.min(n/2,s/2),degStart:0,degEnd:2015.9999999999998},{x:n/2,y:s/2});Rn(g,w,{onSegmentStyle:(y,_)=>({strokeStyle:m(y/(_-1)),lineWidth:Math.max(1,10*(y/(_-1))),lineCap:"round"})})}function f(g,m,w){m.length<2||(w?Rn(g,m,{onSegmentStyle:(y,_)=>({strokeStyle:w(y/(_-1)),lineWidth:Math.max(1,10*(y/(_-1))),lineCap:"round"})}):(Object.assign(g,{strokeStyle:"pink"}),Rn(g,m)))}const x=S();return A(()=>{const g=x.value;t=g.getContext("2d");const m=N(window,"resize",fn(()=>{n=window.innerWidth,s=window.innerHeight,Object.assign(g,{width:n,height:s}),v(t)},100),{immediate:!0});nn(g,{"background-color":"#0d0d0d"}),W(()=>{m()})}),(g,m)=>(O(),T("canvas",{ref_key:"canvasRef",ref:x},null,512))}}),ps=L(fs,[["__scopeId","data-v-04ed0a96"]]),ms="/demo/assets/imgs/display-BBE8hmEl.png",gs={codes:[{name:"index.vue",code:hs,lang:"js"}],component:ps,display:ms,title:"螺旋线",descriptions:""},vs=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
 import useGui from '@/hooks/useLilGui'
 import { registEvent, rafLoop, setElement, drawLine, randomBetween, ptOffset, loopNGetResult, randomHexColor, angleToPos } from '@thing772/utils'
-import { throttle } from 'lodash-es'
+import { debounce } from 'lodash-es'
 import { movePtWithDirection, outBounds } from '@/utils/utils'
 import type { Pos } from '@thing772/utils/dist/typings/main';
 
@@ -2247,18 +2735,21 @@ function generateRoundPointLines(center: Pos, r: number, args: { lengthArgs: [nu
 
 const canvasRef = ref()
 
+function setCanvasSize() {
+  w = window.innerWidth
+  h = window.innerHeight
+  Object.assign(canvasRef.value, {
+    width: w,
+    height: h
+  })
+}
+
 onMounted(() => {
   const canvas = canvasRef.value
   ctx = canvas.getContext('2d')
+  const uninstallResize = registEvent(window, 'resize', debounce(setCanvasSize, 100))
 
-  const uninstallResize = registEvent(window, 'resize', throttle(() => {
-    w = window.innerWidth
-    h = window.innerHeight
-    Object.assign(canvas, {
-      width: w,
-      height: h
-    })
-  }, 100), { immediate: true })
+  setCanvasSize()
 
   setElement(canvas, { 'background-color': '#0d0d0d' })
 
@@ -2306,7 +2797,7 @@ canvas {
   cursor: pointer;
 }
 </style>
-`,ss=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t,n=window.innerWidth,a=window.innerHeight;z({查看源码(){o("check-source")}});let l=100;function c(){return{x:S(0,n,!0),y:S(0,a,!0)}}function s(i,{length:m,step1:d,step2:u}){let p=Cn();const y={x:n/2,y:a/2};let b=In(y,i),g=sn(i,b,m);return{draw(w){if(An(i.x,0,n)||An(i.y,0,a)){i={...y},g=sn(y,b,.1);return}yn(w,{strokeStyle:p,lineWidth:1,lineCap:"round"})(i,g),i=sn(i,b,d),g=sn(g,b,u)}}}function h(i,m,d,u=1e3){return _n(p=>{let y=jn(i,p*360/u,m);const b=S(...d.lengthArgs),g=S(...d.step1Args),w=g*+S(.8,1,!1).toFixed(2);return s(y,{length:b,step1:g,step2:w})},u)}const f=k();return A(()=>{const i=f.value;t=i.getContext("2d");const m=W(window,"resize",En(()=>{n=window.innerWidth,a=window.innerHeight,Object.assign(i,{width:n,height:a})},100),{immediate:!0});un(i,{"background-color":"#0d0d0d"});let d=_n(()=>{const g=S(1,5),w=S(1,5),v=+S(.8,1,!1).toFixed(2),_=w*v;return s(c(),{length:g,step1:w,step2:_})},l),u=h({x:n/2,y:a/2},Math.min(n,a)/2-100,{step1Args:[.1,2,!1],lengthArgs:[1,20,!1]},100),p=h({x:n/2,y:a/2},Math.min(n,a)/2-200,{step1Args:[.1,2,!1],lengthArgs:[1,20,!1]},100),y=d.concat(u,u,p);const b=U(()=>{t.clearRect(0,0,n,a),y.forEach(g=>{g.draw(t)})});N(()=>{m(),b()})}),(i,m)=>(O(),F("canvas",{ref_key:"canvasRef",ref:f},null,512))}}),as=L(ss,[["__scopeId","data-v-ee7d2122"]]),is="/demo/assets/imgs/display-CmfO_pXK.png",os={codes:[{name:"index.vue",code:ts,lang:"js"}],component:as,display:is,title:"射线效果",descriptions:""},rs=`<template>
+`,xs=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t,n=window.innerWidth,s=window.innerHeight;z({查看源码(){i("check-source")}});let r=100;function u(){return{x:k(0,n,!0),y:k(0,s,!0)}}function a(v,{length:d,step1:c,step2:f}){let x=Z();const g={x:n/2,y:s/2};let m=In(g,v),w=rn(v,m,d);return{draw(y){if(Ln(v.x,0,n)||Ln(v.y,0,s)){v={...g},w=rn(g,m,.1);return}wn(y,{strokeStyle:x,lineWidth:1,lineCap:"round"})(v,w),v=rn(v,m,c),w=rn(w,m,f)}}}function h(v,d,c,f=1e3){return Sn(x=>{let g=Xn(v,x*360/f,d);const m=k(...c.lengthArgs),w=k(...c.step1Args),y=w*+k(.8,1,!1).toFixed(2);return a(g,{length:m,step1:w,step2:y})},f)}const p=S();function o(){n=window.innerWidth,s=window.innerHeight,Object.assign(p.value,{width:n,height:s})}return A(()=>{const v=p.value;t=v.getContext("2d");const d=N(window,"resize",fn(o,100));o(),nn(v,{"background-color":"#0d0d0d"});let c=Sn(()=>{const w=k(1,5),y=k(1,5),_=+k(.8,1,!1).toFixed(2),B=y*_;return a(u(),{length:w,step1:y,step2:B})},r),f=h({x:n/2,y:s/2},Math.min(n,s)/2-100,{step1Args:[.1,2,!1],lengthArgs:[1,20,!1]},100),x=h({x:n/2,y:s/2},Math.min(n,s)/2-200,{step1Args:[.1,2,!1],lengthArgs:[1,20,!1]},100),g=c.concat(f,f,x);const m=X(()=>{t.clearRect(0,0,n,s),g.forEach(w=>{w.draw(t)})});W(()=>{d(),m()})}),(v,d)=>(O(),T("canvas",{ref_key:"canvasRef",ref:p},null,512))}}),ys=L(xs,[["__scopeId","data-v-a8b8d34a"]]),bs="/demo/assets/imgs/display-CmfO_pXK.png",ws={codes:[{name:"index.vue",code:vs,lang:"js"}],component:ys,display:bs,title:"射线效果",descriptions:""},_s=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -2400,7 +2891,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,ls=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=innerWidth,n=innerHeight,a;const l=k(.01),c=k(.01),s=k(1),h=rn(new $n.Noise(Math.random())),f=k("simplex2"),i=()=>{const d=a.getImageData(0,0,t,n);for(let u=0;u<t;u++)for(let p=0;p<n;p++){const y=~~Math.min(255,Math.abs(h.value[f.value](u*l.value,p*c.value))*s.value*256);d.data[(p*t+u)*4+0]=y,d.data[(p*t+u)*4+1]=y,d.data[(p*t+u)*4+2]=y,d.data[(p*t+u)*4+3]=255}a.putImageData(d,0,0)};z({噪声生成算法:{value:[f.value,["simplex2","perlin2"]],onFinishChange(d){f.value=d}},x方向缩放因子:{value:[l.value,.001,.5,.001],onFinishChange(d){l.value=d}},y方向缩放因子:{value:[c.value,.001,.5,.001],onFinishChange(d){c.value=d}},值放缩因子:{value:[s.value,.01,255,.1],onFinishChange(d){s.value=d}},重新生成随机种子(){h.value=new $n.Noise(Math.random())},查看源码(){o("check-source")}});const m=k();return A(()=>{const d=m.value;d.width=t,d.height=n,a=d.getContext("2d",{willReadFrequently:!0});const u=W(window,"resize",xe(()=>{t=~~(innerWidth/1),n=~~(innerHeight/1),d.width=t,d.height=n,i()},100)),p=ye(i);N(()=>{u(),p()})}),(d,u)=>(O(),F("canvas",{ref_key:"canvasRef",ref:m},null,512))}}),cs="/demo/assets/imgs/display-CsCBxHWH.png",us={codes:[{name:"index.vue",code:rs,lang:"js"}],component:ls,display:cs,title:"随机噪声",descriptions:""},ds=`<template>
+`,Cs=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=innerWidth,n=innerHeight,s;const r=S(.01),u=S(.01),a=S(1),h=un(new Nn.Noise(Math.random())),p=S("simplex2"),o=()=>{const d=s.getImageData(0,0,t,n);for(let c=0;c<t;c++)for(let f=0;f<n;f++){const x=~~Math.min(255,Math.abs(h.value[p.value](c*r.value,f*u.value))*a.value*256);d.data[(f*t+c)*4+0]=x,d.data[(f*t+c)*4+1]=x,d.data[(f*t+c)*4+2]=x,d.data[(f*t+c)*4+3]=255}s.putImageData(d,0,0)};z({噪声生成算法:{value:[p.value,["simplex2","perlin2"]],onFinishChange(d){p.value=d}},x方向缩放因子:{value:[r.value,.001,.5,.001],onFinishChange(d){r.value=d}},y方向缩放因子:{value:[u.value,.001,.5,.001],onFinishChange(d){u.value=d}},值放缩因子:{value:[a.value,.01,255,.1],onFinishChange(d){a.value=d}},重新生成随机种子(){h.value=new Nn.Noise(Math.random())},查看源码(){i("check-source")}});const v=S();return A(()=>{const d=v.value;d.width=t,d.height=n,s=d.getContext("2d",{willReadFrequently:!0});const c=N(window,"resize",fn(()=>{t=~~(innerWidth/1),n=~~(innerHeight/1),d.width=t,d.height=n,o()},100)),f=Ce(o);W(()=>{c(),f()})}),(d,c)=>(O(),T("canvas",{ref_key:"canvasRef",ref:v},null,512))}}),Rs="/demo/assets/imgs/display-CsCBxHWH.png",Ss={codes:[{name:"index.vue",code:_s,lang:"js"}],component:Cs,display:Rs,title:"随机噪声",descriptions:""},ks=`<template>
   <el-input class="input" v-model="text" placeholder="输入ICON中显示的字" size="large" @keyup.enter="onEnter"></el-input>
   <canvas ref="canvasRef"></canvas>
 </template>
@@ -2542,7 +3033,7 @@ canvas {
   box-shadow: 0 0 10px 5px #409EFF;
 }
 </style>
-`,hs=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t="#cbc262",n="#fff",a=26,l=10,c=64,s=64;const h=k();let f,i;const m=k("");function d(){p()}z({设置背景色:{value:[t],isColor:!0,onChange(y){t=y,p()}},设置文字颜色:{value:[n],isColor:!0,onChange(y){n=y,p()}},设置文字大小:{value:[a,14,30,1],onChange(y){a=y,p()}},设置尺寸:{value:[c,32,64,1],onChange(y){c=y,s=y,f.width=c,f.height=s,p()}},设置圆角:{value:[l,0,100,1],onChange(y){l=y,p()}},图标下载(){f&&u(f)},查看源码(){o("check-source")}});function u(y){const b=y.toDataURL(),g=document.createElement("a");g.download="icon.png",document.body.appendChild(g),g.href=b,g.click(),document.body.removeChild(g)}function p(){i.clearRect(0,0,c,s),i.save(),i.beginPath(),i.moveTo(l,0),i.lineTo(f.width-l,0),i.quadraticCurveTo(f.width,0,f.width,l),i.lineTo(f.width,f.height-l),i.quadraticCurveTo(f.width,f.height,f.width-l,f.height),i.lineTo(l,f.height),i.quadraticCurveTo(0,f.height,0,f.height-l),i.lineTo(0,l),i.quadraticCurveTo(0,0,l,0),i.closePath(),i.clip(),Object.assign(i,{fillStyle:t}),i.fillRect(0,0,c,s),Object.assign(i,{fillStyle:n,textAlign:"center",textBaseline:"middle",font:`bold ${a}px aria`}),i.fillText(m.value,c/2,s/2+2),i.restore()}return A(()=>{f=h.value,f.width=c,f.height=s,i=f.getContext("2d"),p()}),(y,b)=>{const g=Bn;return O(),F(K,null,[G(g,{class:"input",modelValue:X(m),"onUpdate:modelValue":b[0]||(b[0]=w=>xn(m)?m.value=w:null),placeholder:"输入ICON中显示的字",size:"large",onKeyup:kn(d,["enter"])},null,8,["modelValue"]),H("canvas",{ref_key:"canvasRef",ref:h},null,512)],64)}}}),fs=L(hs,[["__scopeId","data-v-894f0b5c"]]),ps="/demo/assets/imgs/display-C0bS9oOy.png",ms={codes:[{name:"index.vue",code:ds,lang:"js"}],component:fs,display:ps,title:"简单文字图标生成",descriptions:""},gs=`<template>
+`,Bs=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t="#cbc262",n="#fff",s=26,r=10,u=64,a=64;const h=S();let p,o;const v=S("");function d(){f()}z({设置背景色:{value:[t],isColor:!0,onChange(x){t=x,f()}},设置文字颜色:{value:[n],isColor:!0,onChange(x){n=x,f()}},设置文字大小:{value:[s,14,30,1],onChange(x){s=x,f()}},设置尺寸:{value:[u,32,64,1],onChange(x){u=x,a=x,p.width=u,p.height=a,f()}},设置圆角:{value:[r,0,100,1],onChange(x){r=x,f()}},图标下载(){p&&c(p)},查看源码(){i("check-source")}});function c(x){const g=x.toDataURL(),m=document.createElement("a");m.download="icon.png",document.body.appendChild(m),m.href=g,m.click(),document.body.removeChild(m)}function f(){o.clearRect(0,0,u,a),o.save(),o.beginPath(),o.moveTo(r,0),o.lineTo(p.width-r,0),o.quadraticCurveTo(p.width,0,p.width,r),o.lineTo(p.width,p.height-r),o.quadraticCurveTo(p.width,p.height,p.width-r,p.height),o.lineTo(r,p.height),o.quadraticCurveTo(0,p.height,0,p.height-r),o.lineTo(0,r),o.quadraticCurveTo(0,0,r,0),o.closePath(),o.clip(),Object.assign(o,{fillStyle:t}),o.fillRect(0,0,u,a),Object.assign(o,{fillStyle:n,textAlign:"center",textBaseline:"middle",font:`bold ${s}px aria`}),o.fillText(v.value,u/2,a/2+2),o.restore()}return A(()=>{p=h.value,p.width=u,p.height=a,o=p.getContext("2d"),f()}),(x,g)=>{const m=Fn;return O(),T(U,null,[G(m,{class:"input",modelValue:Y(v),"onUpdate:modelValue":g[0]||(g[0]=w=>bn(v)?v.value=w:null),placeholder:"输入ICON中显示的字",size:"large",onKeyup:jn(d,["enter"])},null,8,["modelValue"]),V("canvas",{ref_key:"canvasRef",ref:h},null,512)],64)}}}),Es=L(Bs,[["__scopeId","data-v-894f0b5c"]]),js="/demo/assets/imgs/display-C0bS9oOy.png",Fs={codes:[{name:"index.vue",code:ks,lang:"js"}],component:Es,display:js,title:"简单文字图标生成",descriptions:""},Is=`<template>
   <canvas ref="canvasRef"></canvas>
   <el-input class="input" v-model="input" placeholder="请输入内容" size="large" @keyup.enter="onEnter"></el-input>
 </template>
@@ -2713,7 +3204,7 @@ onMounted(() => {
   box-shadow: 0 0 10px 5px #409EFF;
 }
 </style>
-`;class vs{constructor(e){C(this,"canvas");C(this,"ctx");C(this,"fontSize",200);C(this,"fontFamily","微软雅黑");C(this,"color","pink");C(this,"gap",3);C(this,"alphaThreshold",30);C(this,"w",0);C(this,"h",0);const{canvas:o,ctx:t,fontSize:n,fontFamily:a,color:l,gap:c,alphaThreshold:s}=e;this.canvas=o,this.ctx=t??o.getContext("2d"),n&&(this.fontSize=n),a&&(this.fontFamily=a),l&&(this.color=l),c!=null&&(this.gap=c),s!=null&&(this.alphaThreshold=s),this.w=o.width,this.h=o.height}setSize(e){this.w=e.width,this.h=e.height}_measureText(e){const{ctx:o,fontSize:t,fontFamily:n,color:a,w:l,h:c}=this;o.save(),Object.assign(o,{font:`${t}px ${n}`,fillStyle:a,textBaseline:"bottom"});const s=o.measureText(e);let{width:h}=s;const{actualBoundingBoxAscent:f,actualBoundingBoxDescent:i}=s,m=~~(Math.abs(f)+Math.abs(i));h=~~h,o.fillText(e,0,m);const d=o.getImageData(0,0,h,m).data;return o.clearRect(0,0,l,c),o.restore(),{data:d,width:h,height:m}}getParticles(e){const{data:o,width:t,height:n}=this._measureText(e),{gap:a,alphaThreshold:l,w:c,h:s}=this,h=[],f=[];for(let i=0;i<t;i+=a)for(let m=0;m<n;m+=a){const d=m*t+i,u=o[d*4+0],p=o[d*4+1],y=o[d*4+2],b=o[d*4+3];if(b<=l)continue;const{signal:g,resolve:w}=be();h.push(g);const v=we({x:i,y:m},In({x:t/2,y:n/2},{x:c/2,y:s/2}));f.push({tx:v.x,ty:v.y,color:qn(u,p,y,b),onDone:w})}return{particles:f,done:Promise.all(h)}}}const xs=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,t=k(),n=k("");let a,l=[],c=3,s="#f00",h=30,f=100,i=1,m=.1,d=.1,u=innerWidth,p=innerHeight;const y=Tn(()=>new Qn({r:i,x:S(0,u),y:S(0,p),fx:.1,fy:.1}));let b="hello world";function g(v,_){const B=a.getParticles(v);return l=y(B.particles.length).map(j=>(j.done=!1,_&&(j.x=S(0,u),j.y=S(0,p)),j)),l.forEach((j,E)=>Object.assign(j,B.particles[E])),B.done}function w(){n.value&&(b=n.value,g(b,!0))}return A(()=>{const v=t.value,_=v.getContext("2d",{willReadFrequently:!0});Object.assign(v,{width:u,height:p}),a=new vs({canvas:v,ctx:_,gap:c,alphaThreshold:h,color:s}),z({调整文字颜色:{value:[s],isColor:!0,onFinishChange(E){a.color=E,g(b,!0)}},采样alpha过滤阈值:{value:[h,0,100,1],onFinishChange(E){a.alphaThreshold=E,g(b,!0)}},采样间隔调整:{value:[c,1,20,1],onFinishChange(E){a.gap=E,g(b,!0)}},点大小调整:{value:[i,1,20,1],onFinishChange(E){i=E,y.update(x=>x.r=E),g(b,!0)}},x方向缓动因子调整:{value:[m,.01,1,.01],onFinishChange(E){m=E,y.update(x=>x.fx=E),g(b,!0)}},y方向缓动因子调整:{value:[d,.01,1,.01],onFinishChange(E){d=E,y.update(x=>x.fy=E),g(b,!0)}},字体大小调整:{value:[f,50,340,10],onFinishChange(E){f=E,a.fontSize=E,g(b,!0)}},查看源码(){o("check-source")}}),g(b);const B=U(()=>{_.clearRect(0,0,u,p),l.forEach(E=>{E.render(_),E.update()})}),j=W(window,"resize",()=>{u=innerWidth,p=innerHeight,v.width=u,v.height=p,a.setSize({width:u,height:p})});N(()=>{j(),B()})}),(v,_)=>{const B=Bn;return O(),F(K,null,[H("canvas",{ref_key:"canvasRef",ref:t},null,512),G(B,{class:"input",modelValue:X(n),"onUpdate:modelValue":_[0]||(_[0]=j=>xn(n)?n.value=j:null),placeholder:"请输入内容",size:"large",onKeyup:kn(w,["enter"])},null,8,["modelValue"])],64)}}}),ys=L(xs,[["__scopeId","data-v-8c68ef59"]]),bs=`import { getSignal, ptOffset, getMovePt, rgb } from '@thing772/utils'
+`;class Os{constructor(e){C(this,"canvas");C(this,"ctx");C(this,"fontSize",200);C(this,"fontFamily","微软雅黑");C(this,"color","pink");C(this,"gap",3);C(this,"alphaThreshold",30);C(this,"w",0);C(this,"h",0);const{canvas:i,ctx:t,fontSize:n,fontFamily:s,color:r,gap:u,alphaThreshold:a}=e;this.canvas=i,this.ctx=t??i.getContext("2d"),n&&(this.fontSize=n),s&&(this.fontFamily=s),r&&(this.color=r),u!=null&&(this.gap=u),a!=null&&(this.alphaThreshold=a),this.w=i.width,this.h=i.height}setSize(e){this.w=e.width,this.h=e.height}_measureText(e){const{ctx:i,fontSize:t,fontFamily:n,color:s,w:r,h:u}=this;i.save(),Object.assign(i,{font:`${t}px ${n}`,fillStyle:s,textBaseline:"bottom"});const a=i.measureText(e);let{width:h}=a;const{actualBoundingBoxAscent:p,actualBoundingBoxDescent:o}=a,v=~~(Math.abs(p)+Math.abs(o));h=~~h,i.fillText(e,0,v);const d=i.getImageData(0,0,h,v).data;return i.clearRect(0,0,r,u),i.restore(),{data:d,width:h,height:v}}getParticles(e){const{data:i,width:t,height:n}=this._measureText(e),{gap:s,alphaThreshold:r,w:u,h:a}=this,h=[],p=[];for(let o=0;o<t;o+=s)for(let v=0;v<n;v+=s){const d=v*t+o,c=i[d*4+0],f=i[d*4+1],x=i[d*4+2],g=i[d*4+3];if(g<=r)continue;const{signal:m,resolve:w}=Re();h.push(m);const y=Se({x:o,y:v},In({x:t/2,y:n/2},{x:u/2,y:a/2}));p.push({tx:y.x,ty:y.y,color:ke(c,f,x,g),onDone:w})}return{particles:p,done:Promise.all(h)}}}const Ms=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,t=S(),n=S("");let s,r=[],u=3,a="#f00",h=30,p=100,o=1,v=.1,d=.1,c=innerWidth,f=innerHeight;const x=On(()=>new Zn({r:o,x:k(0,c),y:k(0,f),fx:.1,fy:.1}));let g="hello world";function m(y,_){const B=s.getParticles(y);return r=x(B.particles.length).map(I=>(I.done=!1,_&&(I.x=k(0,c),I.y=k(0,f)),I)),r.forEach((I,E)=>Object.assign(I,B.particles[E])),B.done}function w(){n.value&&(g=n.value,m(g,!0))}return A(()=>{const y=t.value,_=y.getContext("2d",{willReadFrequently:!0});Object.assign(y,{width:c,height:f}),s=new Os({canvas:y,ctx:_,gap:u,alphaThreshold:h,color:a}),z({调整文字颜色:{value:[a],isColor:!0,onFinishChange(E){s.color=E,m(g,!0)}},采样alpha过滤阈值:{value:[h,0,100,1],onFinishChange(E){s.alphaThreshold=E,m(g,!0)}},采样间隔调整:{value:[u,1,20,1],onFinishChange(E){s.gap=E,m(g,!0)}},点大小调整:{value:[o,1,20,1],onFinishChange(E){o=E,x.update(b=>b.r=E),m(g,!0)}},x方向缓动因子调整:{value:[v,.01,1,.01],onFinishChange(E){v=E,x.update(b=>b.fx=E),m(g,!0)}},y方向缓动因子调整:{value:[d,.01,1,.01],onFinishChange(E){d=E,x.update(b=>b.fy=E),m(g,!0)}},字体大小调整:{value:[p,50,340,10],onFinishChange(E){p=E,s.fontSize=E,m(g,!0)}},查看源码(){i("check-source")}}),m(g);const B=X(()=>{_.clearRect(0,0,c,f),r.forEach(E=>{E.render(_),E.update()})}),I=N(window,"resize",()=>{c=innerWidth,f=innerHeight,y.width=c,y.height=f,s.setSize({width:c,height:f})});W(()=>{I(),B()})}),(y,_)=>{const B=Fn;return O(),T(U,null,[V("canvas",{ref_key:"canvasRef",ref:t},null,512),G(B,{class:"input",modelValue:Y(n),"onUpdate:modelValue":_[0]||(_[0]=I=>bn(n)?n.value=I:null),placeholder:"请输入内容",size:"large",onKeyup:jn(w,["enter"])},null,8,["modelValue"])],64)}}}),Ts=L(Ms,[["__scopeId","data-v-8c68ef59"]]),Ps=`import { getSignal, ptOffset, getMovePt, rgb } from '@thing772/utils'
 import { Particle } from '@/utils/class/particle'
 
 type CreateTextParticlesOptionis = {
@@ -2826,7 +3317,7 @@ export class TextParticle {
     }
   }
 }
-`,ws="/demo/assets/imgs/display-DOJbIvru.png",_s={codes:[{name:"index.vue",code:gs,lang:"js"},{name:"textParticle.ts",code:bs,lang:"ts"},{name:"particle.ts",code:Zn,lang:"ts"}],component:ys,display:ws,title:"文字粒子化",descriptions:""},Cs=`<template>
+`,zs="/demo/assets/imgs/display-DOJbIvru.png",$s={codes:[{name:"index.vue",code:Is,lang:"js"},{name:"textParticle.ts",code:Ps,lang:"ts"},{name:"particle.ts",code:Jn,lang:"ts"}],component:Ts,display:zs,title:"文字粒子化",descriptions:""},Ds=`<template>
   <canvas ref="canvasRef"></canvas>
 </template>
 <script setup lang="ts">
@@ -2930,7 +3421,7 @@ onMounted(() => {
   })
 })
 <\/script>
-`,Rs=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=100,n=20,a=10,l=7;z({小球个数:{value:[t,1,1e3,10],onFinishChange(f){t=f,h.setBallNum(f)}},小球半径上限:{value:[n,4,100,1],onFinishChange(f){n=f,h.updateBalls(i=>{i.r=S(4,f)})}},小球x方向移动速度上限:{value:[a,1,15,.5],onFinishChange(f){a=f,h.updateBalls(i=>{i.vx=S(1,f)})}},小球y方向移动速度上限:{value:[l,1,15,.5],onFinishChange(f){l=f,h.updateBalls(i=>{i.vy=S(1,f)})}},开始(){c&&c(),c=h.start()},查看源码(){o("check-source")}});let c;const s=k();let h;return A(()=>{const f=s.value;let i=innerWidth,m=innerHeight;Object.assign(f,{width:i,height:m}),h=Fn({canvas:f,ballsNum:t,createBallFac:()=>new Q({x:S(10,i-10),y:S(10,m-10),r:S(1,n),vx:S(1,a),vy:S(1,l),styleOptions:{fillStyle:Y()}})});const d=W(window,"resize",()=>{i=innerWidth,m=innerHeight,h.setSize({width:i,height:m})},{immediate:!0});h.render(),N(()=>{d(),c&&c()})}),(f,i)=>(O(),F("canvas",{ref_key:"canvasRef",ref:s},null,512))}}),Ss="/demo/assets/imgs/display-BpUGJlnU.png",ks={codes:[{name:"index.vue",code:Cs,lang:"js"},{name:"wander-balls.ts",code:On,lang:"ts"},{name:"ball.ts",code:en,lang:"ts"}],component:Rs,display:Ss,title:"矩形区域内飘荡的小球",descriptions:""},Bs=`<template>
+`,As=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=100,n=20,s=10,r=7;z({小球个数:{value:[t,1,1e3,10],onFinishChange(p){t=p,h.setBallNum(p)}},小球半径上限:{value:[n,4,100,1],onFinishChange(p){n=p,h.updateBalls(o=>{o.r=k(4,p)})}},小球x方向移动速度上限:{value:[s,1,15,.5],onFinishChange(p){s=p,h.updateBalls(o=>{o.vx=k(1,p)})}},小球y方向移动速度上限:{value:[r,1,15,.5],onFinishChange(p){r=p,h.updateBalls(o=>{o.vy=k(1,p)})}},开始(){u&&u(),u=h.start()},查看源码(){i("check-source")}});let u;const a=S();let h;return A(()=>{const p=a.value;let o=innerWidth,v=innerHeight;Object.assign(p,{width:o,height:v}),h=Tn({canvas:p,ballsNum:t,createBallFac:()=>new Q({x:k(10,o-10),y:k(10,v-10),r:k(1,n),vx:k(1,s),vy:k(1,r),styleOptions:{fillStyle:K()}})});const d=N(window,"resize",()=>{o=innerWidth,v=innerHeight,h.setSize({width:o,height:v})},{immediate:!0});h.render(),W(()=>{d(),u&&u()})}),(p,o)=>(O(),T("canvas",{ref_key:"canvasRef",ref:a},null,512))}}),Ns="/demo/assets/imgs/display-BpUGJlnU.png",Ws={codes:[{name:"index.vue",code:Ds,lang:"js"},{name:"wander-balls.ts",code:Mn,lang:"ts"},{name:"ball.ts",code:on,lang:"ts"}],component:As,display:Ns,title:"矩形区域内飘荡的小球",descriptions:""},Ls=`<template>
   <div class="container">
     <div class="el1">
       财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人，
@@ -3007,7 +3498,7 @@ const el2Class = computed(() => ([
   }
 }
 </style>
-`,Es={class:"container"},Is=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,{obj:t}=z({模糊自身:{value:[!1],onChange(c){n.value=c}},模糊背景:{value:[!1],onChange(c){a.value=c}},查看源码(){o("check-source")}}),n=k(t.模糊自身),a=k(t.模糊背景),l=Sn(()=>["el2",{"blur-self":n.value,"blur-backdrop":a.value}]);return(c,s)=>(O(),F("div",Es,[s[0]||(s[0]=H("div",{class:"el1"}," 财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人， 较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻） ",-1)),H("div",{class:cn(X(l))}," 财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。 ",2)]))}}),js=L(Is,[["__scopeId","data-v-bce03b61"]]),Ts="/demo/assets/imgs/display-C7z4HTpE.png",Os={codes:[{name:"index.vue",code:Bs,lang:"js"}],component:js,display:Ts,title:"css模糊效果",descriptions:""},Fs=`<template>
+`,Hs={class:"container"},Gs=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,{obj:t}=z({模糊自身:{value:[!1],onChange(u){n.value=u}},模糊背景:{value:[!1],onChange(u){s.value=u}},查看源码(){i("check-source")}}),n=S(t.模糊自身),s=S(t.模糊背景),r=Bn(()=>["el2",{"blur-self":n.value,"blur-backdrop":s.value}]);return(u,a)=>(O(),T("div",Hs,[a[0]||(a[0]=V("div",{class:"el1"}," 财联社11月5日电，日本厚生劳动省公布的人口动态统计初步数据显示，2024年1月至6月出生的婴儿数量为329998人， 较去年同期减少6.3%。预计日本今年全年出生人数或将首次低于70万。（央视新闻） ",-1)),V("div",{class:hn(Y(r))}," 财联社11月5日电，德国舍弗勒集团（Schaeffler）11月5日宣布，将在欧洲裁员约4700人，其中在德国将裁员约2800个岗位。 ",2)]))}}),Vs=L(Gs,[["__scopeId","data-v-bce03b61"]]),qs="/demo/assets/imgs/display-C7z4HTpE.png",Xs={codes:[{name:"index.vue",code:Ls,lang:"js"}],component:Vs,display:qs,title:"css模糊效果",descriptions:""},Ys=`<template>
   <div :class="ctClass">
     测试文本
     <div class="circle">
@@ -3084,7 +3575,7 @@ const ctClass = computed(() => ([
   background-color: pink;
 }
 </style>
-`,Ps=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,{obj:t}=z({"添加box-shadow":{value:[!1],onChange(s){n.value=s}},添加圆角:{value:[!1],onChange(s){a.value=s}},"添加filter:drop-shadow":{value:[!1],onChange(s){l.value=s}},查看源码(){o("check-source")}}),n=k(t["添加box-shadow"]),a=k(t.添加圆角),l=k(t["添加filter:drop-shadow"]),c=Sn(()=>["container",{"has-shadow-box":n.value,"round-border":a.value,filter:l.value}]);return(s,h)=>(O(),F("div",{class:cn(X(c))},h[0]||(h[0]=[mn(" 测试文本 "),H("div",{class:"circle"}," 测试文本2 ",-1)]),2))}}),Ms=L(Ps,[["__scopeId","data-v-4ee4a0c8"]]),zs="/demo/assets/imgs/display-CvX0ByRG.png",$s={codes:[{name:"index.vue",code:Fs,lang:"js"}],component:Ms,display:zs,title:"css box阴影效果",descriptions:""},Ds=`<template>
+`,Ks=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,{obj:t}=z({"添加box-shadow":{value:[!1],onChange(a){n.value=a}},添加圆角:{value:[!1],onChange(a){s.value=a}},"添加filter:drop-shadow":{value:[!1],onChange(a){r.value=a}},查看源码(){i("check-source")}}),n=S(t["添加box-shadow"]),s=S(t.添加圆角),r=S(t["添加filter:drop-shadow"]),u=Bn(()=>["container",{"has-shadow-box":n.value,"round-border":s.value,filter:r.value}]);return(a,h)=>(O(),T("div",{class:hn(Y(u))},h[0]||(h[0]=[xn(" 测试文本 "),V("div",{class:"circle"}," 测试文本2 ",-1)]),2))}}),Us=L(Ks,[["__scopeId","data-v-4ee4a0c8"]]),Qs="/demo/assets/imgs/display-CvX0ByRG.png",Zs={codes:[{name:"index.vue",code:Ys,lang:"js"}],component:Us,display:Qs,title:"css box阴影效果",descriptions:""},Js=`<template>
   <div class="box">
     <div ref="node"></div>
   </div>
@@ -3282,7 +3773,7 @@ onMounted(() => {
   padding: 20px;
 }
 </style>
-`;function As(r){const{data:e=[],getX:o,getY:t,width:n=200,height:a=200,margin:l=[],color:c={},sortY:s=0,xAxis:h={},yAxis:f={},yLegend:i={},hideXTicks:m}=r,[d=60,u=0,p=30,y=30]=l;let b,g;const w=_e("svg").attr("width",n).attr("height",a).attr("viewBox",[0,0,n,a]).style("background-color",c.bg||""),v=w.append("g"),_=w.append("g").attr("transform",`translate(0,${a-p})`),B=w.append("g").attr("transform",`translate(${y},0)`),j=E=>{const x=T=>{if(b=Se().range([y,n-u]),fn(r.xScale))for(const[I,$]of Object.entries(r.xScale))b[I]($);else b.padding(.2);s>0?b.domain(ke(T,([I])=>(s==1?1:-1)*t(I),o)):b.domain(T.map(o)),g=Be().domain([0,Ee(T,t)]).range([a-p,d])},R=T=>{T.attr("x",0).attr("y",0).attr("width",b.bandwidth()).attr("height",I=>g(0)-g(t(I))).attr("fill",c.bar||"#409eff")},M=T=>{T.text(I=>I.value).attr("text-anchor","middle").attr("x",b.bandwidth()/2).attr("y",-4)};x(E),v.selectAll("g").data(E).join(T=>T.append("g").attr("transform",I=>`translate(${b(o(I))},${g(t(I))})`).call(I=>{R(I.append("rect")),M(I.append("text"))}),T=>(R(T.select("rect")),M(T.select("text")),T)).attr("transform",T=>`translate(${b(o(T))},${g(t(T))})`),_.call(T=>{const I=Ce(b);I.tickSizeOuter(0);for(const[$,D]of Object.entries(h))I[$](D);I(T)}).call(T=>{m&&T.selectAll(".tick").remove()}),B.call(T=>{const I=Re(g);for(const[$,D]of Object.entries(f))I[$](D);I(T)}).call(T=>T.select(".domain").remove()).call(T=>{if(i.text){const I=T.append("text").attr("text-anchor","middle").attr("x",0).attr("y",20);for(const[$,D]of Object.entries(i))$=="text"?I[$](D):I.attr($,D)}})};return j(e),{svg:w.node(),update:j}}function*Ns(r,e){dn(e)||(e=wn),e=e;for(let o=1;o<r.length;o++)for(let t=0;t<r.length-o;t++)e(r[t])>e(r[t+1])&&(ln(r,t,t+1),yield[...r])}function*Ws(r,e){dn(e)||(e=wn),e=e,r=[...r];for(let o=0;o<r.length-1;o++){let t=0;for(let n=0;n<r.length-o;n++)e(r[n])>e(r[t])&&(t=n);ln(r,t,r.length-o-1),yield[...r]}}function*Ls(r,e){dn(e)||(e=wn),r=[...r],e=e;for(let o=0;o<r.length-1;o++)if(e(r[o])>e(r[o+1])){ln(r,o,o+1),yield[...r];let t=o;for(;t>0&&!(e(r[t])>=e(r[t-1]));)ln(r,t,t-1),yield[...r],t--}}function*Gs(r,e){dn(e)||(e=wn);function*o(t,n){if(e=e,t==n)return;const a=Math.floor((t+n)/2);yield*o(t,a),yield*o(a+1,n);const l=c=>r=[...r.slice(0,t),...c,...r.slice(n+1)];if(!(e(r[a])<=e(r[a+1]))){if(e(r[n])<=e(r[t])){yield l([...r.slice(a+1,n+1),...r.slice(t,a+1)]);return}for(let c=1;a+c<=n;c++){let s=a+c;for(;s>t&&!(e(r[s])>=e(r[s-1]));)ln(r,s,s-1),s--,yield[...r]}}}yield*o(0,r.length-1)}const Hs={class:"box"},Vs=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,t=k(),n=[{label:"冒泡排序",value:Ns},{label:"选择排序",value:Ws},{label:"插入排序",value:Ls},{label:"归并排序",value:Gs}],a=n[0],l=k(a.value);let c;const s=innerWidth-100,h=innerHeight-100;let f=!1,i=20;const m=rn([]),d=rn();function u(){m.value=at(i).map((w,v)=>({id:v,value:w})),f=!1,d.value=l.value(m.value,w=>w.value)}q(l,()=>{d.value=l.value(m.value,w=>w.value)});function p(){const{value:w,done:v}=d.value.next();if(f=v,v){bn({showClose:!0,message:"已经排序完毕",type:"success",grouping:!0});return}else m.value=w}const y=k(0);function b(){y.value==0&&((!d.value||f)&&u(),y.value=setInterval(()=>{if(f){clearInterval(y.value),y.value=0;return}p()},g))}q(()=>m.value,w=>{w.length>0?(c||(c=As({width:s,height:h,getX:v=>v.id,getY:v=>v.value}),t.value.appendChild(c.svg)),c.update(w)):c&&(t.value.removeChild(c.svg),c=null)});let g=50;return A(()=>{u();const{helpers:{getAllControllers:w}}=z({选择算法:{value:[a.label,n.map(_=>_.label)],onChange(_){const B=n.find(j=>j.label==_);l.value=B.value}},随机数个数:{value:[i,10,100,1],onFinishChange(_){i=_}},自动开始时间间隔:{value:[g,16,100,5],onFinishChange(_){g=_}},生成随机数:{value:[function(){u()}],disable:y.value!=0},排序下一步:{value:[function(){p()}],disable:!d.value||y.value!=0},自动开始(){b()},查看源码(){o("check-source")}}),v=q(y,_=>{w().forEach(B=>{B.property!="查看源码"&&B.disable(_>0)})});N(()=>{v(),clearInterval(y.value)})}),(w,v)=>(O(),F("div",Hs,[H("div",{ref_key:"node",ref:t},null,512)]))}}),qs=L(Vs,[["__scopeId","data-v-9858c415"]]),Xs=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`;function na(l){const{data:e=[],getX:i,getY:t,width:n=200,height:s=200,margin:r=[],color:u={},sortY:a=0,xAxis:h={},yAxis:p={},yLegend:o={},hideXTicks:v}=l,[d=60,c=0,f=30,x=30]=r;let g,m;const w=Be("svg").attr("width",n).attr("height",s).attr("viewBox",[0,0,n,s]).style("background-color",u.bg||""),y=w.append("g"),_=w.append("g").attr("transform",`translate(0,${s-f})`),B=w.append("g").attr("transform",`translate(${x},0)`),I=E=>{const b=F=>{if(g=Fe().range([x,n-c]),gn(l.xScale))for(const[j,$]of Object.entries(l.xScale))g[j]($);else g.padding(.2);a>0?g.domain(Ie(F,([j])=>(a==1?1:-1)*t(j),i)):g.domain(F.map(i)),m=Oe().domain([0,Me(F,t)]).range([s-f,d])},R=F=>{F.attr("x",0).attr("y",0).attr("width",g.bandwidth()).attr("height",j=>m(0)-m(t(j))).attr("fill",u.bar||"#409eff")},M=F=>{F.text(j=>j.value).attr("text-anchor","middle").attr("x",g.bandwidth()/2).attr("y",-4)};b(E),y.selectAll("g").data(E).join(F=>F.append("g").attr("transform",j=>`translate(${g(i(j))},${m(t(j))})`).call(j=>{R(j.append("rect")),M(j.append("text"))}),F=>(R(F.select("rect")),M(F.select("text")),F)).attr("transform",F=>`translate(${g(i(F))},${m(t(F))})`),_.call(F=>{const j=Ee(g);j.tickSizeOuter(0);for(const[$,D]of Object.entries(h))j[$](D);j(F)}).call(F=>{v&&F.selectAll(".tick").remove()}),B.call(F=>{const j=je(m);for(const[$,D]of Object.entries(p))j[$](D);j(F)}).call(F=>F.select(".domain").remove()).call(F=>{if(o.text){const j=F.append("text").attr("text-anchor","middle").attr("x",0).attr("y",20);for(const[$,D]of Object.entries(o))$=="text"?j[$](D):j.attr($,D)}})};return I(e),{svg:w.node(),update:I}}function*ea(l,e){pn(e)||(e=Cn),e=e;for(let i=1;i<l.length;i++)for(let t=0;t<l.length-i;t++)e(l[t])>e(l[t+1])&&(dn(l,t,t+1),yield[...l])}function*ta(l,e){pn(e)||(e=Cn),e=e,l=[...l];for(let i=0;i<l.length-1;i++){let t=0;for(let n=0;n<l.length-i;n++)e(l[n])>e(l[t])&&(t=n);dn(l,t,l.length-i-1),yield[...l]}}function*sa(l,e){pn(e)||(e=Cn),l=[...l],e=e;for(let i=0;i<l.length-1;i++)if(e(l[i])>e(l[i+1])){dn(l,i,i+1),yield[...l];let t=i;for(;t>0&&!(e(l[t])>=e(l[t-1]));)dn(l,t,t-1),yield[...l],t--}}function*aa(l,e){pn(e)||(e=Cn);function*i(t,n){if(e=e,t==n)return;const s=Math.floor((t+n)/2);yield*i(t,s),yield*i(s+1,n);const r=u=>l=[...l.slice(0,t),...u,...l.slice(n+1)];if(!(e(l[s])<=e(l[s+1]))){if(e(l[n])<=e(l[t])){yield r([...l.slice(s+1,n+1),...l.slice(t,s+1)]);return}for(let u=1;s+u<=n;u++){let a=s+u;for(;a>t&&!(e(l[a])>=e(l[a-1]));)dn(l,a,a-1),a--,yield[...l]}}}yield*i(0,l.length-1)}const ia={class:"box"},oa=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,t=S(),n=[{label:"冒泡排序",value:ea},{label:"选择排序",value:ta},{label:"插入排序",value:sa},{label:"归并排序",value:aa}],s=n[0],r=S(s.value);let u;const a=innerWidth-100,h=innerHeight-100;let p=!1,o=20;const v=un([]),d=un();function c(){v.value=ct(o).map((w,y)=>({id:y,value:w})),p=!1,d.value=r.value(v.value,w=>w.value)}H(r,()=>{d.value=r.value(v.value,w=>w.value)});function f(){const{value:w,done:y}=d.value.next();if(p=y,y){_n({showClose:!0,message:"已经排序完毕",type:"success",grouping:!0});return}else v.value=w}const x=S(0);function g(){x.value==0&&((!d.value||p)&&c(),x.value=setInterval(()=>{if(p){clearInterval(x.value),x.value=0;return}f()},m))}H(()=>v.value,w=>{w.length>0?(u||(u=na({width:a,height:h,getX:y=>y.id,getY:y=>y.value}),t.value.appendChild(u.svg)),u.update(w)):u&&(t.value.removeChild(u.svg),u=null)});let m=50;return A(()=>{c();const{helpers:{getAllControllers:w}}=z({选择算法:{value:[s.label,n.map(_=>_.label)],onChange(_){const B=n.find(I=>I.label==_);r.value=B.value}},随机数个数:{value:[o,10,100,1],onFinishChange(_){o=_}},自动开始时间间隔:{value:[m,16,100,5],onFinishChange(_){m=_}},生成随机数:{value:[function(){c()}],disable:x.value!=0},排序下一步:{value:[function(){f()}],disable:!d.value||x.value!=0},自动开始(){g()},查看源码(){i("check-source")}}),y=H(x,_=>{w().forEach(B=>{B.property!="查看源码"&&B.disable(_>0)})});W(()=>{y(),clearInterval(x.value)})}),(w,y)=>(O(),T("div",ia,[V("div",{ref_key:"node",ref:t},null,512)]))}}),ra=L(oa,[["__scopeId","data-v-9858c415"]]),la=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 /**
  * 根据传入数组，经过冒泡排序每个步骤后,
@@ -3302,7 +3793,7 @@ export default function* bubbleSort<D>(arr: D[], selector?: (item: D) => any) {
     }
   }
 }
-`,Ys=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,ca=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 /**
  * 根据传入数组，经过选择排序每个步骤后,
@@ -3325,7 +3816,7 @@ export default function* selectionSort<D>(arr: D[], selector?: (item: D) => any)
     yield [...arr]
   }
 }
-`,Ks=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,ua=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 
 /**
@@ -3356,7 +3847,7 @@ export default function* insertSort<D>(arr: D[], selector?: (item: D) => any) {
     }
   }
 }
-`,Us=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
+`,da=`import { isFunc, identity, swapArrayItem } from '@/utils/utils'
 
 
 // function mergeSort<D>(arr: D[], selector?: (item: D) => any) {
@@ -3485,7 +3976,7 @@ export default function* mergeSort<D>(arr: D[], selector?: (item: D) => any) {
   }
   yield* split(0, arr.length - 1)
 }
-`,Qs="/demo/assets/imgs/display-B3luB7Uf.png",Zs={codes:[{name:"index.vue",code:Ds,lang:"js"},{name:"bubble.ts",code:Xs,lang:"ts"},{name:"selection.ts",code:Ys,lang:"ts"},{name:"insertion.ts",code:Ks,lang:"ts"},{name:"merge.ts",code:Us,lang:"ts"}],component:qs,display:Qs,title:"排序算法可视化",descriptions:""},Js=`<template>
+`,ha="/demo/assets/imgs/display-B3luB7Uf.png",fa={codes:[{name:"index.vue",code:Js,lang:"js"},{name:"bubble.ts",code:la,lang:"ts"},{name:"selection.ts",code:ca,lang:"ts"},{name:"insertion.ts",code:ua,lang:"ts"},{name:"merge.ts",code:da,lang:"ts"}],component:ra,display:ha,title:"排序算法可视化",descriptions:""},pa=`<template>
   <div class="box">
     <el-card class="demo-card" shadow="always">
       <div style="display:flex;">
@@ -3615,7 +4106,7 @@ useGui({
   }
 }
 </style>
-`,na=`import { easeOutCubic } from './ease'
+`,ma=`import { easeOutCubic } from './ease'
 import { isDef } from '@/utils/utils'
 
 export enum DIRECTION {
@@ -3760,7 +4251,7 @@ export function drawPrice(arr: any[], options: DrawPriceOptions) {
     draw
   }
 }
-`;function ea(r){return 1-Math.pow(1-r,3)}var an=(r=>(r[r.NORMAL=0]="NORMAL",r[r.REVERSE=1]="REVERSE",r))(an||{});function ta(r,e){const{startIndex:o=0,speed:t=1,onDone:n,onProcessing:a}=e;let l=o,c,s;const h=u=>{fn(u)&&(s=Math.ceil(800/u))},f=()=>{c&&(cancelAnimationFrame(c),c=0)};h(t);function i(u){f();let p;const{direction:y,speed:b,startIndex:g}=u;h(b),fn(g)&&(l=g);const w=v=>{p||(p=v),v-p>=s&&(y==0?l=(l+1)%r.length:l=l-1>=0?l-1:r.length-1,a(l),p=v),c=requestAnimationFrame(w)};c||(c=requestAnimationFrame(w))}function m(){f()}function d(u){f();let{loopTimes:p=5,targetIndex:y=r.length-1}=u||{};const{direction:b,speed:g,startIndex:w}=u||{};p=Math.max(Math.ceil(Number(p)),1),y=Math.max(0,Math.min(Number(y),r.length-1)),h(g),fn(w)&&(l=w);const v=l;let _;const B=y-v;b==0?_=v+p*r.length+(B>=0?B:r.length+B):_=v-p*r.length+(B<=0?B:-r.length+B);const j=Math.abs(_-v)*s;let E;const x=R=>{E||(E=R);const M=Math.min(1,(R-E)/j);let I=(Math.ceil(ea(M)*(_-v))+v)%r.length;if(I<0&&(I+=r.length),l!=I&&(l=I,a(l)),M==1){n(l),c=0;return}c=requestAnimationFrame(x)};c=requestAnimationFrame(x)}return{wander:i,stop:m,draw:d}}const sa={class:"box"},aa={style:{display:"flex"}},ia=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e,t=k(1),n=[...Array(10)],a={targetIndex:2,loopTimes:2,direction:an.NORMAL,speed:5},{wander:l,stop:c,draw:s}=ta(n,{speed:a.speed,startIndex:t.value,onProcessing:d=>{t.value=d},onDone(d){bn({showClose:!0,message:"已经抽奖完毕",type:"success",grouping:!0}),t.value=d}});function h(){l({...a})}function f(){s({...a})}N(()=>{c(),i&&clearTimeout(i)});let i;function m(){h(),i=setTimeout(()=>{a.targetIndex=Yn(n),f(),i=0},2500)}return z({设定巡航速度:{value:[a.speed,1,10,1],onFinishChange(d){a.speed=d}},设定最终选中项索引:{value:[a.targetIndex,0,n.length-1,1],onFinishChange(d){a.targetIndex=d}},轮转次数:{value:[a.loopTimes,2,20,1],onFinishChange(d){a.loopTimes=d}},轮转方向:{value:[a.direction==an.NORMAL?"正向":"负向",["正向","负向"]],onChange(d){a.direction=d=="正向"?an.NORMAL:an.REVERSE}},开始抽奖:f,开始巡航:h,停止:c,模拟接口返回预制数据:m,查看源码(){o("check-source")}}),(d,u)=>{const p=Xn;return O(),F("div",sa,[G(p,{class:"demo-card",shadow:"always"},{default:V(()=>[H("div",aa,[(O(),F(K,null,on(n,(y,b)=>H("div",{class:cn(["block",X(t)==b?"selected":""]),key:b},pn(b),3)),64))])]),_:1})])}}}),oa=L(ia,[["__scopeId","data-v-3b4448e6"]]),ra="/demo/assets/imgs/display-DiF1Sfat.png",la={codes:[{name:"index.vue",code:Js,lang:"js"},{name:"draw-price.ts",code:na,lang:"ts"}],component:oa,display:ra,title:"抽奖",descriptions:""},ca=`<template>
+`;function ga(l){return 1-Math.pow(1-l,3)}var ln=(l=>(l[l.NORMAL=0]="NORMAL",l[l.REVERSE=1]="REVERSE",l))(ln||{});function va(l,e){const{startIndex:i=0,speed:t=1,onDone:n,onProcessing:s}=e;let r=i,u,a;const h=c=>{gn(c)&&(a=Math.ceil(800/c))},p=()=>{u&&(cancelAnimationFrame(u),u=0)};h(t);function o(c){p();let f;const{direction:x,speed:g,startIndex:m}=c;h(g),gn(m)&&(r=m);const w=y=>{f||(f=y),y-f>=a&&(x==0?r=(r+1)%l.length:r=r-1>=0?r-1:l.length-1,s(r),f=y),u=requestAnimationFrame(w)};u||(u=requestAnimationFrame(w))}function v(){p()}function d(c){p();let{loopTimes:f=5,targetIndex:x=l.length-1}=c||{};const{direction:g,speed:m,startIndex:w}=c||{};f=Math.max(Math.ceil(Number(f)),1),x=Math.max(0,Math.min(Number(x),l.length-1)),h(m),gn(w)&&(r=w);const y=r;let _;const B=x-y;g==0?_=y+f*l.length+(B>=0?B:l.length+B):_=y-f*l.length+(B<=0?B:-l.length+B);const I=Math.abs(_-y)*a;let E;const b=R=>{E||(E=R);const M=Math.min(1,(R-E)/I);let j=(Math.ceil(ga(M)*(_-y))+y)%l.length;if(j<0&&(j+=l.length),r!=j&&(r=j,s(r)),M==1){n(r),u=0;return}u=requestAnimationFrame(b)};u=requestAnimationFrame(b)}return{wander:o,stop:v,draw:d}}const xa={class:"box"},ya={style:{display:"flex"}},ba=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e,t=S(1),n=[...Array(10)],s={targetIndex:2,loopTimes:2,direction:ln.NORMAL,speed:5},{wander:r,stop:u,draw:a}=va(n,{speed:s.speed,startIndex:t.value,onProcessing:d=>{t.value=d},onDone(d){_n({showClose:!0,message:"已经抽奖完毕",type:"success",grouping:!0}),t.value=d}});function h(){r({...s})}function p(){a({...s})}W(()=>{u(),o&&clearTimeout(o)});let o;function v(){h(),o=setTimeout(()=>{s.targetIndex=Kn(n),p(),o=0},2500)}return z({设定巡航速度:{value:[s.speed,1,10,1],onFinishChange(d){s.speed=d}},设定最终选中项索引:{value:[s.targetIndex,0,n.length-1,1],onFinishChange(d){s.targetIndex=d}},轮转次数:{value:[s.loopTimes,2,20,1],onFinishChange(d){s.loopTimes=d}},轮转方向:{value:[s.direction==ln.NORMAL?"正向":"负向",["正向","负向"]],onChange(d){s.direction=d=="正向"?ln.NORMAL:ln.REVERSE}},开始抽奖:p,开始巡航:h,停止:u,模拟接口返回预制数据:v,查看源码(){i("check-source")}}),(d,c)=>{const f=Yn;return O(),T("div",xa,[G(f,{class:"demo-card",shadow:"always"},{default:q(()=>[V("div",ya,[(O(),T(U,null,cn(n,(x,g)=>V("div",{class:hn(["block",Y(t)==g?"selected":""]),key:g},vn(g),3)),64))])]),_:1})])}}}),wa=L(ba,[["__scopeId","data-v-3b4448e6"]]),_a="/demo/assets/imgs/display-DiF1Sfat.png",Ca={codes:[{name:"index.vue",code:pa,lang:"js"},{name:"draw-price.ts",code:ma,lang:"ts"}],component:wa,display:_a,title:"抽奖",descriptions:""},Ra=`<template>
   <div class="container">
     <div class="hive-row" :class="index % 2 == 1 ? 'odd' : ''" v-for="(sub, index) in imgs" @mouseenter="enter"
       @mouseleave="leave" :key="index">
@@ -3882,7 +4373,7 @@ $rotate: rotateY(0deg);
   }
 }
 </style>
-`,ua="/demo/assets/imgs/018194d9aac11f975e17b274fe4a78af1463731957-BlWzWTpc.png",da="/demo/assets/imgs/10251358673700483-Bf69morh.jpg",ha="/demo/assets/imgs/10251358673922612-wa-5hia3.jpg",fa="/demo/assets/imgs/10251381214893821-DZ0tyfKl.jpg",pa="/demo/assets/imgs/10251381215028477-DT0oxPDL.jpg",ma="/demo/assets/imgs/10251381215091916-34MSuKPK.jpg",ga="/demo/assets/imgs/10251381215152314-ZOViud5b.jpg",va="/demo/assets/imgs/10251381215208971-BnTSlzDn.jpg",xa="/demo/assets/imgs/10251381215487222-CyoYfFWR.jpg",ya="/demo/assets/imgs/10251381215991717-jivRh7vw.jpg",ba="/demo/assets/imgs/10251381216212847-C6d5iI8I.jpg",wa="/demo/assets/imgs/3a5950fc2408a7f8136de8704e1819c21463732075-DT6cAkAt.png",_a="/demo/assets/imgs/48d780d33eaf46a5646376b814b8efa71463731556-CGACL27Z.png",Ca="/demo/assets/imgs/554e21161de34506e9cb1ecbcd85716d1463732343-LZH7KjnQ.png",Ra="/demo/assets/imgs/884f9b653e317cc514890954b2e35be81463731323-DvATjqjX.png",Sa="/demo/assets/imgs/8a116da0668edebd82af16ecf7e75ace1590566316-Cl-PTpZA.jpg",ka="/demo/assets/imgs/928d6ec50975da022bda97a1ab8f04c81463731839-d_LHiOEG.png",Ba="/demo/assets/imgs/a748932756b48bd46a8fd17df4579dea1463732104-DlsyWN-A.png",Ea="/demo/assets/imgs/b5978ead603dcdc66704e721960debe31590565987-4RsIwXgW.jpg",Ia="/demo/assets/imgs/c06f07de280d4edebf801eef4b142c721463731804-DD1ps6p3.png",ja="/demo/assets/imgs/ceb8c078cf6b410d7def183870fe584d1590566557-9BfKn2sf.jpg",Ta="/demo/assets/imgs/ea5871bc33e131b497b9bb273890e8ae1463731875-WWF6WmyZ.png",Oa="/demo/assets/imgs/f29af13446f1feed47dcfd299ccaa23c1463732001-DrhlCMaO.png",Fa="/demo/assets/imgs/fef4eadd191c3461054ca60cde8576db1590566398-Bn18syhQ.jpg",Pa={class:"container"},Ma=["src"],za=5,$a=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=e;let t=[...Object.values([ua,da,ha,fa,pa,ma,ga,va,xa,ya,ba,wa,_a,Ca,Ra,Sa,ka,Ba,Ea,Ia,ja,Ta,Oa,Fa])];t=k(it(t,Math.ceil(t.length/za))),z({查看源码(){o("check-source")}});function n(l){l.target.classList.add("level-up")}function a(l){l.target.classList.remove("level-up")}return(l,c)=>(O(),F("div",Pa,[(O(!0),F(K,null,on(X(t),(s,h)=>(O(),F("div",{class:cn(["hive-row",h%2==1?"odd":""]),onMouseenter:n,onMouseleave:a,key:h},[(O(!0),F(K,null,on(s,f=>(O(),F("img",{class:"hive-item",src:f,alt:"",key:f},null,8,Ma))),128))],34))),128))]))}}),Da=L($a,[["__scopeId","data-v-5a2d0a77"]]),Aa="/demo/assets/imgs/display-BVEemRNY.png",Na={codes:[{name:"index.vue",code:ca,lang:"js"}],component:Da,display:Aa,title:"蜂巢图片",descriptions:""},Wa=`<template>
+`,Sa="/demo/assets/imgs/018194d9aac11f975e17b274fe4a78af1463731957-BlWzWTpc.png",ka="/demo/assets/imgs/10251358673700483-Bf69morh.jpg",Ba="/demo/assets/imgs/10251358673922612-wa-5hia3.jpg",Ea="/demo/assets/imgs/10251381214893821-DZ0tyfKl.jpg",ja="/demo/assets/imgs/10251381215028477-DT0oxPDL.jpg",Fa="/demo/assets/imgs/10251381215091916-34MSuKPK.jpg",Ia="/demo/assets/imgs/10251381215152314-ZOViud5b.jpg",Oa="/demo/assets/imgs/10251381215208971-BnTSlzDn.jpg",Ma="/demo/assets/imgs/10251381215487222-CyoYfFWR.jpg",Ta="/demo/assets/imgs/10251381215991717-jivRh7vw.jpg",Pa="/demo/assets/imgs/10251381216212847-C6d5iI8I.jpg",za="/demo/assets/imgs/3a5950fc2408a7f8136de8704e1819c21463732075-DT6cAkAt.png",$a="/demo/assets/imgs/48d780d33eaf46a5646376b814b8efa71463731556-CGACL27Z.png",Da="/demo/assets/imgs/554e21161de34506e9cb1ecbcd85716d1463732343-LZH7KjnQ.png",Aa="/demo/assets/imgs/884f9b653e317cc514890954b2e35be81463731323-DvATjqjX.png",Na="/demo/assets/imgs/8a116da0668edebd82af16ecf7e75ace1590566316-Cl-PTpZA.jpg",Wa="/demo/assets/imgs/928d6ec50975da022bda97a1ab8f04c81463731839-d_LHiOEG.png",La="/demo/assets/imgs/a748932756b48bd46a8fd17df4579dea1463732104-DlsyWN-A.png",Ha="/demo/assets/imgs/b5978ead603dcdc66704e721960debe31590565987-4RsIwXgW.jpg",Ga="/demo/assets/imgs/c06f07de280d4edebf801eef4b142c721463731804-DD1ps6p3.png",Va="/demo/assets/imgs/ceb8c078cf6b410d7def183870fe584d1590566557-9BfKn2sf.jpg",qa="/demo/assets/imgs/ea5871bc33e131b497b9bb273890e8ae1463731875-WWF6WmyZ.png",Xa="/demo/assets/imgs/f29af13446f1feed47dcfd299ccaa23c1463732001-DrhlCMaO.png",Ya="/demo/assets/imgs/fef4eadd191c3461054ca60cde8576db1590566398-Bn18syhQ.jpg",Ka={class:"container"},Ua=["src"],Qa=5,Za=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=e;let t=[...Object.values([Sa,ka,Ba,Ea,ja,Fa,Ia,Oa,Ma,Ta,Pa,za,$a,Da,Aa,Na,Wa,La,Ha,Ga,Va,qa,Xa,Ya])];t=S(ut(t,Math.ceil(t.length/Qa))),z({查看源码(){i("check-source")}});function n(r){r.target.classList.add("level-up")}function s(r){r.target.classList.remove("level-up")}return(r,u)=>(O(),T("div",Ka,[(O(!0),T(U,null,cn(Y(t),(a,h)=>(O(),T("div",{class:hn(["hive-row",h%2==1?"odd":""]),onMouseenter:n,onMouseleave:s,key:h},[(O(!0),T(U,null,cn(a,p=>(O(),T("img",{class:"hive-item",src:p,alt:"",key:p},null,8,Ua))),128))],34))),128))]))}}),Ja=L(Za,[["__scopeId","data-v-5a2d0a77"]]),ni="/demo/assets/imgs/display-BVEemRNY.png",ei={codes:[{name:"index.vue",code:Ra,lang:"js"}],component:Ja,display:ni,title:"蜂巢图片",descriptions:""},ti=`<template>
   <div class="box">
     <canvas ref="canvas"></canvas>
   </div>
@@ -3941,7 +4432,7 @@ canvas {
   display: block;
 }
 </style>
-`,La=`import { isFunc } from '@/utils/utils'
+`,si=`import { isFunc } from '@/utils/utils'
 
 type SceneOptions = {
   width: number;
@@ -4045,7 +4536,7 @@ export class Scene {
     }
   }
 }
-`,Ga=`import type { SceneInstance, SceneObj } from "./scene"
+`,ai=`import type { SceneInstance, SceneObj } from "./scene"
 import { randArr, randomInt } from "@/utils/utils"
 
 const textPool = [...Array(26)].map((item, index) => {
@@ -4194,4 +4685,4 @@ export class TextRain {
     this.scene.stop()
   }
 }
-`;class Ha{constructor(e){C(this,"canvas");C(this,"ctx");C(this,"width",0);C(this,"height",0);C(this,"background");C(this,"_t0",0);C(this,"_t1",0);C(this,"_dt",0);C(this,"_objects",[]);C(this,"_raf",0);const{width:o,height:t,canvas:n,background:a}=e;this.canvas=n,this.ctx=n.getContext("2d"),this.background=a??"#000",this.setSize(o,t)}setSize(e,o){this.canvas.width=e,this.canvas.height=o,this.width=e,this.height=o}_render(){const{width:e,height:o,ctx:t,background:n}=this;t.fillStyle=n,t.fillRect(0,0,e,o);for(const a of[...this._objects])a.render(this._dt)}_updateTime(e){this._t0==0&&(this._t0=e),this._dt=e-this._t0}run(e){const o=t=>{this._updateTime(t),dn(e)&&e(this._dt),this._render(),this._raf=requestAnimationFrame(o)};this._raf=requestAnimationFrame(o)}addObj(...e){return e.forEach(o=>{this._objects.find(t=>t==o)||(this._objects.push(o),o.scene=this)}),this}removeObj(e){const o=this._objects.findIndex(t=>t==e);return o!=-1&&(this._objects.splice(o,1),e.scene==this&&(e.scene=null)),this}stop(){this._raf&&(cancelAnimationFrame(this._raf),this._t0=0,this._t1=0,this._dt=0)}}const Va=[...Array(26)].map((r,e)=>["a","A"].map(o=>String.fromCharCode(o.charCodeAt(0)+e))).flat();function qa(){return[...Array(Z(8)+2)].map(()=>Kn(Va)).join("")}class Xa{constructor(e){C(this,"_x");C(this,"_y");C(this,"_text");C(this,"_opacity");C(this,"_onDismiss");C(this,"scene");C(this,"_opacityDecay");C(this,"_rawOptions");C(this,"_yStep");C(this,"_font","20px serif");C(this,"_fillStyle","red");const{x:o,y:t,text:n,opacity:a,opacityDecay:l,onDismiss:c,yStep:s}=e;this._x=o,this._y=t,this._text=n,this._opacity=a,this._onDismiss=c,this._opacityDecay=l??.01,this._rawOptions={...e},this._yStep=s??4}setFont(e,o){return this._font=e,this._fillStyle=o,this}render(e){const{_text:o,_x:t,_y:n,_opacityDecay:a,_yStep:l,_fillStyle:c,_font:s}=this,{ctx:h,height:f}=this.scene,i={font:h.font,fillStyle:h.fillStyle,globalAlpha:h.globalAlpha};this._opacity-=typeof a=="number"?a:a(e),this._opacity<0&&(this._opacity=0),h.font=s,h.fillStyle=c,h.globalAlpha=this._opacity;let m=0;const d=n+(typeof l=="number"?l:l(e));for(const u of o){const p=h.measureText(u),{actualBoundingBoxAscent:y,actualBoundingBoxDescent:b}=p,g=b+y;h.fillText(u,t,d-m),m+=g+10}this._y=d,Object.assign(h,i),(this._opacity==0||d-m>f)&&this._onDismiss(this)}}class Ya{constructor(e){C(this,"scene");C(this,"num",0);C(this,"maxNum",100);C(this,"colors",["brown","red","green","yellow","chocolate","pink","burlywood","chartreuse","cyan"]);const{scene:o,maxNum:t}=e;this.scene=o,t&&(this.maxNum=t)}addText(){if(this.num<this.maxNum){this.num++;const{width:e,height:o}=this.scene,t=new Xa({text:qa(),x:Z(e),y:Z(o),yStep:Z(10)+2,opacity:+Math.min(1,Math.random()+.2).toPrecision(2),opacityDecay:.01,onDismiss:n=>{this.scene.removeObj(n),this.num--}}).setFont(`${Z(15)+14}px serif`,Kn(this.colors));this.scene.addObj(t)}}start(){this.scene.run(()=>{this.addText()})}stop(){this.scene.stop()}}function Ka(r,e,o){r.addEventListener("resize",e),N(()=>{r.removeEventListener("resize",e)})}const Ua={class:"box"},Qa=P({__name:"index",emits:["check-source"],setup(r,{emit:e}){const o=k(),t=e;return A(()=>{const n=new Ha({width:innerWidth,height:innerHeight,canvas:o.value}),{obj:a}=z({文字串数量:{value:[10,10,200,10],onChange(c){l.maxNum=c}},查看代码:function(){t("check-source")}}),l=new Ya({scene:n,maxNum:a.文字串数量});l.start(),Ka(window,()=>{n.setSize(innerWidth,innerHeight)}),N(()=>{l.stop()})}),(n,a)=>(O(),F("div",Ua,[H("canvas",{ref_key:"canvas",ref:o},null,512)]))}}),Za=L(Qa,[["__scopeId","data-v-2318ea81"]]),Ja="/demo/assets/imgs/display-DwV-CRAI.png",ni={codes:[{name:"index.vue",code:Wa,lang:"js"},{name:"scene.ts",code:La,lang:"ts"},{name:"textRain.ts",code:Ga,lang:"ts"}],component:Za,display:Ja,title:"文字雨",descriptions:""};let hn;function Jn(){return hn||(hn=Object.assign({"./demo/canvas/audio-wave/config.ts":tt,"./demo/canvas/bfs/config.ts":ht,"./demo/canvas/chasing/config.ts":gt,"./demo/canvas/connect-balls/config.ts":bt,"./demo/canvas/coord/config.ts":St,"./demo/canvas/dfs/config.ts":Tt,"./demo/canvas/effect-1/config.ts":zt,"./demo/canvas/eyeballs/config.ts":Nt,"./demo/canvas/faliling-balls/config.ts":qt,"./demo/canvas/friction/config.ts":Ut,"./demo/canvas/helix/config.ts":es,"./demo/canvas/line/config.ts":os,"./demo/canvas/noise/config.ts":us,"./demo/canvas/simple-icon/config.ts":ms,"./demo/canvas/text-particle/config.ts":_s,"./demo/canvas/wander-balls/config.ts":ks,"./demo/css/blur/config.ts":Os,"./demo/css/shadow/config.ts":$s,"./demo/d3/sort/config.ts":Zs,"./demo/draw-price/config.ts":la,"./demo/hive/config.ts":Na,"./demo/text-rain/config.ts":ni}),hn)}const ne=[];function ei(){const r=Jn();for(const e in r){const{codes:o,component:t,title:n}=r[e],a=function(){return Dn(Xe,{codes:o},({checkSource:s})=>Dn(t,{onCheckSource:()=>{s()}}))};a.displayName=`Demo(${e})`;const l=e.replace(/.*\/demo\//,"").replace("/config.ts","").split("/").join("-");r[e].routeName=l,ne.push({path:l,name:l,component:a,meta:{title:n}})}}ei();const ti={path:"/demo",children:ne},si={class:"common-layout"},ai=P({__name:"index",setup(r){const e=Object.values(Jn());return(o,t)=>{const n=Oe,a=Fe,l=Xn,c=Te,s=je,h=Ie,f=Pe;return O(),F("div",si,[G(f,{class:"container"},{default:V(()=>[G(h,{class:"main"},{default:V(()=>[G(s,{class:"row",gutter:20},{default:V(()=>[(O(!0),F(K,null,on(X(e),i=>(O(),Rn(c,{key:i.routeName,span:4},{default:V(()=>[G(l,{class:"demo-card","body-style":{padding:"0px"},shadow:"always",onClick:m=>o.$router.push({name:i.routeName})},{footer:V(()=>[G(a,{tag:"p"},{default:V(()=>[mn(pn(i.title),1)]),_:2},1024),G(a,{tag:"p","line-clamp":2},{default:V(()=>[mn(pn(i.descriptions||"暂无描述"),1)]),_:2},1024)]),default:V(()=>[G(n,{class:"image",src:i.display,fit:"cover"},null,8,["src"])]),_:2},1032,["onClick"])]),_:2},1024))),128))]),_:1})]),_:1})]),_:1})])}}}),ii=L(ai,[["__scopeId","data-v-9c137ebc"]]),ee=Me({history:ze("/demo/"),routes:[{path:"/",component:ii},ti]});ee.beforeEach((r,e,o)=>{document.title=r.meta.title??"my demos",o()});const Pn=$e(We);Pn.use(De());Pn.use(ee);Pn.mount("#app");
+`;class ii{constructor(e){C(this,"canvas");C(this,"ctx");C(this,"width",0);C(this,"height",0);C(this,"background");C(this,"_t0",0);C(this,"_t1",0);C(this,"_dt",0);C(this,"_objects",[]);C(this,"_raf",0);const{width:i,height:t,canvas:n,background:s}=e;this.canvas=n,this.ctx=n.getContext("2d"),this.background=s??"#000",this.setSize(i,t)}setSize(e,i){this.canvas.width=e,this.canvas.height=i,this.width=e,this.height=i}_render(){const{width:e,height:i,ctx:t,background:n}=this;t.fillStyle=n,t.fillRect(0,0,e,i);for(const s of[...this._objects])s.render(this._dt)}_updateTime(e){this._t0==0&&(this._t0=e),this._dt=e-this._t0}run(e){const i=t=>{this._updateTime(t),pn(e)&&e(this._dt),this._render(),this._raf=requestAnimationFrame(i)};this._raf=requestAnimationFrame(i)}addObj(...e){return e.forEach(i=>{this._objects.find(t=>t==i)||(this._objects.push(i),i.scene=this)}),this}removeObj(e){const i=this._objects.findIndex(t=>t==e);return i!=-1&&(this._objects.splice(i,1),e.scene==this&&(e.scene=null)),this}stop(){this._raf&&(cancelAnimationFrame(this._raf),this._t0=0,this._t1=0,this._dt=0)}}const oi=[...Array(26)].map((l,e)=>["a","A"].map(i=>String.fromCharCode(i.charCodeAt(0)+e))).flat();function ri(){return[...Array(en(8)+2)].map(()=>Un(oi)).join("")}class li{constructor(e){C(this,"_x");C(this,"_y");C(this,"_text");C(this,"_opacity");C(this,"_onDismiss");C(this,"scene");C(this,"_opacityDecay");C(this,"_rawOptions");C(this,"_yStep");C(this,"_font","20px serif");C(this,"_fillStyle","red");const{x:i,y:t,text:n,opacity:s,opacityDecay:r,onDismiss:u,yStep:a}=e;this._x=i,this._y=t,this._text=n,this._opacity=s,this._onDismiss=u,this._opacityDecay=r??.01,this._rawOptions={...e},this._yStep=a??4}setFont(e,i){return this._font=e,this._fillStyle=i,this}render(e){const{_text:i,_x:t,_y:n,_opacityDecay:s,_yStep:r,_fillStyle:u,_font:a}=this,{ctx:h,height:p}=this.scene,o={font:h.font,fillStyle:h.fillStyle,globalAlpha:h.globalAlpha};this._opacity-=typeof s=="number"?s:s(e),this._opacity<0&&(this._opacity=0),h.font=a,h.fillStyle=u,h.globalAlpha=this._opacity;let v=0;const d=n+(typeof r=="number"?r:r(e));for(const c of i){const f=h.measureText(c),{actualBoundingBoxAscent:x,actualBoundingBoxDescent:g}=f,m=g+x;h.fillText(c,t,d-v),v+=m+10}this._y=d,Object.assign(h,o),(this._opacity==0||d-v>p)&&this._onDismiss(this)}}class ci{constructor(e){C(this,"scene");C(this,"num",0);C(this,"maxNum",100);C(this,"colors",["brown","red","green","yellow","chocolate","pink","burlywood","chartreuse","cyan"]);const{scene:i,maxNum:t}=e;this.scene=i,t&&(this.maxNum=t)}addText(){if(this.num<this.maxNum){this.num++;const{width:e,height:i}=this.scene,t=new li({text:ri(),x:en(e),y:en(i),yStep:en(10)+2,opacity:+Math.min(1,Math.random()+.2).toPrecision(2),opacityDecay:.01,onDismiss:n=>{this.scene.removeObj(n),this.num--}}).setFont(`${en(15)+14}px serif`,Un(this.colors));this.scene.addObj(t)}}start(){this.scene.run(()=>{this.addText()})}stop(){this.scene.stop()}}function ui(l,e,i){l.addEventListener("resize",e),W(()=>{l.removeEventListener("resize",e)})}const di={class:"box"},hi=P({__name:"index",emits:["check-source"],setup(l,{emit:e}){const i=S(),t=e;return A(()=>{const n=new ii({width:innerWidth,height:innerHeight,canvas:i.value}),{obj:s}=z({文字串数量:{value:[10,10,200,10],onChange(u){r.maxNum=u}},查看代码:function(){t("check-source")}}),r=new ci({scene:n,maxNum:s.文字串数量});r.start(),ui(window,()=>{n.setSize(innerWidth,innerHeight)}),W(()=>{r.stop()})}),(n,s)=>(O(),T("div",di,[V("canvas",{ref_key:"canvas",ref:i},null,512)]))}}),fi=L(hi,[["__scopeId","data-v-2318ea81"]]),pi="/demo/assets/imgs/display-DwV-CRAI.png",mi={codes:[{name:"index.vue",code:ti,lang:"js"},{name:"scene.ts",code:si,lang:"ts"},{name:"textRain.ts",code:ai,lang:"ts"}],component:fi,display:pi,title:"文字雨",descriptions:""};let mn;function ne(){return mn||(mn=Object.assign({"./demo/canvas/audio-wave/config.ts":rt,"./demo/canvas/bfs/config.ts":mt,"./demo/canvas/chasing/config.ts":yt,"./demo/canvas/comet/config.ts":kt,"./demo/canvas/connect-balls/config.ts":Ft,"./demo/canvas/coord/config.ts":Pt,"./demo/canvas/dfs/config.ts":Wt,"./demo/canvas/effect-1/config.ts":qt,"./demo/canvas/eyeballs/config.ts":Ut,"./demo/canvas/faliling-balls/config.ts":ts,"./demo/canvas/friction/config.ts":os,"./demo/canvas/glow/config.ts":ds,"./demo/canvas/helix/config.ts":gs,"./demo/canvas/line/config.ts":ws,"./demo/canvas/noise/config.ts":Ss,"./demo/canvas/simple-icon/config.ts":Fs,"./demo/canvas/text-particle/config.ts":$s,"./demo/canvas/wander-balls/config.ts":Ws,"./demo/css/blur/config.ts":Xs,"./demo/css/shadow/config.ts":Zs,"./demo/d3/sort/config.ts":fa,"./demo/draw-price/config.ts":Ca,"./demo/hive/config.ts":ei,"./demo/text-rain/config.ts":mi}),mn)}const ee=[];function gi(){const l=ne();for(const e in l){const{codes:i,component:t,title:n}=l[e],s=function(){return Wn(Ze,{codes:i},({checkSource:a})=>Wn(t,{onCheckSource:()=>{a()}}))};s.displayName=`Demo(${e})`;const r=e.replace(/.*\/demo\//,"").replace("/config.ts","").split("/").join("-");l[e].routeName=r,ee.push({path:r,name:r,component:s,meta:{title:n}})}}gi();const vi={path:"/demo",children:ee},xi={class:"common-layout"},yi=P({__name:"index",setup(l){const e=Object.values(ne());return(i,t)=>{const n=$e,s=De,r=Yn,u=ze,a=Pe,h=Te,p=Ae;return O(),T("div",xi,[G(p,{class:"container"},{default:q(()=>[G(h,{class:"main"},{default:q(()=>[G(a,{class:"row",gutter:20},{default:q(()=>[(O(!0),T(U,null,cn(Y(e),o=>(O(),kn(u,{key:o.routeName,span:4},{default:q(()=>[G(r,{class:"demo-card","body-style":{padding:"0px"},shadow:"always",onClick:v=>i.$router.push({name:o.routeName})},{footer:q(()=>[G(s,{tag:"p"},{default:q(()=>[xn(vn(o.title),1)]),_:2},1024),G(s,{tag:"p","line-clamp":2},{default:q(()=>[xn(vn(o.descriptions||"暂无描述"),1)]),_:2},1024)]),default:q(()=>[G(n,{class:"image",src:o.display,fit:"cover"},null,8,["src"])]),_:2},1032,["onClick"])]),_:2},1024))),128))]),_:1})]),_:1})]),_:1})])}}}),bi=L(yi,[["__scopeId","data-v-9c137ebc"]]),te=Ne({history:We("/demo/"),routes:[{path:"/",component:bi},vi]});te.beforeEach((l,e,i)=>{document.title=l.meta.title??"my demos",i()});const Pn=Le(qe);Pn.use(He());Pn.use(te);Pn.mount("#app");
